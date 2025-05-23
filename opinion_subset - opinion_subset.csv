@@ -1,0 +1,4254 @@
+age,gender,norm_educ,norm_income,party,prefsep_welfare,welfare_support
+66,Hombre,0.8,1,cons,-1,Mantener o Reducir
+30,Hombre,0.6,0,cons,1,Aumentar
+67,Hombre,0.9,0.25,cons,-1,Mantener o Reducir
+19,Mujer,0.7,NA,lib,-1,Mantener o Reducir
+37,Hombre,0.6,0.5,other,-1,Mantener o Reducir
+47,Hombre,1,0.5,ndp,1,Aumentar
+49,Hombre,0.6,0,cons,0,Mantener o Reducir
+22,Mujer,0.3,0,lib,1,Aumentar
+37,Hombre,0.9,0.75,cons,-1,Mantener o Reducir
+38,Hombre,0.4,0.75,ndp,0,Mantener o Reducir
+72,Hombre,0.4,0.25,cons,1,Aumentar
+53,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+41,Hombre,0.8,0.75,ndp,-1,Mantener o Reducir
+61,Hombre,0.5,0.25,cons,1,Aumentar
+65,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+84,Hombre,0.8,0,cons,-1,Mantener o Reducir
+23,Mujer,0.8,0,ndp,0,Mantener o Reducir
+35,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+71,Mujer,0.8,0.75,lib,0,Mantener o Reducir
+25,Hombre,0.2,0,lib,0,Mantener o Reducir
+48,Hombre,0.6,0.5,other,0,Mantener o Reducir
+50,Hombre,0.5,0,lib,-1,Mantener o Reducir
+31,Hombre,0.5,0.5,cons,-1,Mantener o Reducir
+80,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+27,Mujer,0.4,0.75,lib,0,Mantener o Reducir
+26,Mujer,0.8,0.5,cons,0,Mantener o Reducir
+22,Mujer,0.3,0.75,cons,1,Aumentar
+34,Mujer,0.7,NA,cons,-1,Mantener o Reducir
+67,Hombre,0.7,0.25,cons,1,Aumentar
+47,Mujer,0.5,1,ndp,1,Aumentar
+68,Hombre,0.6,0,cons,1,Aumentar
+71,Hombre,1,NA,cons,0,Mantener o Reducir
+46,Hombre,0.6,1,cons,-1,Mantener o Reducir
+28,Hombre,NA,1,lib,0,Mantener o Reducir
+37,Mujer,0.8,0.75,lib,0,Mantener o Reducir
+48,Mujer,0.5,0.25,ndp,0,Mantener o Reducir
+61,Hombre,0.7,0.25,cons,0,Mantener o Reducir
+38,Hombre,0.6,1,lib,-1,Mantener o Reducir
+23,Mujer,0.8,0.25,lib,-1,Mantener o Reducir
+61,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+74,Mujer,0.3,0,cons,-1,Mantener o Reducir
+60,Mujer,0.7,0.5,cons,0,Mantener o Reducir
+67,Hombre,0.3,0,cons,0,Mantener o Reducir
+35,Hombre,1,0.75,other,-1,Mantener o Reducir
+37,Mujer,1,1,ndp,-1,Mantener o Reducir
+65,Mujer,0.5,0,cons,0,Mantener o Reducir
+46,Hombre,0.4,0.75,cons,-1,Mantener o Reducir
+37,Mujer,0.4,NA,cons,0,Mantener o Reducir
+62,Hombre,0.4,0,cons,0,Mantener o Reducir
+51,Mujer,0.7,1,cons,-1,Mantener o Reducir
+63,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+18,Mujer,0.7,1,lib,1,Aumentar
+58,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+55,Hombre,0.7,1,cons,-1,Mantener o Reducir
+20,Hombre,0.7,0.75,cons,0,Mantener o Reducir
+64,Hombre,1,0,ndp,1,Aumentar
+58,Mujer,0.4,1,cons,-1,Mantener o Reducir
+40,Mujer,0.4,NA,lib,0,Mantener o Reducir
+41,Mujer,0.8,1,cons,0,Mantener o Reducir
+40,Hombre,0.2,1,ndp,-1,Mantener o Reducir
+65,Mujer,0.8,0,cons,-1,Mantener o Reducir
+53,Mujer,0.6,0.5,cons,-1,Mantener o Reducir
+81,Hombre,0.7,0.25,cons,0,Mantener o Reducir
+77,Hombre,0.5,0.25,lib,0,Mantener o Reducir
+41,Hombre,1,1,cons,0,Mantener o Reducir
+39,Hombre,0.9,0.5,other,0,Mantener o Reducir
+61,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+43,Hombre,1,0,cons,0,Mantener o Reducir
+65,Mujer,0.8,1,cons,0,Mantener o Reducir
+61,Mujer,0.5,0.5,cons,-1,Mantener o Reducir
+60,Mujer,0.4,0,ndp,1,Aumentar
+18,Mujer,0.4,0.75,ndp,-1,Mantener o Reducir
+65,Mujer,0.5,0.75,cons,1,Aumentar
+52,Hombre,0.7,0,ndp,1,Aumentar
+48,Hombre,0.6,1,other,-1,Mantener o Reducir
+35,Hombre,0.4,0,lib,0,Mantener o Reducir
+41,Hombre,0.8,0.25,lib,1,Aumentar
+56,Mujer,0.3,0,cons,0,Mantener o Reducir
+33,Mujer,0.7,0,ndp,0,Mantener o Reducir
+58,Hombre,0.6,0,ndp,1,Aumentar
+38,Mujer,0.9,0.75,lib,1,Aumentar
+74,Mujer,0.6,1,ndp,1,Aumentar
+61,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+29,Mujer,0.4,1,ndp,1,Aumentar
+64,Hombre,0.5,0,other,1,Aumentar
+20,Hombre,0.3,0.75,ndp,0,Mantener o Reducir
+43,Mujer,0.5,0.5,cons,-1,Mantener o Reducir
+72,Hombre,0.6,0,cons,-1,Mantener o Reducir
+23,Mujer,0.6,1,ndp,0,Mantener o Reducir
+37,Hombre,0.3,NA,other,1,Aumentar
+42,Mujer,0.8,1,lib,0,Mantener o Reducir
+35,Mujer,0.9,1,cons,0,Mantener o Reducir
+60,Mujer,0.3,1,ndp,1,Aumentar
+20,Mujer,0.4,0.5,lib,1,Aumentar
+20,Hombre,0.7,0.5,ndp,-1,Mantener o Reducir
+74,Hombre,0.5,0.5,lib,1,Aumentar
+23,Hombre,0.8,1,cons,-1,Mantener o Reducir
+58,Hombre,0.8,1,cons,-1,Mantener o Reducir
+54,Mujer,0.5,NA,cons,1,Aumentar
+36,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+19,Mujer,0.4,0.25,lib,-1,Mantener o Reducir
+30,Hombre,0.6,1,cons,-1,Mantener o Reducir
+64,Mujer,0.8,0.75,cons,0,Mantener o Reducir
+23,Mujer,0.4,0.5,lib,0,Mantener o Reducir
+75,Mujer,0.4,0.5,cons,-1,Mantener o Reducir
+71,Mujer,0.6,NA,cons,-1,Mantener o Reducir
+33,Hombre,0.5,1,ndp,-1,Mantener o Reducir
+76,Hombre,0.5,0.5,ndp,1,Aumentar
+18,Hombre,0.7,0.75,cons,1,Aumentar
+33,Mujer,0.5,0,cons,0,Mantener o Reducir
+81,Hombre,0.5,0,cons,1,Aumentar
+38,Hombre,0.9,NA,other,-1,Mantener o Reducir
+83,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+23,Hombre,0.7,0.5,cons,0,Mantener o Reducir
+70,Hombre,0.8,0.5,cons,0,Mantener o Reducir
+67,Hombre,0.8,0.25,ndp,1,Aumentar
+65,Hombre,0.8,1,ndp,1,Aumentar
+61,Hombre,0.6,0.75,cons,-1,Mantener o Reducir
+21,Mujer,0.7,0.5,ndp,1,Aumentar
+30,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+23,Mujer,0.6,1,other,-1,Mantener o Reducir
+20,Mujer,0.4,0.25,ndp,1,Aumentar
+35,Mujer,0.8,1,cons,0,Mantener o Reducir
+25,Hombre,0.8,0.5,other,0,Mantener o Reducir
+22,Hombre,0.6,0.75,ndp,0,Mantener o Reducir
+30,Mujer,0.8,1,cons,0,Mantener o Reducir
+78,Hombre,0.5,0.75,cons,0,Mantener o Reducir
+50,Mujer,0.4,0.5,other,1,Aumentar
+24,Hombre,0.7,1,lib,0,Mantener o Reducir
+54,Hombre,0.7,0.25,cons,-1,Mantener o Reducir
+72,Mujer,0.6,0.75,lib,0,Mantener o Reducir
+34,Mujer,0.6,1,lib,-1,Mantener o Reducir
+52,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+25,Hombre,0,NA,ndp,-1,Mantener o Reducir
+75,Mujer,1,0.5,ndp,1,Aumentar
+24,Hombre,0.7,0.25,cons,0,Mantener o Reducir
+51,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+35,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+63,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+25,Hombre,0.9,1,ndp,0,Mantener o Reducir
+69,Hombre,0.7,0.5,cons,-1,Mantener o Reducir
+23,Mujer,0.8,NA,lib,1,Aumentar
+68,Mujer,0.5,0.25,other,-1,Mantener o Reducir
+42,Mujer,0.6,0,ndp,1,Aumentar
+79,Hombre,0.4,0.75,cons,0,Mantener o Reducir
+49,Hombre,0.8,1,ndp,0,Mantener o Reducir
+57,Mujer,0.6,NA,cons,-1,Mantener o Reducir
+27,Mujer,0.6,0.5,ndp,1,Aumentar
+75,Hombre,0.9,0.5,lib,1,Aumentar
+38,Mujer,0.5,1,ndp,0,Mantener o Reducir
+26,Mujer,0.9,NA,ndp,-1,Mantener o Reducir
+30,Hombre,0.6,1,lib,0,Mantener o Reducir
+47,Hombre,0.6,0,cons,1,Aumentar
+57,Hombre,0.5,0.5,cons,-1,Mantener o Reducir
+65,Mujer,0.6,0,cons,1,Aumentar
+24,Mujer,0.8,NA,ndp,0,Mantener o Reducir
+48,Mujer,0.4,0,ndp,1,Aumentar
+58,Hombre,0.9,0.5,cons,0,Mantener o Reducir
+58,Hombre,0.7,1,cons,0,Mantener o Reducir
+27,Hombre,0.8,0.75,cons,0,Mantener o Reducir
+57,Mujer,0.3,0.5,cons,-1,Mantener o Reducir
+46,Hombre,0.6,0.5,lib,-1,Mantener o Reducir
+49,Mujer,0.4,0.75,ndp,0,Mantener o Reducir
+18,Hombre,0.3,NA,lib,1,Aumentar
+28,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+45,Mujer,0.7,1,cons,0,Mantener o Reducir
+20,Mujer,0.4,0.5,ndp,0,Mantener o Reducir
+29,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+68,Mujer,0.4,0.5,ndp,0,Mantener o Reducir
+65,Mujer,0.5,0.25,other,1,Aumentar
+19,Hombre,0.5,1,cons,-1,Mantener o Reducir
+58,Mujer,0.3,NA,cons,1,Aumentar
+57,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+56,Hombre,0.6,0.75,cons,0,Mantener o Reducir
+33,Mujer,0.4,0.5,ndp,0,Mantener o Reducir
+76,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+76,Mujer,0.7,0,cons,1,Aumentar
+32,Hombre,0.4,0.25,other,1,Aumentar
+20,Hombre,0.4,1,ndp,0,Mantener o Reducir
+19,Mujer,0.7,1,cons,1,Aumentar
+83,Hombre,0.8,1,ndp,0,Mantener o Reducir
+21,Mujer,0.7,0.75,lib,0,Mantener o Reducir
+33,Mujer,0.7,NA,cons,0,Mantener o Reducir
+69,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+31,Hombre,0.8,0.25,cons,0,Mantener o Reducir
+49,Hombre,0.6,1,cons,-1,Mantener o Reducir
+57,Hombre,0.7,0.5,cons,0,Mantener o Reducir
+49,Mujer,0.4,0.75,ndp,-1,Mantener o Reducir
+21,Hombre,0.7,0,cons,0,Mantener o Reducir
+66,Hombre,1,0.25,cons,0,Mantener o Reducir
+35,Mujer,0.8,1,other,1,Aumentar
+45,Hombre,0.8,1,cons,0,Mantener o Reducir
+75,Mujer,0.5,0,cons,1,Aumentar
+36,Mujer,0.8,0.75,cons,1,Aumentar
+54,Hombre,0.6,1,cons,0,Mantener o Reducir
+63,Mujer,1,0.25,cons,-1,Mantener o Reducir
+63,Mujer,0.4,0,ndp,0,Mantener o Reducir
+66,Mujer,0.8,0.75,lib,1,Aumentar
+35,Hombre,0.8,1,cons,0,Mantener o Reducir
+61,Mujer,0.8,1,cons,0,Mantener o Reducir
+48,Hombre,0.8,1,cons,1,Aumentar
+55,Hombre,0.5,0.25,cons,-1,Mantener o Reducir
+44,Mujer,0.7,0.5,ndp,1,Aumentar
+62,Mujer,0.9,0.5,cons,-1,Mantener o Reducir
+18,Mujer,0.4,NA,lib,1,Aumentar
+72,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+20,Hombre,0.7,0,lib,1,Aumentar
+27,Mujer,0.6,0,other,1,Aumentar
+28,Mujer,0.9,0,cons,1,Aumentar
+70,Hombre,0.8,1,cons,0,Mantener o Reducir
+68,Mujer,0.6,0,cons,0,Mantener o Reducir
+65,Hombre,0.5,0.5,cons,0,Mantener o Reducir
+49,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+53,Hombre,0.8,0.5,lib,-1,Mantener o Reducir
+27,Hombre,0.8,0.25,cons,1,Aumentar
+22,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+39,Mujer,0.8,0,cons,0,Mantener o Reducir
+27,Mujer,0.8,1,cons,1,Aumentar
+57,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+29,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+59,Mujer,0.3,0,cons,0,Mantener o Reducir
+48,Hombre,0.6,0.5,ndp,-1,Mantener o Reducir
+19,Hombre,0.4,0,ndp,0,Mantener o Reducir
+51,Mujer,0.5,0.5,ndp,0,Mantener o Reducir
+69,Mujer,0.7,0.5,ndp,0,Mantener o Reducir
+18,Hombre,0.7,0.25,ndp,-1,Mantener o Reducir
+18,Hombre,0.3,1,ndp,1,Aumentar
+55,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+39,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+65,Mujer,0.6,0,lib,1,Aumentar
+19,Hombre,0.4,0.75,cons,0,Mantener o Reducir
+57,Mujer,0.8,1,cons,-1,Mantener o Reducir
+59,Mujer,0.9,1,cons,-1,Mantener o Reducir
+42,Mujer,0.4,0,other,0,Mantener o Reducir
+22,Mujer,0.8,NA,ndp,0,Mantener o Reducir
+18,Hombre,0.3,0,cons,-1,Mantener o Reducir
+79,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+53,Mujer,0.8,1,ndp,1,Aumentar
+55,Mujer,0.9,1,cons,0,Mantener o Reducir
+56,Mujer,0.1,0.5,ndp,1,Aumentar
+27,Hombre,0.4,0.25,lib,1,Aumentar
+50,Mujer,0.8,0,ndp,1,Aumentar
+22,Mujer,0.3,0.5,ndp,0,Mantener o Reducir
+71,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+31,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+71,Hombre,0.8,0.75,ndp,0,Mantener o Reducir
+26,Mujer,0.7,NA,ndp,1,Aumentar
+62,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+24,Hombre,0.3,0.25,ndp,1,Aumentar
+68,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+53,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+21,Mujer,0.6,0,cons,0,Mantener o Reducir
+18,Mujer,0.3,0.75,cons,0,Mantener o Reducir
+50,Hombre,0.6,0.5,cons,1,Aumentar
+61,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+74,Hombre,0.4,0.5,lib,1,Aumentar
+36,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+49,Hombre,0.5,0.75,lib,-1,Mantener o Reducir
+64,Mujer,0.6,0,cons,1,Aumentar
+71,Mujer,0.5,0,lib,0,Mantener o Reducir
+57,Mujer,0.5,0.25,ndp,1,Aumentar
+48,Mujer,0.5,0.25,ndp,0,Mantener o Reducir
+73,Hombre,0.7,0.5,lib,-1,Mantener o Reducir
+66,Hombre,0.6,0.25,ndp,-1,Mantener o Reducir
+30,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+21,Mujer,0.6,0.25,cons,0,Mantener o Reducir
+69,Hombre,1,0.5,cons,0,Mantener o Reducir
+67,Mujer,0.6,0.25,other,0,Mantener o Reducir
+30,Mujer,0.8,0.25,ndp,1,Aumentar
+70,Hombre,0.3,0.25,other,1,Aumentar
+71,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+25,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+65,Mujer,0.4,0.5,cons,0,Mantener o Reducir
+55,Hombre,0.7,1,lib,0,Mantener o Reducir
+67,Mujer,0.5,NA,ndp,-1,Mantener o Reducir
+75,Mujer,0.8,NA,lib,-1,Mantener o Reducir
+39,Hombre,0.8,0.25,lib,-1,Mantener o Reducir
+34,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+34,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+44,Mujer,0.6,0.75,cons,-1,Mantener o Reducir
+27,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+60,Hombre,0.6,0,lib,1,Aumentar
+23,Mujer,0.8,0.25,ndp,1,Aumentar
+58,Mujer,0.5,0,ndp,0,Mantener o Reducir
+45,Mujer,0.7,1,lib,1,Aumentar
+35,Mujer,0.7,1,cons,0,Mantener o Reducir
+34,Hombre,1,0.5,ndp,0,Mantener o Reducir
+90,Hombre,0.5,0.25,cons,0,Mantener o Reducir
+44,Mujer,0.5,0.5,lib,0,Mantener o Reducir
+67,Mujer,0.9,0.5,ndp,1,Aumentar
+60,Hombre,0.6,0,ndp,1,Aumentar
+76,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+74,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+18,Mujer,0.4,NA,cons,0,Mantener o Reducir
+71,Hombre,0.8,0.75,ndp,0,Mantener o Reducir
+82,Mujer,0.7,0,cons,0,Mantener o Reducir
+25,Mujer,0.8,0,other,1,Aumentar
+51,Hombre,0.8,1,cons,0,Mantener o Reducir
+71,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+31,Hombre,1,1,ndp,0,Mantener o Reducir
+57,Hombre,0.5,1,cons,0,Mantener o Reducir
+37,Hombre,0.8,0.75,cons,1,Aumentar
+59,Hombre,0.6,1,cons,1,Aumentar
+74,Mujer,0.5,0.25,lib,0,Mantener o Reducir
+73,Hombre,0.6,1,cons,-1,Mantener o Reducir
+20,Hombre,1,0.75,cons,1,Aumentar
+37,Hombre,0.7,NA,lib,-1,Mantener o Reducir
+31,Mujer,0.4,0,cons,1,Aumentar
+31,Hombre,0.4,0.25,ndp,1,Aumentar
+58,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+50,Hombre,0.8,1,lib,0,Mantener o Reducir
+75,Mujer,0.8,1,lib,1,Aumentar
+61,Mujer,0.8,1,lib,0,Mantener o Reducir
+45,Hombre,0.4,0.25,lib,-1,Mantener o Reducir
+70,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+31,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+65,Hombre,0.3,0,cons,0,Mantener o Reducir
+20,Hombre,0.5,1,cons,0,Mantener o Reducir
+42,Hombre,0.6,1,cons,-1,Mantener o Reducir
+57,Hombre,0.4,0,cons,1,Aumentar
+23,Hombre,0.3,NA,lib,-1,Mantener o Reducir
+30,Hombre,0.9,1,other,1,Aumentar
+53,Hombre,0.3,0.25,other,1,Aumentar
+60,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+34,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+60,Hombre,1,0.5,ndp,0,Mantener o Reducir
+31,Hombre,0.8,NA,cons,0,Mantener o Reducir
+39,Hombre,0.7,0.25,ndp,1,Aumentar
+67,Hombre,0.3,0.25,cons,0,Mantener o Reducir
+18,Hombre,0.5,NA,other,0,Mantener o Reducir
+64,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+51,Hombre,0.5,0,cons,1,Aumentar
+63,Hombre,0.6,0.25,ndp,1,Aumentar
+68,Hombre,0.4,0,lib,1,Aumentar
+54,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+49,Hombre,0.8,0.75,lib,1,Aumentar
+67,Hombre,0.7,0.25,cons,-1,Mantener o Reducir
+20,Mujer,0.7,NA,cons,-1,Mantener o Reducir
+84,Hombre,0.3,0.25,cons,1,Aumentar
+24,Mujer,0.8,0,ndp,1,Aumentar
+61,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+68,Hombre,0.8,0,ndp,1,Aumentar
+25,Hombre,0.7,1,lib,0,Mantener o Reducir
+63,Hombre,0.4,0.5,ndp,0,Mantener o Reducir
+69,Hombre,0.8,0.25,lib,1,Aumentar
+37,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+79,Hombre,0.5,0.25,cons,-1,Mantener o Reducir
+67,Hombre,0.5,0,ndp,1,Aumentar
+55,Hombre,0.9,0,cons,1,Aumentar
+58,Hombre,0.6,0,ndp,1,Aumentar
+25,Hombre,0.8,0.25,ndp,1,Aumentar
+33,Mujer,0.3,0.25,other,0,Mantener o Reducir
+72,Mujer,0.7,0,cons,-1,Mantener o Reducir
+45,Hombre,0.4,1,cons,-1,Mantener o Reducir
+24,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+48,Mujer,0.4,0.25,ndp,-1,Mantener o Reducir
+38,Hombre,0.8,0.75,lib,1,Aumentar
+65,Hombre,0.7,0,ndp,1,Aumentar
+78,Hombre,1,1,cons,0,Mantener o Reducir
+32,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+31,Mujer,0.4,0,cons,0,Mantener o Reducir
+37,Mujer,0.9,0.25,lib,1,Aumentar
+67,Hombre,0.5,0.5,other,-1,Mantener o Reducir
+69,Hombre,0.6,0,ndp,0,Mantener o Reducir
+45,Hombre,0.9,0.25,ndp,0,Mantener o Reducir
+68,Hombre,0.8,0.5,cons,0,Mantener o Reducir
+30,Mujer,0.9,0.5,ndp,1,Aumentar
+62,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+69,Mujer,0.9,0.75,lib,0,Mantener o Reducir
+22,Hombre,0.5,0.5,lib,-1,Mantener o Reducir
+53,Hombre,0.5,0,ndp,1,Aumentar
+77,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+65,Mujer,0.4,0.5,ndp,1,Aumentar
+53,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+50,Hombre,0.8,1,lib,0,Mantener o Reducir
+67,Mujer,0.7,0,ndp,1,Aumentar
+31,Hombre,0.3,0.5,lib,-1,Mantener o Reducir
+26,Mujer,0.8,0.75,lib,1,Aumentar
+80,Hombre,0.9,1,other,0,Mantener o Reducir
+47,Mujer,0.6,1,cons,-1,Mantener o Reducir
+62,Hombre,0.4,0,cons,1,Aumentar
+20,Mujer,0.7,1,other,0,Mantener o Reducir
+59,Hombre,0.9,NA,cons,0,Mantener o Reducir
+39,Hombre,0.6,1,ndp,0,Mantener o Reducir
+27,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+21,Mujer,0.7,NA,lib,1,Aumentar
+80,Hombre,0.9,1,ndp,0,Mantener o Reducir
+55,Mujer,0.4,0.5,cons,-1,Mantener o Reducir
+19,Mujer,0.3,0.25,lib,0,Mantener o Reducir
+42,Mujer,0.4,0,other,0,Mantener o Reducir
+22,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+30,Mujer,0.5,0.5,ndp,1,Aumentar
+35,Hombre,0.2,0,ndp,0,Mantener o Reducir
+71,Mujer,0.7,0,cons,0,Mantener o Reducir
+58,Mujer,0.8,0.25,lib,1,Aumentar
+54,Hombre,0.4,0.5,lib,-1,Mantener o Reducir
+40,Hombre,0.4,0.75,ndp,1,Aumentar
+68,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+22,Hombre,0.7,0.25,other,1,Aumentar
+48,Mujer,0.4,0,ndp,1,Aumentar
+69,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+28,Hombre,0.8,0.25,ndp,1,Aumentar
+68,Hombre,0.9,0.5,cons,0,Mantener o Reducir
+60,Mujer,0.7,0,ndp,1,Aumentar
+84,Mujer,0.6,0.25,ndp,1,Aumentar
+61,Hombre,0.7,0,lib,1,Aumentar
+19,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+45,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+74,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+36,Hombre,0.8,1,ndp,0,Mantener o Reducir
+40,Hombre,0.7,0.25,other,1,Aumentar
+43,Mujer,0.4,0.25,other,1,Aumentar
+46,Mujer,0.8,0.5,cons,-1,Mantener o Reducir
+35,Mujer,0.8,0.25,lib,1,Aumentar
+38,Hombre,0.8,0,cons,0,Mantener o Reducir
+56,Hombre,0.4,0.75,cons,0,Mantener o Reducir
+75,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+69,Hombre,0.9,0.5,ndp,0,Mantener o Reducir
+64,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+47,Mujer,0.5,0.25,ndp,1,Aumentar
+25,Hombre,0.8,0.25,ndp,-1,Mantener o Reducir
+53,Mujer,0.2,0.5,ndp,-1,Mantener o Reducir
+64,Mujer,0.5,NA,ndp,0,Mantener o Reducir
+19,Mujer,0.4,0.25,ndp,1,Aumentar
+20,Hombre,0.4,0.25,other,1,Aumentar
+50,Hombre,0.5,0.75,other,0,Mantener o Reducir
+46,Hombre,0.6,1,lib,0,Mantener o Reducir
+27,Mujer,0.8,0.25,cons,0,Mantener o Reducir
+34,Mujer,0.5,0.25,other,1,Aumentar
+28,Mujer,0.8,0.75,ndp,0,Mantener o Reducir
+42,Hombre,0.8,0.75,ndp,1,Aumentar
+55,Hombre,0.8,0.5,other,0,Mantener o Reducir
+45,Hombre,0.5,0,lib,1,Aumentar
+68,Mujer,0.7,0.5,cons,1,Aumentar
+25,Mujer,1,0.5,other,1,Aumentar
+21,Mujer,0.6,0.25,cons,0,Mantener o Reducir
+31,Mujer,0.7,0,ndp,1,Aumentar
+23,Mujer,0.7,0.5,ndp,0,Mantener o Reducir
+59,Mujer,0.9,0.5,ndp,0,Mantener o Reducir
+60,Hombre,1,0.25,ndp,1,Aumentar
+56,Mujer,0.4,0,lib,1,Aumentar
+37,Mujer,1,0.25,cons,0,Mantener o Reducir
+51,Hombre,0.5,0.5,lib,0,Mantener o Reducir
+20,Hombre,0.4,0,cons,-1,Mantener o Reducir
+52,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+21,Hombre,0.7,0.5,lib,1,Aumentar
+72,Hombre,0.5,NA,ndp,-1,Mantener o Reducir
+46,Hombre,0.8,1,lib,1,Aumentar
+72,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+67,Hombre,0.4,0.25,ndp,1,Aumentar
+35,Mujer,0.8,0.5,ndp,1,Aumentar
+53,Hombre,0.5,0,cons,1,Aumentar
+67,Hombre,0.7,0,cons,0,Mantener o Reducir
+20,Hombre,0.5,0.5,other,1,Aumentar
+65,Mujer,0.5,0.25,ndp,1,Aumentar
+29,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+50,Hombre,0.9,1,ndp,0,Mantener o Reducir
+70,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+36,Mujer,0.7,0.25,cons,0,Mantener o Reducir
+39,Mujer,0.6,0,other,1,Aumentar
+51,Mujer,0.8,0.25,cons,-1,Mantener o Reducir
+61,Hombre,0.3,0.25,cons,0,Mantener o Reducir
+49,Mujer,0.6,0.5,cons,-1,Mantener o Reducir
+36,Mujer,1,NA,lib,-1,Mantener o Reducir
+77,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+31,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+63,Mujer,0.3,1,cons,-1,Mantener o Reducir
+23,Mujer,0.8,1,lib,0,Mantener o Reducir
+54,Mujer,0.8,0.5,ndp,1,Aumentar
+63,Hombre,0.6,0,lib,1,Aumentar
+43,Hombre,0.3,0.5,lib,1,Aumentar
+67,Hombre,0.7,0,cons,0,Mantener o Reducir
+61,Mujer,0.8,0,other,1,Aumentar
+26,Hombre,0.8,0.25,lib,1,Aumentar
+56,Mujer,0.6,0,other,-1,Mantener o Reducir
+48,Mujer,0.7,0.5,cons,0,Mantener o Reducir
+63,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+41,Mujer,0.8,0.5,cons,0,Mantener o Reducir
+67,Mujer,0.8,0,ndp,1,Aumentar
+18,Mujer,0.4,0.75,cons,1,Aumentar
+53,Mujer,0.6,0.25,other,0,Mantener o Reducir
+40,Mujer,0.8,0.5,lib,1,Aumentar
+70,Mujer,0.9,0.5,other,1,Aumentar
+47,Hombre,0.8,0.5,lib,1,Aumentar
+44,Mujer,0.7,0.5,cons,-1,Mantener o Reducir
+63,Hombre,0.3,0.25,lib,0,Mantener o Reducir
+54,Hombre,0.4,0,lib,1,Aumentar
+52,Hombre,0.8,0.5,lib,1,Aumentar
+39,Mujer,0.8,0.75,lib,1,Aumentar
+59,Hombre,0.5,0.25,other,1,Aumentar
+73,Hombre,1,1,cons,1,Aumentar
+33,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+38,Hombre,0.8,0.5,lib,1,Aumentar
+59,Hombre,0.5,0.5,cons,-1,Mantener o Reducir
+54,Mujer,0.3,0.25,ndp,1,Aumentar
+70,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+61,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+72,Mujer,0.8,0,cons,0,Mantener o Reducir
+73,Hombre,0.3,0.25,ndp,0,Mantener o Reducir
+66,Mujer,0.4,0.5,lib,1,Aumentar
+51,Hombre,0.5,0.25,ndp,1,Aumentar
+69,Mujer,0.7,0,other,1,Aumentar
+24,Hombre,0.6,1,ndp,0,Mantener o Reducir
+45,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+58,Mujer,0.4,0.75,lib,1,Aumentar
+58,Hombre,0.6,0.25,lib,1,Aumentar
+62,Hombre,0.4,0,ndp,-1,Mantener o Reducir
+62,Mujer,0.5,0,lib,0,Mantener o Reducir
+32,Hombre,0.8,NA,lib,0,Mantener o Reducir
+49,Mujer,0.4,0,ndp,1,Aumentar
+63,Mujer,0.8,0.5,ndp,1,Aumentar
+28,Mujer,0.8,0.25,ndp,-1,Mantener o Reducir
+39,Hombre,0.9,1,lib,1,Aumentar
+75,Hombre,0.4,0.5,lib,1,Aumentar
+18,Mujer,0.3,0,other,-1,Mantener o Reducir
+29,Mujer,0.7,0,ndp,0,Mantener o Reducir
+45,Hombre,0.8,1,cons,0,Mantener o Reducir
+31,Mujer,0.4,0.25,lib,-1,Mantener o Reducir
+23,Mujer,0.7,0,lib,1,Aumentar
+37,Mujer,0.3,0,other,1,Aumentar
+74,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+57,Hombre,0.6,0,lib,0,Mantener o Reducir
+50,Hombre,0.7,0.25,lib,1,Aumentar
+37,Mujer,1,0.75,cons,-1,Mantener o Reducir
+56,Mujer,0.5,0,lib,1,Aumentar
+46,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+22,Hombre,0.7,0.5,cons,0,Mantener o Reducir
+51,Hombre,0.6,1,ndp,0,Mantener o Reducir
+55,Mujer,0.4,0.5,cons,-1,Mantener o Reducir
+50,Hombre,0.8,0.75,cons,-1,Mantener o Reducir
+63,Mujer,0.7,0.25,lib,1,Aumentar
+41,Hombre,1,0.5,ndp,1,Aumentar
+68,Hombre,0.5,0.25,lib,0,Mantener o Reducir
+73,Mujer,0.6,1,lib,0,Mantener o Reducir
+32,Hombre,0.4,0.25,lib,0,Mantener o Reducir
+56,Hombre,0.8,0.5,ndp,1,Aumentar
+69,Hombre,0.6,0,ndp,1,Aumentar
+59,Hombre,1,1,lib,0,Mantener o Reducir
+45,Hombre,0.5,0,lib,1,Aumentar
+73,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+42,Hombre,0.4,0.5,lib,0,Mantener o Reducir
+59,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+58,Hombre,0.5,0.5,lib,-1,Mantener o Reducir
+32,Hombre,0.4,0.25,ndp,1,Aumentar
+77,Hombre,0.5,0,other,-1,Mantener o Reducir
+62,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+38,Hombre,1,0.25,lib,-1,Mantener o Reducir
+56,Hombre,0.8,1,ndp,0,Mantener o Reducir
+57,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+57,Mujer,1,0.5,other,0,Mantener o Reducir
+28,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+54,Hombre,0.5,0,cons,1,Aumentar
+45,Hombre,0.6,1,ndp,0,Mantener o Reducir
+32,Hombre,0.7,0,ndp,0,Mantener o Reducir
+18,Mujer,0.4,NA,other,1,Aumentar
+58,Mujer,0.8,0,ndp,0,Mantener o Reducir
+37,Mujer,0.4,0.75,ndp,-1,Mantener o Reducir
+36,Hombre,0.7,1,cons,-1,Mantener o Reducir
+54,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+81,Hombre,0.6,0.25,other,1,Aumentar
+66,Mujer,0.8,0.25,ndp,1,Aumentar
+57,Mujer,0.6,0.5,lib,1,Aumentar
+28,Mujer,0.8,0.5,cons,1,Aumentar
+44,Mujer,0.5,0.75,lib,0,Mantener o Reducir
+53,Hombre,0.7,0.25,lib,0,Mantener o Reducir
+19,Mujer,0.4,0,other,0,Mantener o Reducir
+75,Mujer,0.5,0.25,ndp,1,Aumentar
+56,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+51,Hombre,0.7,0.5,cons,0,Mantener o Reducir
+28,Mujer,1,1,cons,1,Aumentar
+38,Mujer,0.8,0.25,ndp,1,Aumentar
+34,Hombre,0.4,0,other,1,Aumentar
+23,Mujer,0.3,0,ndp,1,Aumentar
+59,Hombre,0.6,1,lib,-1,Mantener o Reducir
+74,Mujer,0.7,0.5,cons,0,Mantener o Reducir
+49,Mujer,0.3,0.25,ndp,-1,Mantener o Reducir
+29,Hombre,0.4,0,lib,1,Aumentar
+27,Hombre,0.8,0.25,other,0,Mantener o Reducir
+65,Mujer,0.3,0.25,cons,-1,Mantener o Reducir
+28,Mujer,0.8,0.5,ndp,1,Aumentar
+64,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+20,Mujer,0.7,0.5,cons,0,Mantener o Reducir
+65,Mujer,0.5,NA,cons,1,Aumentar
+62,Mujer,0.5,0.25,ndp,1,Aumentar
+34,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+61,Hombre,0.8,1,cons,0,Mantener o Reducir
+55,Mujer,0.3,0.25,other,0,Mantener o Reducir
+22,Mujer,0.5,0,lib,-1,Mantener o Reducir
+19,Hombre,0.3,1,lib,-1,Mantener o Reducir
+53,Hombre,0.3,0,cons,1,Aumentar
+19,Hombre,0.3,0.25,ndp,0,Mantener o Reducir
+18,Hombre,0.4,1,ndp,1,Aumentar
+78,Hombre,0.6,0.25,other,0,Mantener o Reducir
+67,Hombre,0.6,0,ndp,0,Mantener o Reducir
+55,Hombre,0.4,0.5,lib,0,Mantener o Reducir
+71,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+60,Hombre,0.5,0,lib,1,Aumentar
+56,Mujer,1,0.25,ndp,-1,Mantener o Reducir
+44,Hombre,0.6,0.5,ndp,-1,Mantener o Reducir
+19,Mujer,0.7,0.25,lib,1,Aumentar
+24,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+64,Hombre,0.8,1,cons,-1,Mantener o Reducir
+27,Mujer,0.3,1,ndp,-1,Mantener o Reducir
+18,Mujer,0.4,0.75,lib,1,Aumentar
+67,Hombre,0.3,0,cons,0,Mantener o Reducir
+28,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+43,Hombre,0.4,1,lib,0,Mantener o Reducir
+25,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+42,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+52,Mujer,0.6,0.5,ndp,1,Aumentar
+60,Mujer,0.8,1,lib,1,Aumentar
+38,Hombre,0.4,1,other,0,Mantener o Reducir
+22,Hombre,0.4,0.75,other,1,Aumentar
+43,Mujer,0.8,0.25,lib,1,Aumentar
+70,Mujer,0.6,0.25,other,1,Aumentar
+73,Hombre,0.6,0.75,ndp,1,Aumentar
+67,Hombre,0.6,NA,cons,0,Mantener o Reducir
+77,Hombre,0.6,0.75,cons,-1,Mantener o Reducir
+46,Hombre,0.3,0,other,1,Aumentar
+58,Mujer,0.6,0,ndp,1,Aumentar
+77,Hombre,0.3,1,cons,0,Mantener o Reducir
+50,Mujer,0.8,0.25,lib,1,Aumentar
+75,Mujer,0.8,0.5,ndp,1,Aumentar
+51,Hombre,0.2,0,other,1,Aumentar
+24,Mujer,0.7,0.25,ndp,1,Aumentar
+57,Mujer,0.4,0.25,ndp,1,Aumentar
+61,Mujer,0.6,0,lib,0,Mantener o Reducir
+40,Hombre,0.7,0.5,cons,-1,Mantener o Reducir
+70,Hombre,0.5,0,lib,1,Aumentar
+20,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+62,Mujer,0.5,0,cons,0,Mantener o Reducir
+32,Mujer,0.8,0.5,ndp,1,Aumentar
+63,Mujer,0.4,0.5,cons,0,Mantener o Reducir
+52,Hombre,0.6,0,ndp,1,Aumentar
+29,Mujer,0.9,0.25,lib,1,Aumentar
+71,Mujer,0.5,0,ndp,0,Mantener o Reducir
+44,Hombre,0.8,0.25,ndp,1,Aumentar
+69,Mujer,0.4,NA,cons,-1,Mantener o Reducir
+59,Hombre,0.6,1,ndp,1,Aumentar
+36,Hombre,NA,NA,ndp,0,Mantener o Reducir
+28,Mujer,0.4,0.5,ndp,-1,Mantener o Reducir
+56,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+66,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+49,Mujer,0.8,0.75,cons,-1,Mantener o Reducir
+63,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+73,Mujer,0.4,NA,cons,0,Mantener o Reducir
+61,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+63,Hombre,0.6,0.75,ndp,0,Mantener o Reducir
+59,Hombre,0.3,0,ndp,1,Aumentar
+79,Hombre,0.8,NA,ndp,1,Aumentar
+42,Hombre,0.8,0.25,lib,-1,Mantener o Reducir
+72,Hombre,0.7,0.25,ndp,1,Aumentar
+70,Hombre,0.8,0,ndp,1,Aumentar
+47,Hombre,0.7,0,ndp,0,Mantener o Reducir
+62,Mujer,0.8,0.25,ndp,1,Aumentar
+74,Mujer,0.9,0,cons,0,Mantener o Reducir
+55,Mujer,0.8,0.5,cons,0,Mantener o Reducir
+37,Mujer,0.7,0.75,cons,-1,Mantener o Reducir
+42,Mujer,0.6,1,ndp,0,Mantener o Reducir
+29,Mujer,0.7,0.25,other,-1,Mantener o Reducir
+59,Mujer,0.5,0.5,lib,-1,Mantener o Reducir
+35,Hombre,0.6,0.25,ndp,-1,Mantener o Reducir
+76,Mujer,0.4,NA,lib,-1,Mantener o Reducir
+27,Mujer,0.8,0.5,ndp,1,Aumentar
+62,Hombre,0.7,0.5,lib,1,Aumentar
+70,Mujer,0.3,0.25,cons,0,Mantener o Reducir
+18,Hombre,0.4,0,lib,1,Aumentar
+33,Hombre,0.9,0.25,ndp,1,Aumentar
+48,Mujer,0.8,0.5,lib,1,Aumentar
+25,Mujer,0.4,0.5,lib,0,Mantener o Reducir
+60,Hombre,0.6,0,lib,1,Aumentar
+77,Hombre,0.7,0.25,lib,1,Aumentar
+32,Mujer,0.7,0.25,lib,1,Aumentar
+64,Mujer,0.5,NA,cons,-1,Mantener o Reducir
+58,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+61,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+70,Hombre,0.4,0.5,lib,-1,Mantener o Reducir
+55,Hombre,0.8,1,lib,0,Mantener o Reducir
+29,Mujer,0.5,1,ndp,-1,Mantener o Reducir
+52,Mujer,0.5,0,ndp,1,Aumentar
+58,Mujer,0.8,0.25,cons,1,Aumentar
+28,Hombre,0.4,0.5,other,-1,Mantener o Reducir
+35,Hombre,0.3,0.25,lib,-1,Mantener o Reducir
+71,Mujer,0.6,0,cons,0,Mantener o Reducir
+50,Hombre,0.6,1,ndp,1,Aumentar
+41,Hombre,1,1,cons,1,Aumentar
+36,Mujer,0.5,0,lib,0,Mantener o Reducir
+46,Hombre,0.5,0,ndp,1,Aumentar
+70,Mujer,0.6,0,cons,-1,Mantener o Reducir
+54,Mujer,0.6,0,other,1,Aumentar
+38,Hombre,0.8,0.75,cons,1,Aumentar
+35,Mujer,1,1,ndp,0,Mantener o Reducir
+67,Mujer,0.6,0.25,ndp,1,Aumentar
+30,Mujer,0.7,0,ndp,0,Mantener o Reducir
+26,Hombre,0.8,0.25,other,0,Mantener o Reducir
+38,Hombre,1,0.75,lib,0,Mantener o Reducir
+63,Hombre,0.6,1,cons,0,Mantener o Reducir
+26,Mujer,0.4,1,ndp,1,Aumentar
+45,Mujer,0.9,0.25,cons,-1,Mantener o Reducir
+35,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+49,Hombre,0.8,0.75,cons,0,Mantener o Reducir
+22,Mujer,0.7,0.25,lib,1,Aumentar
+28,Mujer,0.7,0.25,cons,1,Aumentar
+79,Hombre,0.8,0.5,ndp,1,Aumentar
+30,Hombre,0.7,0.5,cons,-1,Mantener o Reducir
+51,Mujer,0.3,0,cons,1,Aumentar
+57,Hombre,0.8,NA,ndp,0,Mantener o Reducir
+60,Mujer,0.6,1,ndp,0,Mantener o Reducir
+60,Hombre,1,NA,cons,-1,Mantener o Reducir
+64,Hombre,0.9,1,lib,1,Aumentar
+69,Hombre,0.7,0.25,ndp,1,Aumentar
+35,Hombre,0.8,1,lib,0,Mantener o Reducir
+69,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+68,Hombre,0.6,0,lib,0,Mantener o Reducir
+40,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+35,Mujer,0.8,0.5,ndp,1,Aumentar
+34,Hombre,0.5,0.25,cons,-1,Mantener o Reducir
+61,Hombre,0.3,0.25,ndp,-1,Mantener o Reducir
+38,Mujer,0.5,0.25,ndp,1,Aumentar
+23,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+28,Hombre,0.7,0.25,other,0,Mantener o Reducir
+55,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+63,Mujer,0.5,0.25,ndp,0,Mantener o Reducir
+25,Hombre,0.3,0.25,lib,-1,Mantener o Reducir
+25,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+28,Mujer,0.7,0,other,1,Aumentar
+38,Hombre,0.6,0.75,lib,0,Mantener o Reducir
+25,Hombre,0.8,0.25,ndp,1,Aumentar
+30,Mujer,0.8,1,lib,0,Mantener o Reducir
+28,Mujer,0.7,0.25,ndp,1,Aumentar
+72,Mujer,0.9,0.5,lib,1,Aumentar
+36,Mujer,0.5,0.75,cons,-1,Mantener o Reducir
+52,Mujer,0.5,0,other,1,Aumentar
+68,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+58,Hombre,0.6,1,cons,-1,Mantener o Reducir
+68,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+68,Mujer,0.6,1,cons,-1,Mantener o Reducir
+67,Hombre,0.6,0,lib,1,Aumentar
+76,Mujer,0.4,0,cons,0,Mantener o Reducir
+56,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+39,Mujer,0.5,0.75,lib,0,Mantener o Reducir
+68,Mujer,0.6,NA,lib,0,Mantener o Reducir
+24,Mujer,0.4,0.25,ndp,1,Aumentar
+52,Mujer,0.6,0,lib,1,Aumentar
+57,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+82,Hombre,0.5,0.5,ndp,0,Mantener o Reducir
+27,Mujer,0.4,0.25,other,0,Mantener o Reducir
+69,Mujer,0.4,0,cons,0,Mantener o Reducir
+38,Hombre,0.7,0.5,cons,0,Mantener o Reducir
+19,Hombre,0.7,0.5,lib,-1,Mantener o Reducir
+22,Mujer,0.7,0.25,lib,1,Aumentar
+34,Hombre,1,1,ndp,1,Aumentar
+44,Hombre,0.5,0.5,ndp,1,Aumentar
+33,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+66,Mujer,0.5,0,cons,0,Mantener o Reducir
+22,Mujer,0.7,0.25,other,0,Mantener o Reducir
+18,Mujer,0.4,NA,lib,1,Aumentar
+71,Mujer,0.6,NA,cons,0,Mantener o Reducir
+70,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+52,Mujer,0.9,0.25,lib,-1,Mantener o Reducir
+49,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+47,Hombre,0.5,0,ndp,0,Mantener o Reducir
+39,Mujer,0.5,0,other,0,Mantener o Reducir
+52,Hombre,0.6,0.75,ndp,-1,Mantener o Reducir
+33,Mujer,0.8,0.25,lib,1,Aumentar
+26,Hombre,0.5,0.5,cons,-1,Mantener o Reducir
+59,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+30,Hombre,0.9,0.5,ndp,0,Mantener o Reducir
+29,Mujer,0.3,0,other,0,Mantener o Reducir
+18,Hombre,0.4,1,lib,0,Mantener o Reducir
+58,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+49,Mujer,0.6,0.75,ndp,1,Aumentar
+35,Mujer,0.8,0.5,cons,-1,Mantener o Reducir
+32,Hombre,0.6,0.5,lib,-1,Mantener o Reducir
+24,Hombre,0.8,NA,cons,0,Mantener o Reducir
+53,Hombre,0.8,0.75,other,-1,Mantener o Reducir
+22,Mujer,0.7,0,lib,-1,Mantener o Reducir
+37,Hombre,0.6,1,lib,-1,Mantener o Reducir
+55,Hombre,0.7,0.5,cons,0,Mantener o Reducir
+21,Mujer,0.7,0.5,cons,-1,Mantener o Reducir
+51,Mujer,0.4,0.75,cons,0,Mantener o Reducir
+73,Mujer,0.7,0,lib,1,Aumentar
+50,Mujer,0.5,0.25,ndp,-1,Mantener o Reducir
+62,Hombre,0.9,0.25,lib,0,Mantener o Reducir
+54,Hombre,0.2,0.25,lib,-1,Mantener o Reducir
+24,Mujer,0.8,0.5,other,1,Aumentar
+74,Hombre,0.8,1,lib,1,Aumentar
+46,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+63,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+34,Hombre,0.9,0.25,other,1,Aumentar
+52,Mujer,0.4,0.5,ndp,0,Mantener o Reducir
+69,Hombre,0.3,0.25,cons,0,Mantener o Reducir
+50,Hombre,0.5,0.25,cons,1,Aumentar
+68,Hombre,0.6,NA,ndp,0,Mantener o Reducir
+38,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+43,Hombre,0.2,0.25,ndp,0,Mantener o Reducir
+27,Mujer,0.8,NA,ndp,0,Mantener o Reducir
+51,Mujer,0.6,0.75,lib,-1,Mantener o Reducir
+25,Mujer,1,0.25,cons,-1,Mantener o Reducir
+75,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+61,Mujer,0.5,0.5,lib,-1,Mantener o Reducir
+71,Hombre,0.8,0.25,lib,1,Aumentar
+36,Mujer,0.4,1,lib,0,Mantener o Reducir
+75,Hombre,0.5,NA,ndp,-1,Mantener o Reducir
+60,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+36,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+63,Hombre,0.9,0.5,lib,1,Aumentar
+63,Hombre,0.4,NA,lib,-1,Mantener o Reducir
+71,Hombre,0.8,0.5,cons,0,Mantener o Reducir
+26,Hombre,0.4,NA,other,-1,Mantener o Reducir
+53,Mujer,0.8,1,cons,0,Mantener o Reducir
+59,Hombre,0.9,0.75,ndp,-1,Mantener o Reducir
+66,Hombre,0.5,0.5,cons,0,Mantener o Reducir
+53,Hombre,0.3,0.25,cons,0,Mantener o Reducir
+63,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+52,Mujer,0.6,0.5,ndp,-1,Mantener o Reducir
+71,Hombre,0.5,0.25,cons,0,Mantener o Reducir
+19,Hombre,0.4,0,other,1,Aumentar
+55,Hombre,0.3,0.75,cons,-1,Mantener o Reducir
+26,Hombre,0.8,0,ndp,1,Aumentar
+78,Hombre,0.6,0.25,lib,1,Aumentar
+65,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+35,Hombre,0.9,0.75,lib,1,Aumentar
+67,Mujer,0.4,0.25,lib,-1,Mantener o Reducir
+77,Hombre,0.3,0.75,cons,-1,Mantener o Reducir
+42,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+39,Hombre,0.7,0.25,lib,0,Mantener o Reducir
+49,Hombre,0.8,0.5,cons,0,Mantener o Reducir
+62,Mujer,0.8,NA,cons,-1,Mantener o Reducir
+63,Mujer,0.7,0.25,lib,1,Aumentar
+54,Hombre,0.7,0.25,lib,-1,Mantener o Reducir
+54,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+22,Mujer,0.8,0.5,lib,1,Aumentar
+26,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+62,Mujer,0.6,0,ndp,0,Mantener o Reducir
+57,Hombre,0.7,0.25,cons,-1,Mantener o Reducir
+83,Mujer,0.8,0.25,cons,0,Mantener o Reducir
+52,Hombre,0.4,0,cons,1,Aumentar
+52,Hombre,0.6,NA,ndp,1,Aumentar
+54,Hombre,0.2,0.25,other,-1,Mantener o Reducir
+67,Mujer,1,1,lib,0,Mantener o Reducir
+53,Hombre,0.3,0.25,ndp,0,Mantener o Reducir
+20,Hombre,0.9,NA,cons,0,Mantener o Reducir
+30,Hombre,0.8,0.5,lib,1,Aumentar
+32,Hombre,0.8,0.5,other,1,Aumentar
+29,Mujer,0.7,0.25,cons,0,Mantener o Reducir
+27,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+51,Hombre,0.5,0,lib,1,Aumentar
+35,Hombre,1,0.75,lib,0,Mantener o Reducir
+70,Mujer,0.8,0.5,cons,0,Mantener o Reducir
+74,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+29,Hombre,0.4,0,other,1,Aumentar
+51,Mujer,0.8,0.75,ndp,-1,Mantener o Reducir
+70,Mujer,0.3,0.25,cons,0,Mantener o Reducir
+65,Hombre,0.8,0.75,cons,-1,Mantener o Reducir
+18,Mujer,0.2,0,ndp,0,Mantener o Reducir
+28,Hombre,0.7,0,cons,1,Aumentar
+52,Hombre,0.6,0,lib,1,Aumentar
+55,Mujer,0.3,0.25,cons,0,Mantener o Reducir
+19,Hombre,0.5,0.25,ndp,-1,Mantener o Reducir
+61,Mujer,0.8,0.5,cons,0,Mantener o Reducir
+60,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+48,Mujer,0.5,0.5,other,0,Mantener o Reducir
+69,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+68,Mujer,0.4,0.25,other,0,Mantener o Reducir
+75,Hombre,0.9,0.5,lib,1,Aumentar
+51,Hombre,0.6,0.75,ndp,-1,Mantener o Reducir
+19,Hombre,0.7,0.5,cons,1,Aumentar
+76,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+71,Hombre,0.5,0.5,cons,0,Mantener o Reducir
+58,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+75,Mujer,0.8,0.25,cons,0,Mantener o Reducir
+35,Mujer,0.4,0.75,ndp,0,Mantener o Reducir
+64,Hombre,0.2,0.25,cons,-1,Mantener o Reducir
+39,Hombre,0.4,0,ndp,1,Aumentar
+45,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+61,Mujer,0.3,0.25,cons,0,Mantener o Reducir
+54,Mujer,0.4,1,cons,0,Mantener o Reducir
+35,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+58,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+18,Mujer,0.4,NA,lib,1,Aumentar
+66,Hombre,0.4,0.5,ndp,-1,Mantener o Reducir
+52,Hombre,0.6,0,lib,1,Aumentar
+70,Mujer,0.3,0.25,cons,1,Aumentar
+55,Mujer,0.5,0.25,lib,0,Mantener o Reducir
+49,Hombre,0.7,0.25,other,0,Mantener o Reducir
+24,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+57,Mujer,1,NA,cons,-1,Mantener o Reducir
+20,Hombre,0.6,1,cons,1,Aumentar
+45,Mujer,0.8,0.75,lib,0,Mantener o Reducir
+34,Hombre,0.3,0.25,lib,0,Mantener o Reducir
+61,Mujer,0.7,0,lib,0,Mantener o Reducir
+23,Mujer,0.6,0,other,1,Aumentar
+63,Hombre,0.8,0,other,0,Mantener o Reducir
+22,Hombre,0.7,0,lib,1,Aumentar
+47,Hombre,0.8,0.75,cons,-1,Mantener o Reducir
+65,Hombre,0.5,0.25,cons,0,Mantener o Reducir
+62,Mujer,0.8,0.25,cons,0,Mantener o Reducir
+63,Hombre,0.8,1,lib,-1,Mantener o Reducir
+68,Hombre,0.4,0.75,cons,0,Mantener o Reducir
+51,Mujer,0.4,0.25,ndp,-1,Mantener o Reducir
+55,Hombre,0.4,0.5,other,0,Mantener o Reducir
+26,Hombre,0.1,0.5,lib,-1,Mantener o Reducir
+47,Hombre,0.5,0.5,cons,-1,Mantener o Reducir
+51,Hombre,0.3,0.5,cons,-1,Mantener o Reducir
+51,Hombre,0.6,0,ndp,1,Aumentar
+19,Hombre,0.3,0.75,ndp,0,Mantener o Reducir
+82,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+50,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+21,Mujer,0.3,0.25,lib,-1,Mantener o Reducir
+40,Hombre,0.4,0.75,lib,0,Mantener o Reducir
+55,Mujer,0.6,0.25,ndp,1,Aumentar
+70,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+23,Mujer,0.7,0.25,ndp,-1,Mantener o Reducir
+68,Hombre,0.3,0,lib,1,Aumentar
+58,Mujer,0.6,NA,lib,-1,Mantener o Reducir
+63,Mujer,0.5,0,cons,0,Mantener o Reducir
+20,Hombre,0.4,0,cons,1,Aumentar
+61,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+40,Hombre,0.4,0.25,lib,0,Mantener o Reducir
+64,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+68,Hombre,0.7,0,cons,0,Mantener o Reducir
+58,Hombre,0.5,0,ndp,1,Aumentar
+57,Hombre,0.5,0.25,lib,1,Aumentar
+28,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+62,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+35,Mujer,0.8,1,cons,0,Mantener o Reducir
+55,Hombre,0.7,0,lib,0,Mantener o Reducir
+43,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+54,Mujer,0.4,0.5,lib,-1,Mantener o Reducir
+68,Mujer,0.6,0.25,cons,0,Mantener o Reducir
+67,Hombre,0.4,0.5,ndp,0,Mantener o Reducir
+44,Hombre,0.8,0.5,lib,1,Aumentar
+19,Mujer,0.7,0,other,1,Aumentar
+60,Mujer,0.6,0,ndp,0,Mantener o Reducir
+32,Mujer,0.8,0.25,cons,-1,Mantener o Reducir
+43,Hombre,0.9,1,cons,-1,Mantener o Reducir
+51,Mujer,0.7,0,other,1,Aumentar
+18,Hombre,0.4,0.5,lib,0,Mantener o Reducir
+73,Hombre,0.8,0,other,0,Mantener o Reducir
+44,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+35,Hombre,0.4,NA,ndp,0,Mantener o Reducir
+26,Mujer,0.8,0.25,lib,-1,Mantener o Reducir
+21,Mujer,0.6,0,other,0,Mantener o Reducir
+31,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+18,Mujer,0.3,NA,cons,-1,Mantener o Reducir
+46,Mujer,0.9,0,lib,1,Aumentar
+61,Hombre,0.8,0.25,ndp,1,Aumentar
+69,Hombre,0.4,0.75,cons,-1,Mantener o Reducir
+63,Mujer,0.6,0.25,lib,1,Aumentar
+73,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+21,Mujer,0.6,0,other,1,Aumentar
+44,Hombre,0.4,0,ndp,1,Aumentar
+36,Hombre,0.6,0.25,ndp,1,Aumentar
+30,Mujer,0.8,0.25,other,-1,Mantener o Reducir
+55,Mujer,0.6,0,lib,1,Aumentar
+57,Mujer,0.6,1,lib,0,Mantener o Reducir
+47,Hombre,0.5,0,lib,0,Mantener o Reducir
+48,Mujer,0.4,1,lib,-1,Mantener o Reducir
+41,Mujer,1,1,cons,-1,Mantener o Reducir
+53,Hombre,0.8,0.75,cons,0,Mantener o Reducir
+43,Hombre,0.6,0.25,cons,1,Aumentar
+25,Mujer,0.3,0,lib,0,Mantener o Reducir
+24,Mujer,0.7,0,other,-1,Mantener o Reducir
+51,Mujer,0.4,0.25,ndp,-1,Mantener o Reducir
+53,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+40,Hombre,0.6,1,ndp,0,Mantener o Reducir
+68,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+53,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+65,Mujer,0.8,0.25,ndp,1,Aumentar
+28,Hombre,0.8,0.25,ndp,-1,Mantener o Reducir
+44,Hombre,0.8,1,lib,0,Mantener o Reducir
+30,Hombre,0.7,0.25,ndp,1,Aumentar
+71,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+60,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+28,Mujer,0.8,0.25,ndp,-1,Mantener o Reducir
+71,Hombre,0.6,0.25,other,0,Mantener o Reducir
+45,Hombre,0.8,0,other,0,Mantener o Reducir
+47,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+47,Hombre,0.6,0.25,other,-1,Mantener o Reducir
+24,Hombre,0.7,0,lib,1,Aumentar
+72,Mujer,0.3,0,cons,-1,Mantener o Reducir
+24,Mujer,0.8,0.75,ndp,0,Mantener o Reducir
+47,Hombre,0.4,0,lib,0,Mantener o Reducir
+25,Hombre,0.6,0.75,ndp,0,Mantener o Reducir
+33,Mujer,0.5,0,lib,1,Aumentar
+49,Mujer,0.6,0.5,cons,1,Aumentar
+46,Hombre,NA,NA,other,0,Mantener o Reducir
+66,Hombre,0.4,0.5,ndp,0,Mantener o Reducir
+19,Mujer,0.4,1,lib,1,Aumentar
+22,Mujer,0.7,1,lib,-1,Mantener o Reducir
+50,Mujer,0.3,0,lib,0,Mantener o Reducir
+42,Hombre,0.4,0,cons,0,Mantener o Reducir
+32,Mujer,0.6,0,lib,1,Aumentar
+24,Mujer,0.6,0.75,lib,-1,Mantener o Reducir
+32,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+19,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+62,Hombre,0.6,0.75,cons,0,Mantener o Reducir
+50,Hombre,0.6,0.75,lib,0,Mantener o Reducir
+72,Hombre,0.6,0,cons,0,Mantener o Reducir
+54,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+31,Mujer,0.8,1,lib,1,Aumentar
+42,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+28,Mujer,0.6,NA,lib,0,Mantener o Reducir
+64,Hombre,0.5,0.25,ndp,-1,Mantener o Reducir
+18,Mujer,0.4,0.75,lib,1,Aumentar
+24,Mujer,0.6,0.75,lib,0,Mantener o Reducir
+41,Hombre,0.4,0,other,1,Aumentar
+49,Mujer,0.4,0.5,cons,0,Mantener o Reducir
+52,Hombre,0.5,0,lib,1,Aumentar
+57,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+30,Mujer,0.1,NA,lib,1,Aumentar
+65,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+49,Mujer,0.4,0,lib,1,Aumentar
+50,Hombre,0.5,0.25,lib,-1,Mantener o Reducir
+56,Hombre,0.6,0.5,other,0,Mantener o Reducir
+64,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+40,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+51,Mujer,0.6,0.25,lib,1,Aumentar
+66,Hombre,0.8,0.5,cons,0,Mantener o Reducir
+64,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+39,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+51,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+64,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+22,Hombre,0.7,0,lib,1,Aumentar
+46,Mujer,0.4,0.5,ndp,0,Mantener o Reducir
+42,Hombre,0.6,0.75,lib,0,Mantener o Reducir
+67,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+31,Hombre,0.4,0,ndp,1,Aumentar
+35,Mujer,0.7,1,lib,0,Mantener o Reducir
+52,Hombre,0.8,0.75,cons,-1,Mantener o Reducir
+56,Hombre,0.7,0.75,lib,1,Aumentar
+45,Mujer,0.8,0.25,lib,-1,Mantener o Reducir
+78,Mujer,0.4,NA,ndp,1,Aumentar
+60,Hombre,0.5,0.75,ndp,1,Aumentar
+66,Hombre,0.4,0,ndp,-1,Mantener o Reducir
+46,Hombre,0.7,1,lib,-1,Mantener o Reducir
+36,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+55,Mujer,0.5,0.5,lib,-1,Mantener o Reducir
+56,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+68,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+66,Hombre,0.9,0.25,ndp,1,Aumentar
+41,Hombre,0.5,0.5,ndp,1,Aumentar
+55,Mujer,0.2,0.25,lib,0,Mantener o Reducir
+31,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+37,Hombre,0.5,0.25,ndp,1,Aumentar
+25,Hombre,0.5,0.25,lib,-1,Mantener o Reducir
+21,Mujer,0.6,0,lib,-1,Mantener o Reducir
+38,Mujer,0.8,0.75,lib,-1,Mantener o Reducir
+47,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+64,Mujer,0.6,1,ndp,-1,Mantener o Reducir
+50,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+66,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+56,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+41,Hombre,0.8,0.5,lib,1,Aumentar
+71,Hombre,0.4,0.25,lib,0,Mantener o Reducir
+35,Mujer,0.8,0.25,ndp,-1,Mantener o Reducir
+20,Hombre,0.2,NA,other,0,Mantener o Reducir
+23,Hombre,0.7,0,ndp,1,Aumentar
+41,Hombre,0.6,0.5,ndp,1,Aumentar
+58,Mujer,1,0.5,cons,0,Mantener o Reducir
+56,Mujer,0.6,1,cons,0,Mantener o Reducir
+31,Hombre,0.2,0.25,ndp,1,Aumentar
+45,Mujer,0.7,0.5,ndp,-1,Mantener o Reducir
+42,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+54,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+32,Hombre,0.8,0.5,other,1,Aumentar
+39,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+72,Hombre,0.3,0,lib,1,Aumentar
+63,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+41,Mujer,0.5,0.25,lib,1,Aumentar
+32,Hombre,0.4,0,ndp,1,Aumentar
+20,Mujer,0.7,0.75,other,1,Aumentar
+36,Hombre,0.8,0.25,cons,1,Aumentar
+23,Hombre,0.4,0,cons,1,Aumentar
+62,Mujer,0.5,0.5,ndp,0,Mantener o Reducir
+56,Hombre,0.4,NA,ndp,0,Mantener o Reducir
+51,Hombre,0.6,0.75,cons,-1,Mantener o Reducir
+20,Mujer,0.7,0,ndp,1,Aumentar
+38,Mujer,0.5,0,ndp,1,Aumentar
+77,Hombre,0.4,0.25,lib,1,Aumentar
+44,Hombre,0.7,1,cons,-1,Mantener o Reducir
+42,Mujer,0.4,0.25,lib,-1,Mantener o Reducir
+47,Mujer,0.6,0.5,ndp,-1,Mantener o Reducir
+66,Mujer,0.6,0.25,lib,1,Aumentar
+54,Hombre,0.7,0.5,lib,0,Mantener o Reducir
+47,Hombre,0.8,0,cons,0,Mantener o Reducir
+25,Hombre,0.7,0.75,other,0,Mantener o Reducir
+76,Hombre,0.3,0.25,lib,0,Mantener o Reducir
+59,Mujer,0.6,0.5,cons,-1,Mantener o Reducir
+36,Hombre,0.6,0,lib,-1,Mantener o Reducir
+21,Mujer,0.5,0,lib,-1,Mantener o Reducir
+42,Hombre,0.8,1,cons,-1,Mantener o Reducir
+69,Mujer,0.6,0.5,lib,-1,Mantener o Reducir
+54,Mujer,0.6,NA,lib,1,Aumentar
+60,Mujer,0.6,0,ndp,0,Mantener o Reducir
+79,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+85,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+72,Mujer,0.5,0.25,lib,0,Mantener o Reducir
+72,Mujer,0.6,1,cons,1,Aumentar
+56,Mujer,0.5,0,lib,1,Aumentar
+30,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+23,Mujer,0.5,0,ndp,1,Aumentar
+51,Mujer,0.4,0,lib,0,Mantener o Reducir
+62,Mujer,0.4,0,lib,0,Mantener o Reducir
+49,Mujer,0.6,0.75,lib,0,Mantener o Reducir
+75,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+44,Hombre,0.6,0,lib,1,Aumentar
+64,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+32,Hombre,0.6,0.75,lib,1,Aumentar
+62,Hombre,0.7,0.5,ndp,1,Aumentar
+60,Hombre,0.7,0,lib,1,Aumentar
+22,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+44,Mujer,0.8,0.75,lib,1,Aumentar
+64,Mujer,0.6,0.25,cons,0,Mantener o Reducir
+67,Hombre,0.6,0.75,cons,-1,Mantener o Reducir
+29,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+62,Mujer,0.4,0,other,-1,Mantener o Reducir
+35,Mujer,0.8,1,cons,0,Mantener o Reducir
+64,Hombre,0.7,0.25,ndp,-1,Mantener o Reducir
+58,Mujer,0.9,1,ndp,0,Mantener o Reducir
+20,Mujer,0.5,0.25,lib,-1,Mantener o Reducir
+47,Hombre,0.6,0,lib,-1,Mantener o Reducir
+32,Hombre,0.4,0.5,lib,1,Aumentar
+68,Mujer,0.7,0,ndp,1,Aumentar
+25,Mujer,0.5,0.25,lib,-1,Mantener o Reducir
+45,Mujer,0.9,0.5,lib,0,Mantener o Reducir
+63,Hombre,0.3,0.25,lib,0,Mantener o Reducir
+29,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+61,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+37,Mujer,0.4,0.25,lib,-1,Mantener o Reducir
+63,Hombre,0.5,0,ndp,0,Mantener o Reducir
+51,Hombre,1,0.75,cons,1,Aumentar
+31,Mujer,0.4,0.25,ndp,1,Aumentar
+48,Hombre,0.7,0.5,lib,-1,Mantener o Reducir
+36,Hombre,0.5,0.75,ndp,-1,Mantener o Reducir
+18,Mujer,0.4,0.5,ndp,0,Mantener o Reducir
+46,Hombre,0.8,0.25,ndp,1,Aumentar
+66,Mujer,0.7,0.25,lib,1,Aumentar
+48,Hombre,0.2,1,other,-1,Mantener o Reducir
+69,Hombre,0.7,0,lib,1,Aumentar
+32,Mujer,0.4,0.75,lib,0,Mantener o Reducir
+35,Hombre,1,0.5,lib,0,Mantener o Reducir
+35,Hombre,0.6,0.5,other,1,Aumentar
+51,Hombre,0.5,0.25,cons,1,Aumentar
+21,Mujer,0.7,0,lib,1,Aumentar
+44,Mujer,0.7,0.25,lib,-1,Mantener o Reducir
+57,Mujer,0.3,0.25,lib,-1,Mantener o Reducir
+32,Mujer,0.8,0.25,lib,1,Aumentar
+58,Mujer,0.4,0.75,cons,-1,Mantener o Reducir
+50,Hombre,0.6,0.5,lib,1,Aumentar
+21,Mujer,0.7,0,ndp,1,Aumentar
+62,Hombre,0.4,0,lib,1,Aumentar
+60,Mujer,0.4,0.75,lib,0,Mantener o Reducir
+48,Hombre,0.5,0,ndp,1,Aumentar
+22,Hombre,0.7,0,ndp,1,Aumentar
+34,Mujer,0.8,0.5,cons,0,Mantener o Reducir
+57,Hombre,0.6,0.25,ndp,1,Aumentar
+47,Mujer,0.8,0.25,lib,1,Aumentar
+35,Mujer,0.8,0,ndp,1,Aumentar
+28,Hombre,0.6,1,cons,0,Mantener o Reducir
+66,Hombre,0.5,0,cons,0,Mantener o Reducir
+25,Hombre,0.7,0,lib,0,Mantener o Reducir
+21,Hombre,0.7,NA,lib,1,Aumentar
+63,Mujer,1,0.5,cons,0,Mantener o Reducir
+55,Mujer,0.4,0.5,ndp,-1,Mantener o Reducir
+28,Hombre,0.8,0.25,lib,1,Aumentar
+41,Hombre,0.8,0.25,ndp,1,Aumentar
+52,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+72,Mujer,0.4,0,cons,0,Mantener o Reducir
+41,Hombre,0.9,1,lib,1,Aumentar
+67,Mujer,0.6,1,lib,0,Mantener o Reducir
+47,Mujer,0.7,0.25,ndp,0,Mantener o Reducir
+68,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+40,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+44,Hombre,0.4,0.5,lib,0,Mantener o Reducir
+33,Mujer,1,1,ndp,-1,Mantener o Reducir
+66,Hombre,0.4,1,cons,0,Mantener o Reducir
+70,Hombre,0.4,0,ndp,1,Aumentar
+40,Hombre,0.5,0.25,other,0,Mantener o Reducir
+71,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+36,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+41,Hombre,0.3,0.25,lib,0,Mantener o Reducir
+31,Mujer,0.5,0.25,other,0,Mantener o Reducir
+52,Mujer,0.8,0.5,other,1,Aumentar
+78,Hombre,0.2,NA,cons,1,Aumentar
+73,Mujer,0.7,0.5,cons,-1,Mantener o Reducir
+23,Mujer,0.7,0,cons,-1,Mantener o Reducir
+65,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+33,Hombre,0.8,1,lib,1,Aumentar
+19,Hombre,0.7,0.5,other,1,Aumentar
+75,Mujer,0.8,0.5,ndp,1,Aumentar
+18,Hombre,0.4,0.5,lib,0,Mantener o Reducir
+54,Hombre,0.9,1,ndp,0,Mantener o Reducir
+48,Hombre,0.6,0.75,cons,0,Mantener o Reducir
+40,Mujer,0.5,0.5,ndp,-1,Mantener o Reducir
+35,Hombre,0.9,1,lib,0,Mantener o Reducir
+73,Hombre,0.3,0,cons,1,Aumentar
+40,Mujer,0.6,0.25,cons,1,Aumentar
+37,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+34,Hombre,0.9,0.25,ndp,1,Aumentar
+83,Hombre,0.5,0.25,ndp,1,Aumentar
+18,Mujer,0.7,0.25,ndp,0,Mantener o Reducir
+71,Hombre,0.7,0.25,ndp,1,Aumentar
+51,Mujer,0.6,0.25,lib,1,Aumentar
+63,Hombre,0.6,0.75,lib,0,Mantener o Reducir
+41,Mujer,0.9,0.5,cons,0,Mantener o Reducir
+70,Hombre,0.3,0.25,ndp,0,Mantener o Reducir
+33,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+45,Hombre,0.6,0.25,lib,1,Aumentar
+40,Mujer,0.3,0.25,lib,-1,Mantener o Reducir
+43,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+33,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+23,Mujer,0.8,0.5,lib,1,Aumentar
+30,Hombre,0.5,0.25,lib,1,Aumentar
+19,Mujer,0.5,0,ndp,0,Mantener o Reducir
+39,Hombre,0.8,0.75,cons,-1,Mantener o Reducir
+46,Mujer,0.8,1,cons,0,Mantener o Reducir
+30,Mujer,0.5,0.5,lib,-1,Mantener o Reducir
+39,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+70,Mujer,0.4,0.25,lib,1,Aumentar
+80,Hombre,0.7,0,lib,0,Mantener o Reducir
+18,Mujer,0.4,1,ndp,1,Aumentar
+60,Hombre,0.8,0.25,ndp,-1,Mantener o Reducir
+34,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+42,Mujer,0.3,0,cons,1,Aumentar
+30,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+68,Mujer,0.8,0,ndp,-1,Mantener o Reducir
+52,Mujer,0.4,0.25,cons,1,Aumentar
+53,Mujer,0.8,0.75,lib,-1,Mantener o Reducir
+40,Mujer,0.4,0.75,cons,1,Aumentar
+25,Hombre,0.5,0.75,lib,1,Aumentar
+19,Hombre,0.5,1,cons,0,Mantener o Reducir
+29,Hombre,0.4,0,ndp,0,Mantener o Reducir
+59,Hombre,0.4,0,ndp,1,Aumentar
+51,Hombre,1,0.5,other,-1,Mantener o Reducir
+59,Mujer,0.4,NA,other,0,Mantener o Reducir
+44,Hombre,0.6,0.5,other,1,Aumentar
+69,Hombre,1,NA,cons,0,Mantener o Reducir
+29,Mujer,0.8,1,lib,-1,Mantener o Reducir
+67,Hombre,0.5,0.25,cons,0,Mantener o Reducir
+48,Hombre,0.5,0.5,lib,-1,Mantener o Reducir
+60,Hombre,0.8,0.25,cons,0,Mantener o Reducir
+65,Mujer,0.6,0,lib,1,Aumentar
+70,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+67,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+68,Hombre,0.6,0,ndp,-1,Mantener o Reducir
+23,Mujer,0.7,0,lib,1,Aumentar
+30,Mujer,0.9,1,ndp,-1,Mantener o Reducir
+23,Hombre,0.8,0.25,lib,1,Aumentar
+71,Mujer,0.5,0,cons,1,Aumentar
+43,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+19,Mujer,0.4,1,lib,0,Mantener o Reducir
+63,Mujer,0.4,0.25,lib,1,Aumentar
+56,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+30,Mujer,0.8,0,ndp,1,Aumentar
+61,Hombre,0.9,0.5,lib,0,Mantener o Reducir
+44,Mujer,0.6,0.25,cons,0,Mantener o Reducir
+33,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+47,Hombre,0.6,1,cons,-1,Mantener o Reducir
+19,Mujer,0.5,0,cons,0,Mantener o Reducir
+58,Hombre,0.7,0.25,lib,-1,Mantener o Reducir
+20,Mujer,0.7,1,lib,1,Aumentar
+79,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+20,Mujer,0.7,0.5,lib,0,Mantener o Reducir
+33,Hombre,0.1,0.5,cons,-1,Mantener o Reducir
+70,Mujer,0.4,0.5,lib,-1,Mantener o Reducir
+67,Mujer,0.7,0.5,lib,1,Aumentar
+64,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+56,Mujer,0.5,1,cons,0,Mantener o Reducir
+33,Hombre,0.8,0.5,ndp,1,Aumentar
+60,Hombre,0.6,0,cons,1,Aumentar
+34,Hombre,0.7,0.25,lib,1,Aumentar
+29,Hombre,0.8,1,lib,0,Mantener o Reducir
+29,Mujer,0.8,0,lib,1,Aumentar
+31,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+34,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+60,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+58,Hombre,0.6,0,ndp,1,Aumentar
+33,Hombre,0.6,0.5,lib,1,Aumentar
+43,Hombre,0.8,1,other,-1,Mantener o Reducir
+65,Hombre,0.8,0.25,lib,1,Aumentar
+20,Mujer,0.4,0.75,lib,-1,Mantener o Reducir
+56,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+52,Hombre,0.7,0.5,lib,0,Mantener o Reducir
+71,Mujer,0.8,0.5,cons,-1,Mantener o Reducir
+24,Hombre,0.8,NA,lib,1,Aumentar
+25,Mujer,0.4,0,ndp,0,Mantener o Reducir
+57,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+18,Mujer,0.3,1,ndp,1,Aumentar
+59,Mujer,0.8,0.25,lib,-1,Mantener o Reducir
+56,Mujer,0.7,0.25,cons,1,Aumentar
+68,Hombre,0.3,0.5,cons,0,Mantener o Reducir
+29,Mujer,0.5,0,ndp,1,Aumentar
+71,Hombre,0.7,0.75,cons,-1,Mantener o Reducir
+61,Hombre,0.5,0,ndp,0,Mantener o Reducir
+48,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+33,Hombre,0.6,0,ndp,1,Aumentar
+56,Mujer,0.8,0,lib,1,Aumentar
+54,Hombre,0.2,0,cons,1,Aumentar
+61,Hombre,0.9,0.5,cons,-1,Mantener o Reducir
+74,Mujer,0.9,1,lib,0,Mantener o Reducir
+53,Hombre,0.5,1,ndp,0,Mantener o Reducir
+26,Mujer,0.8,0.25,lib,-1,Mantener o Reducir
+68,Mujer,0.8,0.5,cons,1,Aumentar
+22,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+63,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+77,Hombre,0.7,0.5,ndp,0,Mantener o Reducir
+42,Hombre,0.9,0.5,cons,0,Mantener o Reducir
+28,Hombre,0.9,0.5,other,1,Aumentar
+59,Mujer,0.8,0,lib,0,Mantener o Reducir
+68,Hombre,0.9,0.5,cons,0,Mantener o Reducir
+35,Hombre,0.8,1,cons,-1,Mantener o Reducir
+57,Hombre,0.7,NA,lib,0,Mantener o Reducir
+42,Hombre,0.5,0.5,cons,0,Mantener o Reducir
+25,Hombre,0.9,0,cons,-1,Mantener o Reducir
+60,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+20,Mujer,0.5,0,lib,1,Aumentar
+65,Hombre,0.3,0.5,cons,0,Mantener o Reducir
+65,Hombre,0.9,1,lib,0,Mantener o Reducir
+52,Hombre,0.8,1,other,0,Mantener o Reducir
+20,Mujer,0.4,0.25,ndp,1,Aumentar
+66,Hombre,0.8,0.75,cons,0,Mantener o Reducir
+58,Mujer,0.4,0.25,ndp,-1,Mantener o Reducir
+25,Hombre,0.8,0,lib,0,Mantener o Reducir
+29,Mujer,0.8,1,ndp,-1,Mantener o Reducir
+35,Hombre,1,1,cons,-1,Mantener o Reducir
+28,Mujer,0.9,0.5,ndp,1,Aumentar
+37,Hombre,0.6,0.25,lib,1,Aumentar
+82,Hombre,0.8,0.5,ndp,-1,Mantener o Reducir
+33,Hombre,0.8,0.25,ndp,1,Aumentar
+49,Mujer,0.6,0.75,other,1,Aumentar
+58,Hombre,0.7,0.25,lib,-1,Mantener o Reducir
+55,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+51,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+42,Mujer,0.8,1,ndp,0,Mantener o Reducir
+25,Mujer,1,0.25,other,-1,Mantener o Reducir
+39,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+70,Hombre,1,0.25,lib,-1,Mantener o Reducir
+47,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+67,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+51,Mujer,0.9,NA,cons,-1,Mantener o Reducir
+38,Hombre,0.6,0.5,lib,1,Aumentar
+44,Mujer,0.4,NA,cons,0,Mantener o Reducir
+67,Mujer,0.7,0.25,cons,1,Aumentar
+19,Mujer,0.4,1,ndp,-1,Mantener o Reducir
+29,Mujer,0.6,1,other,-1,Mantener o Reducir
+57,Hombre,0.6,0,ndp,0,Mantener o Reducir
+19,Hombre,0.5,0.5,cons,-1,Mantener o Reducir
+52,Hombre,0.4,0,ndp,1,Aumentar
+24,Hombre,0.6,0,ndp,-1,Mantener o Reducir
+49,Hombre,0.5,NA,ndp,0,Mantener o Reducir
+58,Mujer,1,1,lib,0,Mantener o Reducir
+33,Hombre,0.5,0,ndp,0,Mantener o Reducir
+72,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+78,Mujer,0.7,0,lib,1,Aumentar
+61,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+47,Hombre,0.8,0.5,lib,-1,Mantener o Reducir
+52,Mujer,0.3,0.5,lib,0,Mantener o Reducir
+70,Hombre,0.7,0.5,cons,0,Mantener o Reducir
+26,Mujer,0.9,0,lib,-1,Mantener o Reducir
+23,Mujer,0.9,1,other,0,Mantener o Reducir
+25,Hombre,0.4,0.25,lib,-1,Mantener o Reducir
+23,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+33,Hombre,0,1,other,-1,Mantener o Reducir
+47,Hombre,0.5,0,ndp,1,Aumentar
+50,Mujer,0.8,0.25,cons,1,Aumentar
+32,Hombre,0.8,NA,cons,-1,Mantener o Reducir
+61,Mujer,0.6,0,ndp,1,Aumentar
+59,Hombre,0.6,0,ndp,1,Aumentar
+69,Mujer,0.8,0.25,ndp,1,Aumentar
+40,Hombre,0.5,0.25,lib,0,Mantener o Reducir
+60,Hombre,0.9,0.5,lib,-1,Mantener o Reducir
+23,Hombre,0.8,0.75,lib,-1,Mantener o Reducir
+59,Hombre,0.8,0.75,lib,1,Aumentar
+39,Hombre,0.6,1,ndp,0,Mantener o Reducir
+66,Hombre,1,0.75,cons,0,Mantener o Reducir
+58,Mujer,0.8,NA,ndp,-1,Mantener o Reducir
+78,Hombre,0.5,0,cons,0,Mantener o Reducir
+20,Mujer,0.7,1,other,0,Mantener o Reducir
+28,Mujer,0.9,0.75,ndp,1,Aumentar
+56,Mujer,0.9,1,lib,1,Aumentar
+37,Hombre,0.8,0.75,cons,0,Mantener o Reducir
+57,Mujer,0.6,0.75,other,0,Mantener o Reducir
+28,Hombre,0.8,0.75,lib,-1,Mantener o Reducir
+33,Mujer,1,0.75,cons,1,Aumentar
+56,Hombre,0.8,0,cons,0,Mantener o Reducir
+48,Hombre,0.9,1,cons,0,Mantener o Reducir
+66,Hombre,0.5,0,lib,1,Aumentar
+49,Mujer,0.8,0,ndp,1,Aumentar
+51,Hombre,1,1,lib,1,Aumentar
+55,Hombre,0.5,0,lib,1,Aumentar
+44,Hombre,0.7,NA,ndp,-1,Mantener o Reducir
+54,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+70,Hombre,0.4,0.25,lib,0,Mantener o Reducir
+54,Hombre,0.6,0.5,other,0,Mantener o Reducir
+31,Mujer,0.4,0.5,cons,0,Mantener o Reducir
+40,Mujer,0.7,0.75,cons,0,Mantener o Reducir
+37,Hombre,0.5,0.5,lib,0,Mantener o Reducir
+19,Hombre,0.3,1,lib,-1,Mantener o Reducir
+30,Hombre,1,0.25,lib,1,Aumentar
+42,Hombre,0.6,NA,ndp,0,Mantener o Reducir
+45,Mujer,0.8,NA,ndp,0,Mantener o Reducir
+43,Mujer,0.3,0.25,lib,-1,Mantener o Reducir
+59,Mujer,0.5,0.5,ndp,0,Mantener o Reducir
+64,Mujer,0.9,0.25,ndp,-1,Mantener o Reducir
+74,Hombre,0.5,0.25,cons,-1,Mantener o Reducir
+50,Mujer,0.5,0,ndp,1,Aumentar
+63,Hombre,0.8,1,lib,0,Mantener o Reducir
+56,Hombre,0.6,0,cons,0,Mantener o Reducir
+48,Hombre,0.8,0.75,other,1,Aumentar
+48,Mujer,0.6,NA,cons,-1,Mantener o Reducir
+50,Hombre,0.3,1,cons,0,Mantener o Reducir
+57,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+62,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+74,Hombre,0.7,0.75,lib,1,Aumentar
+47,Hombre,0.5,0.25,lib,0,Mantener o Reducir
+45,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+37,Hombre,0.8,1,lib,1,Aumentar
+32,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+34,Mujer,0.6,0.25,other,-1,Mantener o Reducir
+36,Hombre,0.8,0.75,lib,1,Aumentar
+59,Mujer,0.4,0,lib,1,Aumentar
+44,Hombre,0.8,1,lib,0,Mantener o Reducir
+50,Hombre,0.8,0.5,other,0,Mantener o Reducir
+68,Hombre,0.6,0.5,ndp,-1,Mantener o Reducir
+49,Hombre,0.8,0,ndp,1,Aumentar
+40,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+38,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+55,Hombre,0.3,0,lib,1,Aumentar
+33,Mujer,1,0,lib,0,Mantener o Reducir
+23,Hombre,0.4,0.5,cons,1,Aumentar
+48,Hombre,0.8,0.5,ndp,1,Aumentar
+18,Mujer,0.3,0,lib,1,Aumentar
+37,Hombre,0.7,0.75,ndp,1,Aumentar
+69,Mujer,0.7,0,lib,-1,Mantener o Reducir
+52,Mujer,0.6,0.25,other,1,Aumentar
+18,Hombre,0.7,0.25,cons,1,Aumentar
+19,Hombre,0.5,0.75,ndp,1,Aumentar
+41,Hombre,0.4,0.75,other,0,Mantener o Reducir
+68,Mujer,0.9,0.75,ndp,1,Aumentar
+58,Mujer,0.3,0,cons,1,Aumentar
+46,Mujer,0.4,0,lib,0,Mantener o Reducir
+60,Hombre,0.6,1,cons,-1,Mantener o Reducir
+56,Hombre,0.6,0.5,cons,1,Aumentar
+55,Hombre,0.4,0,lib,0,Mantener o Reducir
+55,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+19,Hombre,0.4,0,cons,1,Aumentar
+66,Mujer,0.4,0.5,cons,-1,Mantener o Reducir
+67,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+51,Hombre,0.9,0,cons,-1,Mantener o Reducir
+64,Hombre,0.4,0.25,ndp,1,Aumentar
+30,Hombre,0.6,0.5,lib,1,Aumentar
+51,Mujer,0.6,0,cons,-1,Mantener o Reducir
+62,Hombre,0.6,0,ndp,0,Mantener o Reducir
+62,Hombre,0.6,0.75,cons,-1,Mantener o Reducir
+58,Hombre,0.5,0.5,lib,1,Aumentar
+27,Hombre,0.7,0,cons,-1,Mantener o Reducir
+60,Hombre,0.5,0.5,ndp,1,Aumentar
+27,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+25,Hombre,0.8,0.75,cons,0,Mantener o Reducir
+19,Mujer,0.4,0,lib,-1,Mantener o Reducir
+42,Hombre,0.6,0.75,lib,-1,Mantener o Reducir
+57,Hombre,0.8,1,cons,-1,Mantener o Reducir
+38,Mujer,0.6,0,ndp,-1,Mantener o Reducir
+41,Hombre,0.9,0,ndp,1,Aumentar
+24,Mujer,0.6,0,lib,1,Aumentar
+52,Hombre,0.6,1,lib,0,Mantener o Reducir
+62,Mujer,0.2,0,cons,1,Aumentar
+39,Mujer,0.3,0.5,cons,0,Mantener o Reducir
+66,Hombre,0.9,1,lib,0,Mantener o Reducir
+61,Mujer,0.4,0.25,lib,1,Aumentar
+40,Hombre,0.4,0.5,lib,0,Mantener o Reducir
+42,Mujer,0.8,1,cons,0,Mantener o Reducir
+62,Hombre,1,0.25,lib,0,Mantener o Reducir
+26,Hombre,0.8,0.25,cons,0,Mantener o Reducir
+24,Hombre,0.8,0,other,1,Aumentar
+33,Mujer,0.9,0.25,lib,0,Mantener o Reducir
+60,Hombre,0.8,NA,cons,-1,Mantener o Reducir
+42,Mujer,0.8,0,ndp,0,Mantener o Reducir
+24,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+54,Mujer,0.8,1,cons,-1,Mantener o Reducir
+58,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+37,Mujer,1,1,ndp,1,Aumentar
+36,Mujer,0.7,0.75,cons,-1,Mantener o Reducir
+64,Mujer,0.2,0,lib,1,Aumentar
+71,Mujer,0.6,0,other,1,Aumentar
+59,Hombre,0.9,0.5,ndp,0,Mantener o Reducir
+65,Hombre,0.7,0,cons,0,Mantener o Reducir
+55,Mujer,0.6,0.5,lib,1,Aumentar
+30,Hombre,0.9,0.5,lib,0,Mantener o Reducir
+24,Hombre,0.3,0.25,ndp,1,Aumentar
+57,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+68,Mujer,0.9,0.25,ndp,1,Aumentar
+58,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+62,Hombre,0.4,0.25,ndp,1,Aumentar
+45,Hombre,0.9,0.5,lib,0,Mantener o Reducir
+44,Hombre,0.9,0.5,cons,-1,Mantener o Reducir
+63,Mujer,1,0.5,lib,1,Aumentar
+73,Mujer,0.4,0,cons,0,Mantener o Reducir
+35,Hombre,0.4,0.75,other,-1,Mantener o Reducir
+21,Hombre,0.3,0,cons,-1,Mantener o Reducir
+37,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+67,Mujer,0.3,0.25,ndp,1,Aumentar
+69,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+72,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+49,Mujer,0.5,0,other,0,Mantener o Reducir
+62,Hombre,0.8,0.75,other,1,Aumentar
+23,Hombre,0.4,1,cons,0,Mantener o Reducir
+58,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+29,Hombre,0.2,0,cons,0,Mantener o Reducir
+69,Mujer,0.4,0,lib,0,Mantener o Reducir
+60,Hombre,0.8,0.75,lib,1,Aumentar
+28,Mujer,0.4,1,cons,1,Aumentar
+62,Hombre,0.5,0,ndp,1,Aumentar
+67,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+22,Hombre,0.5,0.75,lib,-1,Mantener o Reducir
+46,Hombre,0.6,0.5,ndp,1,Aumentar
+38,Mujer,1,0.5,lib,-1,Mantener o Reducir
+50,Hombre,0.9,0.5,lib,0,Mantener o Reducir
+26,Hombre,1,0.5,cons,0,Mantener o Reducir
+43,Mujer,0.7,0.5,cons,-1,Mantener o Reducir
+47,Hombre,0.9,0,lib,1,Aumentar
+18,Mujer,0.7,0,lib,0,Mantener o Reducir
+70,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+51,Mujer,0.6,NA,other,0,Mantener o Reducir
+66,Hombre,0.4,0.25,lib,-1,Mantener o Reducir
+27,Mujer,0.5,0.25,cons,-1,Mantener o Reducir
+49,Mujer,0.8,1,other,1,Aumentar
+32,Hombre,0.8,0.25,lib,1,Aumentar
+51,Hombre,0.6,0,cons,0,Mantener o Reducir
+63,Mujer,0.4,0.25,cons,-1,Mantener o Reducir
+67,Mujer,1,0.25,ndp,1,Aumentar
+48,Hombre,0.6,0.25,cons,1,Aumentar
+28,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+18,Mujer,0.3,0.25,lib,1,Aumentar
+51,Mujer,0.6,0,ndp,1,Aumentar
+53,Hombre,0.6,0,ndp,1,Aumentar
+68,Mujer,0.4,0,lib,1,Aumentar
+52,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+20,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+59,Hombre,0.4,0.25,other,-1,Mantener o Reducir
+48,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+40,Hombre,1,0.25,lib,0,Mantener o Reducir
+57,Hombre,0.3,0.25,ndp,0,Mantener o Reducir
+62,Mujer,0.8,1,lib,-1,Mantener o Reducir
+54,Hombre,0.3,0,lib,1,Aumentar
+42,Hombre,0.7,NA,lib,1,Aumentar
+71,Hombre,0.8,0.25,ndp,1,Aumentar
+57,Mujer,0.3,0.25,cons,0,Mantener o Reducir
+82,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+35,Hombre,0.8,0.25,lib,-1,Mantener o Reducir
+68,Hombre,0.5,0.5,cons,-1,Mantener o Reducir
+66,Hombre,0.4,0,ndp,-1,Mantener o Reducir
+53,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+89,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+68,Mujer,0.6,1,other,-1,Mantener o Reducir
+69,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+64,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+36,Mujer,0.8,1,lib,0,Mantener o Reducir
+24,Hombre,0.6,0.25,other,-1,Mantener o Reducir
+59,Hombre,0.9,0.75,cons,0,Mantener o Reducir
+40,Mujer,0.6,0,ndp,1,Aumentar
+65,Mujer,0.8,0.25,lib,1,Aumentar
+21,Mujer,0.2,NA,other,-1,Mantener o Reducir
+67,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+47,Mujer,0.8,0.5,cons,1,Aumentar
+67,Mujer,0.5,0.75,lib,0,Mantener o Reducir
+25,Mujer,0.4,0,cons,0,Mantener o Reducir
+25,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+65,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+28,Mujer,0.2,0,lib,1,Aumentar
+60,Hombre,0.4,0,lib,1,Aumentar
+52,Mujer,0.6,0,lib,1,Aumentar
+43,Hombre,1,1,ndp,1,Aumentar
+72,Hombre,1,1,ndp,1,Aumentar
+31,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+40,Mujer,0.5,0.5,cons,0,Mantener o Reducir
+19,Mujer,0.7,NA,ndp,0,Mantener o Reducir
+71,Hombre,0.8,1,cons,-1,Mantener o Reducir
+46,Mujer,0.8,0.25,cons,-1,Mantener o Reducir
+48,Hombre,0.4,1,cons,-1,Mantener o Reducir
+62,Mujer,0.5,0,lib,1,Aumentar
+83,Hombre,0.5,0.25,ndp,1,Aumentar
+34,Hombre,0.8,0.5,cons,0,Mantener o Reducir
+61,Mujer,0.8,0.5,cons,-1,Mantener o Reducir
+60,Mujer,1,NA,ndp,1,Aumentar
+60,Mujer,0.4,0.5,lib,0,Mantener o Reducir
+50,Hombre,0.8,1,lib,0,Mantener o Reducir
+68,Mujer,0.4,0.5,ndp,0,Mantener o Reducir
+59,Mujer,0.5,0,other,0,Mantener o Reducir
+26,Hombre,0.3,0.25,other,0,Mantener o Reducir
+54,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+47,Mujer,0.5,0.25,lib,0,Mantener o Reducir
+48,Mujer,0.9,NA,lib,1,Aumentar
+70,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+42,Hombre,0.9,1,lib,0,Mantener o Reducir
+37,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+63,Hombre,0.7,NA,lib,-1,Mantener o Reducir
+52,Mujer,0.5,0,lib,0,Mantener o Reducir
+71,Hombre,1,0.5,ndp,0,Mantener o Reducir
+22,Mujer,0.6,0,lib,1,Aumentar
+47,Mujer,0.4,0,cons,1,Aumentar
+57,Hombre,0.2,0.25,lib,1,Aumentar
+25,Mujer,0.5,0.5,ndp,-1,Mantener o Reducir
+34,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+58,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+32,Hombre,0.9,1,ndp,1,Aumentar
+30,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+76,Hombre,0.4,0.5,lib,0,Mantener o Reducir
+36,Mujer,0.8,1,lib,0,Mantener o Reducir
+32,Mujer,0.8,0,other,1,Aumentar
+62,Hombre,1,1,lib,0,Mantener o Reducir
+54,Mujer,0.6,0,lib,1,Aumentar
+19,Hombre,0.5,0.5,other,-1,Mantener o Reducir
+35,Hombre,0.6,1,lib,0,Mantener o Reducir
+54,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+29,Mujer,0.9,1,ndp,0,Mantener o Reducir
+21,Mujer,0.4,0,other,1,Aumentar
+66,Hombre,0.9,0.5,lib,1,Aumentar
+36,Hombre,0.8,0.5,cons,1,Aumentar
+47,Hombre,0.9,0.75,ndp,1,Aumentar
+33,Hombre,0.9,0.5,lib,-1,Mantener o Reducir
+70,Hombre,0.7,0,lib,1,Aumentar
+65,Hombre,0.9,0.5,lib,0,Mantener o Reducir
+22,Hombre,0.4,0.25,lib,1,Aumentar
+51,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+70,Hombre,0.9,0.25,cons,0,Mantener o Reducir
+32,Mujer,0.4,0,ndp,1,Aumentar
+23,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+19,Mujer,0.3,NA,ndp,-1,Mantener o Reducir
+46,Hombre,0.7,NA,lib,0,Mantener o Reducir
+32,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+63,Mujer,0.4,0.25,lib,-1,Mantener o Reducir
+21,Hombre,0.8,0.75,cons,1,Aumentar
+28,Hombre,1,0.5,lib,1,Aumentar
+33,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+25,Hombre,0.6,0.75,lib,1,Aumentar
+66,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+71,Mujer,0.5,0,lib,1,Aumentar
+40,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+70,Hombre,0.3,NA,cons,-1,Mantener o Reducir
+58,Mujer,0.8,1,lib,1,Aumentar
+41,Hombre,0.7,1,lib,1,Aumentar
+44,Mujer,0.8,0,cons,-1,Mantener o Reducir
+35,Hombre,0.9,0.5,other,-1,Mantener o Reducir
+55,Mujer,0.4,0.5,cons,1,Aumentar
+32,Hombre,0.8,0.25,cons,0,Mantener o Reducir
+69,Mujer,0.7,0,ndp,1,Aumentar
+23,Hombre,0.7,NA,cons,1,Aumentar
+38,Hombre,0.8,0.75,cons,-1,Mantener o Reducir
+57,Hombre,0.6,0.25,ndp,1,Aumentar
+31,Mujer,0.9,0.5,ndp,1,Aumentar
+28,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+19,Mujer,0.4,1,lib,0,Mantener o Reducir
+39,Hombre,0.4,NA,cons,0,Mantener o Reducir
+56,Hombre,0.5,0.75,lib,-1,Mantener o Reducir
+29,Hombre,0.7,1,cons,0,Mantener o Reducir
+62,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+39,Mujer,0.8,1,lib,-1,Mantener o Reducir
+19,Mujer,0.4,0.5,ndp,1,Aumentar
+52,Hombre,0.6,0.5,lib,-1,Mantener o Reducir
+51,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+44,Hombre,0.7,0.25,cons,0,Mantener o Reducir
+60,Hombre,0.8,1,cons,0,Mantener o Reducir
+51,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+48,Hombre,0.5,0,ndp,1,Aumentar
+45,Hombre,0.3,0.25,cons,0,Mantener o Reducir
+19,Mujer,0.4,1,lib,0,Mantener o Reducir
+74,Hombre,0.9,0,lib,0,Mantener o Reducir
+45,Mujer,0.8,1,ndp,-1,Mantener o Reducir
+62,Mujer,0.6,0,ndp,1,Aumentar
+76,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+31,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+31,Mujer,1,0.75,lib,0,Mantener o Reducir
+72,Hombre,0.8,0.25,ndp,1,Aumentar
+55,Hombre,0.5,0,other,1,Aumentar
+31,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+55,Mujer,0.7,0,ndp,1,Aumentar
+62,Hombre,0.8,1,lib,-1,Mantener o Reducir
+36,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+53,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+53,Mujer,1,1,lib,-1,Mantener o Reducir
+25,Hombre,0.8,1,cons,1,Aumentar
+36,Hombre,0.8,0,lib,1,Aumentar
+57,Hombre,0.5,0.5,lib,1,Aumentar
+59,Hombre,0.5,0.25,lib,1,Aumentar
+74,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+21,Mujer,0.7,NA,ndp,0,Mantener o Reducir
+34,Mujer,0.2,0.25,ndp,-1,Mantener o Reducir
+42,Mujer,0.9,0.25,lib,-1,Mantener o Reducir
+29,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+59,Mujer,0.6,0,ndp,1,Aumentar
+62,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+56,Mujer,0.4,0.5,cons,-1,Mantener o Reducir
+47,Mujer,0.8,0,cons,1,Aumentar
+58,Mujer,0.5,0,other,0,Mantener o Reducir
+35,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+26,Mujer,0.8,0.25,lib,1,Aumentar
+62,Hombre,0.5,1,ndp,1,Aumentar
+62,Hombre,0.7,0,lib,1,Aumentar
+37,Hombre,0.2,1,lib,-1,Mantener o Reducir
+68,Mujer,0.7,0,lib,0,Mantener o Reducir
+44,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+41,Hombre,0.5,0.25,other,-1,Mantener o Reducir
+40,Hombre,0.4,0.25,cons,1,Aumentar
+47,Mujer,0.4,1,lib,-1,Mantener o Reducir
+46,Mujer,0.8,1,ndp,0,Mantener o Reducir
+22,Hombre,0.6,1,ndp,1,Aumentar
+44,Hombre,0.4,0.5,lib,1,Aumentar
+55,Hombre,0.8,0,lib,1,Aumentar
+26,Hombre,0.3,NA,ndp,0,Mantener o Reducir
+52,Hombre,0.5,0,ndp,0,Mantener o Reducir
+58,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+56,Hombre,0.8,0,ndp,1,Aumentar
+75,Hombre,0.9,0.75,ndp,1,Aumentar
+21,Hombre,1,0.5,ndp,1,Aumentar
+79,Hombre,0.7,0.5,lib,0,Mantener o Reducir
+24,Mujer,0.8,1,cons,-1,Mantener o Reducir
+25,Mujer,0.5,0.75,ndp,1,Aumentar
+50,Mujer,0.6,0,ndp,1,Aumentar
+34,Mujer,0.6,1,ndp,-1,Mantener o Reducir
+38,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+44,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+27,Hombre,0.8,0.75,ndp,1,Aumentar
+51,Hombre,0.6,0,ndp,1,Aumentar
+25,Hombre,0.7,0.25,other,1,Aumentar
+25,Hombre,1,1,cons,-1,Mantener o Reducir
+34,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+59,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+65,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+19,Mujer,0.4,0.25,ndp,1,Aumentar
+18,Mujer,0.4,0.75,cons,0,Mantener o Reducir
+19,Mujer,0.5,0.25,ndp,0,Mantener o Reducir
+51,Mujer,0.6,1,cons,0,Mantener o Reducir
+46,Hombre,1,1,cons,1,Aumentar
+55,Hombre,0.5,0.75,cons,-1,Mantener o Reducir
+35,Hombre,0.8,0.25,ndp,1,Aumentar
+61,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+44,Mujer,0.5,0,ndp,0,Mantener o Reducir
+25,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+19,Mujer,0.4,0.75,lib,-1,Mantener o Reducir
+26,Hombre,0.8,0.25,ndp,1,Aumentar
+54,Mujer,0.5,0,ndp,1,Aumentar
+31,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+64,Mujer,0.5,0,cons,1,Aumentar
+29,Hombre,0.8,1,ndp,1,Aumentar
+42,Hombre,0.9,0.5,lib,1,Aumentar
+38,Hombre,0.7,NA,cons,0,Mantener o Reducir
+18,Hombre,0.4,0.75,ndp,0,Mantener o Reducir
+36,Mujer,0.6,0.5,ndp,1,Aumentar
+66,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+63,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+75,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+67,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+24,Hombre,0.4,0.25,ndp,1,Aumentar
+22,Hombre,0.5,0.75,lib,-1,Mantener o Reducir
+26,Hombre,0.6,0.75,cons,0,Mantener o Reducir
+64,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+52,Hombre,0.8,NA,lib,-1,Mantener o Reducir
+69,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+23,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+49,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+18,Mujer,0.4,NA,other,-1,Mantener o Reducir
+46,Hombre,0.8,0.5,ndp,-1,Mantener o Reducir
+42,Mujer,0.8,1,lib,0,Mantener o Reducir
+32,Mujer,0.9,0.5,lib,-1,Mantener o Reducir
+72,Hombre,0.8,0.75,cons,-1,Mantener o Reducir
+67,Hombre,0.7,1,cons,1,Aumentar
+40,Hombre,0.1,0.75,lib,1,Aumentar
+72,Hombre,0.7,0,lib,0,Mantener o Reducir
+21,Hombre,0.8,1,cons,0,Mantener o Reducir
+24,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+54,Hombre,0.5,1,lib,-1,Mantener o Reducir
+33,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+72,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+77,Mujer,0.9,0.25,lib,1,Aumentar
+74,Hombre,0.6,0.25,ndp,1,Aumentar
+50,Mujer,0.5,0,other,0,Mantener o Reducir
+36,Hombre,1,1,lib,-1,Mantener o Reducir
+75,Hombre,0.8,0,other,-1,Mantener o Reducir
+48,Hombre,0.9,0.25,cons,1,Aumentar
+39,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+26,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+60,Hombre,0.7,0,cons,0,Mantener o Reducir
+50,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+35,Hombre,0.9,0.25,lib,0,Mantener o Reducir
+76,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+51,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+30,Mujer,0.8,0,ndp,1,Aumentar
+25,Hombre,0.4,0,lib,-1,Mantener o Reducir
+64,Mujer,0.8,0.25,lib,1,Aumentar
+40,Hombre,0.8,0.25,lib,1,Aumentar
+50,Mujer,0.5,0.5,ndp,0,Mantener o Reducir
+35,Mujer,0.8,NA,lib,0,Mantener o Reducir
+61,Hombre,0.7,0,cons,1,Aumentar
+65,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+73,Hombre,0.7,NA,cons,-1,Mantener o Reducir
+63,Mujer,0.8,1,lib,-1,Mantener o Reducir
+32,Hombre,0.4,0.75,lib,0,Mantener o Reducir
+53,Hombre,0.5,0.25,ndp,1,Aumentar
+64,Hombre,0.3,0.25,ndp,1,Aumentar
+26,Mujer,0.8,NA,cons,1,Aumentar
+61,Mujer,0.4,0.25,other,0,Mantener o Reducir
+37,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+35,Hombre,1,1,other,1,Aumentar
+72,Hombre,0.7,0.5,cons,1,Aumentar
+64,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+58,Mujer,0.5,0.25,lib,0,Mantener o Reducir
+60,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+79,Hombre,1,0.75,cons,0,Mantener o Reducir
+38,Hombre,0.8,0.25,cons,1,Aumentar
+61,Hombre,0.5,0.75,ndp,1,Aumentar
+68,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+79,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+38,Mujer,0.8,0.25,ndp,-1,Mantener o Reducir
+67,Hombre,0.3,0,lib,1,Aumentar
+43,Hombre,0.6,1,ndp,1,Aumentar
+58,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+18,Hombre,0.2,NA,ndp,1,Aumentar
+82,Mujer,0.8,NA,lib,0,Mantener o Reducir
+54,Hombre,0.8,1,cons,0,Mantener o Reducir
+59,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+52,Hombre,0.6,1,lib,0,Mantener o Reducir
+29,Hombre,0.9,0.75,lib,0,Mantener o Reducir
+27,Hombre,1,0.5,cons,0,Mantener o Reducir
+49,Mujer,0.6,0.5,cons,-1,Mantener o Reducir
+76,Mujer,0.5,0,ndp,1,Aumentar
+55,Mujer,0.5,0.25,ndp,0,Mantener o Reducir
+70,Mujer,0.6,0,ndp,0,Mantener o Reducir
+61,Mujer,0.6,NA,cons,0,Mantener o Reducir
+47,Hombre,0.6,0.5,ndp,1,Aumentar
+43,Mujer,0.6,0.5,lib,1,Aumentar
+63,Mujer,0.4,0.25,cons,-1,Mantener o Reducir
+34,Hombre,0.9,0,ndp,1,Aumentar
+62,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+64,Hombre,0.4,0.25,lib,1,Aumentar
+20,Mujer,0.4,0.75,lib,1,Aumentar
+45,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+21,Hombre,0.7,1,lib,-1,Mantener o Reducir
+26,Mujer,0.4,0.75,cons,-1,Mantener o Reducir
+67,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+68,Mujer,0.8,0.75,lib,1,Aumentar
+59,Hombre,0.6,0,lib,0,Mantener o Reducir
+22,Mujer,0.7,0,ndp,1,Aumentar
+20,Hombre,0.7,1,cons,0,Mantener o Reducir
+38,Mujer,1,0.75,ndp,-1,Mantener o Reducir
+49,Hombre,0.4,0.5,ndp,-1,Mantener o Reducir
+71,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+60,Mujer,1,0.5,lib,1,Aumentar
+22,Mujer,0.4,0.5,lib,1,Aumentar
+45,Hombre,0.6,0,cons,1,Aumentar
+39,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+57,Hombre,0.5,0,cons,1,Aumentar
+44,Mujer,0.5,0.5,cons,-1,Mantener o Reducir
+44,Hombre,0.8,1,lib,1,Aumentar
+55,NA,0.6,0.25,cons,0,Mantener o Reducir
+29,Mujer,0.5,0.25,lib,1,Aumentar
+40,Mujer,0.9,0.5,ndp,1,Aumentar
+75,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+38,Hombre,0.5,0.5,ndp,-1,Mantener o Reducir
+48,Hombre,0.8,NA,cons,-1,Mantener o Reducir
+28,Hombre,0.8,0.25,ndp,1,Aumentar
+28,Mujer,0.8,0,lib,0,Mantener o Reducir
+63,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+74,Hombre,0.8,1,cons,0,Mantener o Reducir
+20,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+45,Hombre,0.8,0.25,lib,-1,Mantener o Reducir
+51,Hombre,0.8,0.5,lib,1,Aumentar
+73,Mujer,0.8,1,cons,0,Mantener o Reducir
+37,Mujer,0.6,0.75,cons,-1,Mantener o Reducir
+74,Hombre,0.3,NA,lib,0,Mantener o Reducir
+45,Mujer,0.7,0.5,ndp,0,Mantener o Reducir
+21,Hombre,0.5,0.75,lib,1,Aumentar
+71,Mujer,0.5,0,ndp,0,Mantener o Reducir
+62,Mujer,0.4,0.5,lib,-1,Mantener o Reducir
+82,Mujer,0.3,0,ndp,1,Aumentar
+53,Mujer,0.4,1,lib,-1,Mantener o Reducir
+60,Mujer,0.9,1,cons,1,Aumentar
+57,Mujer,0.8,0.5,cons,-1,Mantener o Reducir
+66,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+45,Hombre,0.4,1,lib,-1,Mantener o Reducir
+64,Mujer,0.7,0.5,cons,0,Mantener o Reducir
+53,Hombre,0.6,0,lib,0,Mantener o Reducir
+20,Mujer,0.5,0.75,ndp,0,Mantener o Reducir
+43,Mujer,0.4,0.75,lib,1,Aumentar
+66,Hombre,0.9,0.5,lib,0,Mantener o Reducir
+48,Hombre,1,1,lib,1,Aumentar
+38,Hombre,0.7,0,other,0,Mantener o Reducir
+38,Mujer,0.8,0.75,lib,1,Aumentar
+72,Hombre,0.6,0,lib,0,Mantener o Reducir
+50,Mujer,0.8,0.5,cons,0,Mantener o Reducir
+72,Hombre,0.7,0.25,cons,-1,Mantener o Reducir
+18,Hombre,0.4,0.75,lib,-1,Mantener o Reducir
+21,Hombre,0.7,0.5,lib,1,Aumentar
+37,Hombre,0.8,0.75,lib,1,Aumentar
+68,Hombre,0.8,0,lib,1,Aumentar
+48,Hombre,0.9,0.5,lib,-1,Mantener o Reducir
+77,Hombre,0.9,0.75,cons,0,Mantener o Reducir
+61,Hombre,0.4,0,cons,0,Mantener o Reducir
+76,Hombre,0.4,0,ndp,0,Mantener o Reducir
+34,Mujer,0.2,0.75,other,-1,Mantener o Reducir
+59,Mujer,0.5,0,other,1,Aumentar
+29,Mujer,0.6,0.25,other,-1,Mantener o Reducir
+24,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+28,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+57,Hombre,0.6,1,cons,0,Mantener o Reducir
+47,Hombre,0.9,0.75,lib,0,Mantener o Reducir
+70,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+73,Hombre,0.5,0.75,lib,0,Mantener o Reducir
+59,Hombre,0.3,0.25,ndp,1,Aumentar
+68,Mujer,0.7,0.25,ndp,1,Aumentar
+19,Mujer,0.4,0,lib,1,Aumentar
+41,Mujer,0.4,0.5,ndp,-1,Mantener o Reducir
+32,Hombre,0.6,1,lib,1,Aumentar
+34,Hombre,0.6,NA,lib,-1,Mantener o Reducir
+46,Hombre,0.8,0,cons,1,Aumentar
+44,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+29,Mujer,1,0.25,ndp,0,Mantener o Reducir
+34,Hombre,0.8,0.25,lib,1,Aumentar
+23,Hombre,0.8,0,ndp,1,Aumentar
+18,Hombre,0.4,NA,lib,0,Mantener o Reducir
+46,Hombre,0.7,0.25,lib,0,Mantener o Reducir
+47,Hombre,0.5,0.5,cons,-1,Mantener o Reducir
+60,Hombre,0.8,NA,cons,-1,Mantener o Reducir
+63,Hombre,0.8,0,lib,0,Mantener o Reducir
+38,Mujer,0.5,0.25,cons,-1,Mantener o Reducir
+45,Hombre,0.5,0.5,cons,0,Mantener o Reducir
+52,Mujer,0.6,1,lib,0,Mantener o Reducir
+53,Mujer,0.8,0.75,ndp,0,Mantener o Reducir
+25,Hombre,0.6,0,cons,1,Aumentar
+29,Hombre,0.9,0.5,lib,1,Aumentar
+70,Hombre,0.6,0.5,other,1,Aumentar
+23,Mujer,0.8,0,other,0,Mantener o Reducir
+48,Hombre,0.6,0.25,cons,1,Aumentar
+65,Hombre,0.7,1,ndp,1,Aumentar
+50,Hombre,0.8,0.5,cons,0,Mantener o Reducir
+66,Hombre,0.8,0.25,lib,1,Aumentar
+44,Mujer,0.4,0,lib,1,Aumentar
+51,Hombre,0.1,0,lib,1,Aumentar
+47,Mujer,0.3,0,ndp,1,Aumentar
+63,Mujer,0.8,1,lib,0,Mantener o Reducir
+40,Hombre,0.4,0,cons,-1,Mantener o Reducir
+37,Hombre,0.8,1,lib,1,Aumentar
+55,Hombre,0.3,0,ndp,1,Aumentar
+47,Hombre,0.8,0.25,ndp,-1,Mantener o Reducir
+47,Hombre,0.9,0.5,ndp,0,Mantener o Reducir
+32,Hombre,0.4,0.25,ndp,1,Aumentar
+44,Mujer,0.9,0.5,ndp,0,Mantener o Reducir
+37,Mujer,1,0.25,lib,0,Mantener o Reducir
+69,Hombre,0.5,0,lib,1,Aumentar
+19,Mujer,0.7,0.25,ndp,1,Aumentar
+66,Mujer,0.6,NA,lib,0,Mantener o Reducir
+26,Hombre,0.5,0.25,lib,1,Aumentar
+48,Mujer,0.5,0.75,lib,0,Mantener o Reducir
+45,Mujer,0.8,0,cons,0,Mantener o Reducir
+74,Hombre,0.4,0.25,lib,1,Aumentar
+29,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+66,Mujer,0.4,0.25,lib,1,Aumentar
+37,Mujer,NA,0,ndp,1,Aumentar
+45,Mujer,0.8,0.75,lib,0,Mantener o Reducir
+36,Hombre,0.9,0.5,lib,-1,Mantener o Reducir
+24,Mujer,0.8,0.5,ndp,1,Aumentar
+27,Hombre,0.8,0.5,lib,-1,Mantener o Reducir
+31,Mujer,0.8,0.75,lib,-1,Mantener o Reducir
+82,Hombre,0.8,0.25,cons,1,Aumentar
+71,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+21,Mujer,0.7,0.25,other,-1,Mantener o Reducir
+47,Hombre,0.9,1,lib,0,Mantener o Reducir
+31,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+42,Mujer,1,NA,cons,0,Mantener o Reducir
+70,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+34,Hombre,0.9,0.25,lib,-1,Mantener o Reducir
+34,Hombre,0.1,0,lib,-1,Mantener o Reducir
+21,Mujer,0.4,0.75,lib,-1,Mantener o Reducir
+21,Mujer,0.3,0.5,other,-1,Mantener o Reducir
+61,Mujer,0.8,0.75,other,0,Mantener o Reducir
+22,Mujer,0.5,0,lib,0,Mantener o Reducir
+64,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+24,Mujer,1,0.25,other,1,Aumentar
+72,Hombre,0.3,0,lib,-1,Mantener o Reducir
+74,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+34,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+42,Mujer,0.9,1,lib,-1,Mantener o Reducir
+71,Mujer,0.8,0,other,1,Aumentar
+35,Hombre,0.5,NA,other,1,Aumentar
+45,Mujer,0.7,0.5,lib,1,Aumentar
+54,Hombre,0.1,0,lib,1,Aumentar
+23,Hombre,0,1,lib,1,Aumentar
+31,Mujer,1,0.25,ndp,0,Mantener o Reducir
+35,Hombre,0.7,NA,cons,0,Mantener o Reducir
+27,Mujer,0.8,1,lib,1,Aumentar
+55,Mujer,0.5,0.25,ndp,1,Aumentar
+50,Mujer,0.6,0.75,cons,-1,Mantener o Reducir
+25,Hombre,0.7,0.75,cons,-1,Mantener o Reducir
+51,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+27,Mujer,0.6,1,lib,-1,Mantener o Reducir
+31,Hombre,0.8,0.5,cons,0,Mantener o Reducir
+58,Hombre,0.4,0.25,ndp,1,Aumentar
+43,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+57,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+34,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+29,Mujer,1,NA,ndp,0,Mantener o Reducir
+57,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+25,Hombre,0.3,0.75,lib,-1,Mantener o Reducir
+50,Mujer,0.3,0.25,cons,1,Aumentar
+33,Hombre,0.8,0,cons,0,Mantener o Reducir
+21,Hombre,0.8,1,lib,1,Aumentar
+20,Mujer,0.4,0.5,lib,0,Mantener o Reducir
+21,Mujer,0.6,0.5,ndp,-1,Mantener o Reducir
+18,Mujer,0.7,0.25,other,0,Mantener o Reducir
+69,Mujer,0.3,1,ndp,1,Aumentar
+48,Mujer,0.3,0.75,lib,-1,Mantener o Reducir
+72,Hombre,1,1,ndp,1,Aumentar
+51,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+49,Mujer,0.7,0.25,lib,1,Aumentar
+70,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+23,Hombre,0,0,other,1,Aumentar
+19,Mujer,0.5,0,lib,0,Mantener o Reducir
+23,Mujer,0.7,0.25,ndp,0,Mantener o Reducir
+73,Hombre,0.7,0.25,lib,1,Aumentar
+31,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+35,Hombre,0.5,0.25,lib,1,Aumentar
+54,Mujer,0.4,1,cons,0,Mantener o Reducir
+54,Mujer,0.4,0.25,cons,1,Aumentar
+63,Hombre,0.8,0.75,cons,0,Mantener o Reducir
+69,Mujer,0.3,0.25,cons,0,Mantener o Reducir
+69,Hombre,0.4,0,lib,1,Aumentar
+36,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+44,Mujer,0.7,0.75,cons,0,Mantener o Reducir
+21,Mujer,0.7,0.25,cons,-1,Mantener o Reducir
+25,Mujer,0.8,0.25,ndp,1,Aumentar
+39,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+41,Mujer,0.6,0.25,ndp,1,Aumentar
+64,Hombre,0.7,0.5,lib,1,Aumentar
+29,Mujer,0.9,0.25,lib,0,Mantener o Reducir
+29,Mujer,0.8,0.75,lib,-1,Mantener o Reducir
+26,Mujer,0.6,0.75,lib,-1,Mantener o Reducir
+25,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+53,Mujer,0.5,0,cons,1,Aumentar
+61,Hombre,0.5,0,ndp,1,Aumentar
+20,Mujer,0.4,0.75,cons,0,Mantener o Reducir
+78,Mujer,0.7,NA,cons,-1,Mantener o Reducir
+23,Mujer,0.8,0.25,ndp,-1,Mantener o Reducir
+53,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+55,Hombre,0.8,1,lib,0,Mantener o Reducir
+20,Mujer,0.5,0.25,ndp,1,Aumentar
+31,Hombre,0.5,NA,lib,1,Aumentar
+41,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+42,Mujer,0.5,1,lib,0,Mantener o Reducir
+30,Hombre,0.8,0.25,cons,1,Aumentar
+54,Hombre,0.8,0,ndp,1,Aumentar
+68,Hombre,0.5,0.25,cons,0,Mantener o Reducir
+38,Hombre,0.5,0,ndp,1,Aumentar
+23,Mujer,0.8,0.5,ndp,1,Aumentar
+24,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+70,Hombre,0.4,0.5,lib,0,Mantener o Reducir
+18,Hombre,0.4,0.75,cons,1,Aumentar
+28,Hombre,0.8,0.75,cons,1,Aumentar
+37,Mujer,0.9,1,cons,0,Mantener o Reducir
+47,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+44,Mujer,0.7,0,cons,-1,Mantener o Reducir
+68,Hombre,0.8,0.75,lib,1,Aumentar
+48,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+72,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+70,Hombre,0.6,NA,other,0,Mantener o Reducir
+19,Mujer,0.4,0,lib,0,Mantener o Reducir
+33,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+22,Mujer,0.7,0.25,other,0,Mantener o Reducir
+25,Hombre,0,1,ndp,1,Aumentar
+24,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+29,Hombre,0.9,0.5,cons,0,Mantener o Reducir
+59,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+61,Hombre,0.4,0,cons,0,Mantener o Reducir
+35,Mujer,0.4,0.5,lib,-1,Mantener o Reducir
+25,Hombre,0.4,0.25,ndp,1,Aumentar
+29,Mujer,0.6,0,ndp,0,Mantener o Reducir
+34,Mujer,0.8,0.5,cons,-1,Mantener o Reducir
+51,Hombre,0.5,0,ndp,1,Aumentar
+74,Hombre,0.8,NA,ndp,0,Mantener o Reducir
+28,Hombre,0.4,0.75,other,1,Aumentar
+51,Hombre,0.9,1,other,0,Mantener o Reducir
+19,Mujer,0.4,0.5,lib,1,Aumentar
+25,Hombre,0.4,0.75,lib,-1,Mantener o Reducir
+37,Mujer,0.8,1,ndp,1,Aumentar
+31,Hombre,0.8,NA,lib,-1,Mantener o Reducir
+56,Hombre,0.9,0.25,lib,1,Aumentar
+30,Mujer,0.8,0.25,lib,1,Aumentar
+49,Hombre,0.9,1,other,0,Mantener o Reducir
+68,Mujer,0.3,0.25,ndp,-1,Mantener o Reducir
+24,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+32,Hombre,0.4,0,cons,0,Mantener o Reducir
+67,Hombre,0.6,0.75,ndp,0,Mantener o Reducir
+20,Hombre,0.3,0,other,1,Aumentar
+25,Mujer,0.5,0.5,other,-1,Mantener o Reducir
+68,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+70,Hombre,0.8,0.25,cons,0,Mantener o Reducir
+25,Hombre,0.5,0.75,other,1,Aumentar
+66,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+72,Hombre,0.5,0,lib,0,Mantener o Reducir
+54,Hombre,0.5,0.25,lib,1,Aumentar
+25,Mujer,0.6,0,lib,0,Mantener o Reducir
+57,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+18,Hombre,0.4,0.5,lib,-1,Mantener o Reducir
+37,Mujer,0.6,0.5,lib,1,Aumentar
+66,Hombre,0.4,0.75,cons,-1,Mantener o Reducir
+24,Hombre,0.5,0,ndp,1,Aumentar
+61,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+72,Mujer,0.9,0.25,ndp,0,Mantener o Reducir
+55,Hombre,1,0.75,lib,1,Aumentar
+45,Mujer,0.3,0,lib,-1,Mantener o Reducir
+47,Hombre,0.9,0.75,ndp,1,Aumentar
+64,Mujer,0.4,0.5,lib,0,Mantener o Reducir
+29,Hombre,1,1,cons,-1,Mantener o Reducir
+44,Mujer,0.6,0,ndp,-1,Mantener o Reducir
+60,Mujer,0.6,1,lib,0,Mantener o Reducir
+34,Mujer,0.5,0.25,ndp,-1,Mantener o Reducir
+63,Mujer,0.3,0,cons,1,Aumentar
+66,Mujer,0.6,0.75,cons,-1,Mantener o Reducir
+34,Mujer,0.6,0.5,cons,-1,Mantener o Reducir
+30,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+20,Mujer,0.4,1,cons,-1,Mantener o Reducir
+71,Hombre,0.9,0.5,lib,0,Mantener o Reducir
+68,Mujer,0.3,0.25,lib,0,Mantener o Reducir
+20,Hombre,0.7,NA,lib,0,Mantener o Reducir
+66,Hombre,0.9,NA,lib,-1,Mantener o Reducir
+36,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+50,Mujer,0.5,1,cons,1,Aumentar
+33,Mujer,0.3,0.25,cons,1,Aumentar
+43,Hombre,0.9,1,ndp,0,Mantener o Reducir
+25,Mujer,0.7,0.5,lib,0,Mantener o Reducir
+46,Mujer,0.6,0.5,lib,-1,Mantener o Reducir
+59,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+60,Hombre,0.4,1,other,1,Aumentar
+34,Hombre,0.8,0.75,ndp,1,Aumentar
+56,Hombre,0.9,0.25,lib,-1,Mantener o Reducir
+24,Mujer,0.8,0,lib,0,Mantener o Reducir
+62,Mujer,0.4,0,cons,0,Mantener o Reducir
+40,Hombre,0.5,0.5,cons,0,Mantener o Reducir
+55,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+72,Mujer,0.4,0,lib,1,Aumentar
+21,Hombre,0.4,0,lib,0,Mantener o Reducir
+36,Mujer,0.8,0,lib,1,Aumentar
+20,Hombre,0.7,NA,lib,1,Aumentar
+35,Mujer,0.4,0.25,ndp,1,Aumentar
+40,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+59,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+63,Hombre,0.5,0,other,1,Aumentar
+69,Mujer,0.9,NA,lib,0,Mantener o Reducir
+45,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+36,Hombre,0.6,1,ndp,-1,Mantener o Reducir
+35,Mujer,0.8,0.25,cons,0,Mantener o Reducir
+27,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+46,Mujer,0.6,0.5,ndp,1,Aumentar
+42,Hombre,0.6,0.5,ndp,-1,Mantener o Reducir
+44,Hombre,0.6,1,cons,-1,Mantener o Reducir
+19,Mujer,0.5,0,lib,-1,Mantener o Reducir
+29,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+39,Mujer,0.9,1,ndp,1,Aumentar
+41,Hombre,0.9,0.25,cons,0,Mantener o Reducir
+39,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+23,Hombre,0.8,0.25,other,1,Aumentar
+35,Hombre,0.2,0.5,lib,1,Aumentar
+38,Hombre,0.7,0.75,cons,-1,Mantener o Reducir
+21,Mujer,0.5,1,lib,1,Aumentar
+19,Mujer,0.5,1,cons,1,Aumentar
+22,Mujer,0.7,1,cons,0,Mantener o Reducir
+19,Hombre,0.2,0.5,lib,1,Aumentar
+26,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+36,Hombre,0.9,0.75,lib,1,Aumentar
+74,Mujer,0.7,NA,lib,-1,Mantener o Reducir
+39,Mujer,0.8,NA,other,1,Aumentar
+33,Mujer,0.8,0.25,lib,1,Aumentar
+34,Mujer,0.8,1,cons,0,Mantener o Reducir
+19,Hombre,0.4,0.75,lib,-1,Mantener o Reducir
+25,Mujer,0.8,1,ndp,1,Aumentar
+54,Mujer,0.8,0.25,lib,1,Aumentar
+23,Hombre,0.8,0.25,lib,-1,Mantener o Reducir
+21,Mujer,0.9,0.5,cons,1,Aumentar
+33,Hombre,0.1,1,lib,1,Aumentar
+49,Mujer,0.7,0,ndp,0,Mantener o Reducir
+52,Mujer,0.4,NA,lib,1,Aumentar
+30,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+21,Hombre,0.4,0.5,ndp,1,Aumentar
+18,Hombre,0.4,0,lib,1,Aumentar
+19,Mujer,0.7,0.25,ndp,1,Aumentar
+18,Hombre,0.4,0.25,lib,1,Aumentar
+65,Hombre,0.5,0.5,cons,-1,Mantener o Reducir
+34,Hombre,0.8,0.75,lib,-1,Mantener o Reducir
+73,Hombre,0.3,0.25,ndp,-1,Mantener o Reducir
+42,Hombre,0.5,0.25,ndp,1,Aumentar
+69,Hombre,0.8,1,cons,-1,Mantener o Reducir
+68,Hombre,0.5,1,cons,-1,Mantener o Reducir
+22,Mujer,0.5,0.5,lib,-1,Mantener o Reducir
+53,Mujer,0.7,0.25,cons,1,Aumentar
+52,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+29,Hombre,0.4,1,lib,1,Aumentar
+22,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+36,Mujer,0.4,0.25,ndp,1,Aumentar
+37,Mujer,0.8,0.75,cons,0,Mantener o Reducir
+66,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+51,Mujer,0.6,0,lib,0,Mantener o Reducir
+38,Hombre,0.4,0.5,ndp,0,Mantener o Reducir
+66,Hombre,0.4,1,cons,0,Mantener o Reducir
+63,Hombre,0.3,0.25,lib,1,Aumentar
+27,Mujer,0.8,0.5,lib,1,Aumentar
+79,Hombre,0.3,1,cons,-1,Mantener o Reducir
+19,Mujer,0.4,0.25,other,-1,Mantener o Reducir
+35,Hombre,0.7,0.75,ndp,1,Aumentar
+61,Hombre,0.8,0.75,lib,1,Aumentar
+21,Mujer,0.5,0,other,0,Mantener o Reducir
+25,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+29,Mujer,0.5,0,ndp,0,Mantener o Reducir
+30,Mujer,0.8,0.5,lib,1,Aumentar
+52,Mujer,0.5,0.5,cons,1,Aumentar
+77,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+19,Hombre,0.7,0.5,lib,-1,Mantener o Reducir
+30,Mujer,0.8,0.5,lib,1,Aumentar
+25,Mujer,0.9,0.5,ndp,1,Aumentar
+65,Hombre,0.3,0.5,lib,-1,Mantener o Reducir
+55,Mujer,0.6,NA,other,-1,Mantener o Reducir
+66,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+72,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+20,Hombre,0.7,0.75,lib,-1,Mantener o Reducir
+47,Hombre,0.4,0,ndp,0,Mantener o Reducir
+62,Hombre,0.6,0.5,lib,-1,Mantener o Reducir
+73,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+30,Mujer,0.6,0,lib,1,Aumentar
+48,Mujer,0.8,0.5,cons,-1,Mantener o Reducir
+45,Mujer,NA,0.5,other,1,Aumentar
+65,Hombre,0.8,0,lib,1,Aumentar
+28,Mujer,0.3,0.25,lib,1,Aumentar
+39,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+38,Hombre,0.5,0.5,ndp,1,Aumentar
+45,Hombre,0.6,0.25,lib,1,Aumentar
+38,Hombre,0.5,0,lib,1,Aumentar
+25,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+34,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+38,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+77,Hombre,0.9,1,cons,0,Mantener o Reducir
+69,Hombre,0.7,1,cons,0,Mantener o Reducir
+56,Mujer,0.8,0,cons,1,Aumentar
+71,Mujer,0.6,0,cons,0,Mantener o Reducir
+77,Hombre,0.8,0,ndp,0,Mantener o Reducir
+20,Hombre,0.7,1,ndp,0,Mantener o Reducir
+67,Hombre,0.8,0,lib,0,Mantener o Reducir
+32,Hombre,0.8,0.5,cons,1,Aumentar
+47,Mujer,0.8,0,cons,0,Mantener o Reducir
+41,Hombre,0.8,0,cons,0,Mantener o Reducir
+30,Mujer,0.6,0.5,cons,1,Aumentar
+35,Hombre,0.8,0.25,cons,0,Mantener o Reducir
+49,Hombre,0.8,1,cons,0,Mantener o Reducir
+47,Hombre,0.6,0,lib,1,Aumentar
+50,Mujer,0.6,0,lib,0,Mantener o Reducir
+56,Mujer,0.4,0.5,ndp,0,Mantener o Reducir
+33,Mujer,0.8,0.5,ndp,1,Aumentar
+22,Hombre,0.4,0.75,cons,-1,Mantener o Reducir
+61,Mujer,0.4,0.75,cons,0,Mantener o Reducir
+22,Mujer,0.5,1,lib,0,Mantener o Reducir
+23,Hombre,0.5,NA,other,1,Aumentar
+52,Hombre,0.7,1,ndp,1,Aumentar
+38,Mujer,0.6,0.25,other,1,Aumentar
+51,Hombre,1,NA,lib,-1,Mantener o Reducir
+72,Mujer,0.6,0.75,lib,-1,Mantener o Reducir
+77,Hombre,0.3,0.25,cons,-1,Mantener o Reducir
+40,Mujer,0.6,0,lib,0,Mantener o Reducir
+76,Mujer,0.8,0.5,cons,0,Mantener o Reducir
+69,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+21,Mujer,0.7,0,cons,1,Aumentar
+27,Hombre,0.7,0.75,ndp,1,Aumentar
+58,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+20,Mujer,0.7,0,lib,0,Mantener o Reducir
+36,Mujer,0.6,0.25,lib,1,Aumentar
+70,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+34,Mujer,0.4,0.5,ndp,-1,Mantener o Reducir
+26,Mujer,0.8,0.25,lib,1,Aumentar
+25,Hombre,0.7,0.75,lib,0,Mantener o Reducir
+65,Hombre,0.7,0.75,lib,0,Mantener o Reducir
+50,Hombre,0.8,0,ndp,0,Mantener o Reducir
+29,Mujer,0.9,0,ndp,0,Mantener o Reducir
+65,Hombre,0.8,0.25,cons,0,Mantener o Reducir
+22,Mujer,0.6,0,lib,1,Aumentar
+23,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+45,Mujer,0.5,0.75,cons,-1,Mantener o Reducir
+74,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+25,Mujer,0.8,0.25,ndp,-1,Mantener o Reducir
+41,Mujer,0.5,NA,lib,-1,Mantener o Reducir
+77,Mujer,0.6,0.25,cons,1,Aumentar
+60,Mujer,0.9,0,lib,1,Aumentar
+53,Hombre,0.7,NA,ndp,1,Aumentar
+21,Mujer,0.5,0.5,ndp,1,Aumentar
+18,Mujer,0,1,other,1,Aumentar
+86,Hombre,0.9,0.25,lib,1,Aumentar
+63,Mujer,0.8,0,ndp,1,Aumentar
+26,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+50,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+24,Hombre,0.4,0.75,ndp,1,Aumentar
+35,Hombre,0.7,0.25,cons,0,Mantener o Reducir
+32,Hombre,0.8,0.25,lib,-1,Mantener o Reducir
+72,Mujer,0.6,0,ndp,1,Aumentar
+33,Mujer,0.8,0.25,cons,1,Aumentar
+65,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+54,Mujer,0.3,0,ndp,1,Aumentar
+25,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+45,Mujer,0.8,NA,ndp,-1,Mantener o Reducir
+43,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+24,Hombre,0.8,0,other,-1,Mantener o Reducir
+67,Mujer,0.6,0,other,0,Mantener o Reducir
+42,Hombre,0.8,0.25,lib,-1,Mantener o Reducir
+55,Hombre,0.6,0,ndp,1,Aumentar
+53,Mujer,0.4,0.5,cons,0,Mantener o Reducir
+22,Mujer,0.5,0.25,other,-1,Mantener o Reducir
+44,Mujer,0.8,1,cons,-1,Mantener o Reducir
+39,Hombre,0.5,NA,ndp,1,Aumentar
+23,Mujer,0.7,0.25,ndp,0,Mantener o Reducir
+36,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+54,Mujer,0.5,0.25,ndp,-1,Mantener o Reducir
+19,Hombre,0.4,NA,lib,1,Aumentar
+65,Hombre,0.3,0.25,ndp,1,Aumentar
+53,Mujer,0.6,1,lib,0,Mantener o Reducir
+64,Mujer,1,0,lib,-1,Mantener o Reducir
+57,Hombre,0.8,0,ndp,0,Mantener o Reducir
+54,Hombre,0.4,0.25,lib,1,Aumentar
+37,Hombre,0.7,0.5,lib,1,Aumentar
+45,Hombre,0.8,NA,ndp,1,Aumentar
+23,Hombre,0.5,0,cons,-1,Mantener o Reducir
+48,Hombre,0.6,0,cons,0,Mantener o Reducir
+64,Mujer,0.4,0.25,lib,-1,Mantener o Reducir
+34,Mujer,0.7,0.25,lib,-1,Mantener o Reducir
+69,Hombre,0.7,0.75,cons,-1,Mantener o Reducir
+68,Mujer,0.6,0,cons,-1,Mantener o Reducir
+55,Hombre,0.8,0.25,ndp,-1,Mantener o Reducir
+38,Hombre,0.8,0.25,lib,1,Aumentar
+70,Mujer,0.7,0.25,ndp,-1,Mantener o Reducir
+49,Mujer,0.4,0.5,lib,-1,Mantener o Reducir
+24,Hombre,0.8,0.25,ndp,1,Aumentar
+66,Hombre,0.5,0,ndp,1,Aumentar
+62,Mujer,0.4,0.25,cons,1,Aumentar
+45,Hombre,0.6,0,cons,0,Mantener o Reducir
+44,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+73,Mujer,1,0,ndp,1,Aumentar
+39,Mujer,0.8,1,cons,-1,Mantener o Reducir
+25,Hombre,0.7,0.25,lib,0,Mantener o Reducir
+56,Hombre,1,1,lib,0,Mantener o Reducir
+57,Mujer,0.3,0.75,ndp,0,Mantener o Reducir
+25,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+69,Hombre,0.7,1,ndp,0,Mantener o Reducir
+60,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+22,Hombre,0.3,0.5,lib,-1,Mantener o Reducir
+36,Mujer,1,0.25,cons,1,Aumentar
+36,Hombre,1,1,lib,-1,Mantener o Reducir
+35,Hombre,0.8,1,lib,0,Mantener o Reducir
+28,Hombre,0.5,0.75,lib,-1,Mantener o Reducir
+19,Mujer,0.4,NA,ndp,0,Mantener o Reducir
+38,Mujer,0.5,0.25,ndp,1,Aumentar
+60,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+20,Mujer,0.4,0.75,lib,-1,Mantener o Reducir
+66,Hombre,0.5,0.25,ndp,-1,Mantener o Reducir
+71,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+48,Mujer,0.7,1,ndp,1,Aumentar
+56,Hombre,0.9,0.5,cons,1,Aumentar
+53,Mujer,0.4,1,cons,0,Mantener o Reducir
+69,Hombre,0.7,1,cons,0,Mantener o Reducir
+32,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+51,Mujer,0.3,0.25,ndp,0,Mantener o Reducir
+35,Mujer,0.6,0.75,ndp,0,Mantener o Reducir
+58,Hombre,0.5,0.25,cons,0,Mantener o Reducir
+21,Mujer,0.4,0.75,lib,-1,Mantener o Reducir
+65,Hombre,1,0.5,ndp,0,Mantener o Reducir
+63,Mujer,0.6,0,other,1,Aumentar
+48,Hombre,0.8,NA,lib,0,Mantener o Reducir
+56,Mujer,0.4,1,ndp,1,Aumentar
+18,Mujer,0.7,1,lib,0,Mantener o Reducir
+34,Hombre,1,0.5,ndp,0,Mantener o Reducir
+24,Hombre,0.7,0.5,other,-1,Mantener o Reducir
+39,Hombre,0.5,0.5,lib,0,Mantener o Reducir
+20,Mujer,0.4,0,lib,0,Mantener o Reducir
+42,Hombre,0.4,NA,cons,0,Mantener o Reducir
+28,Mujer,0.8,0.25,other,0,Mantener o Reducir
+18,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+48,Mujer,0.4,0.75,ndp,0,Mantener o Reducir
+26,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+67,Hombre,0.8,0.5,lib,1,Aumentar
+70,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+43,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+68,Hombre,0.4,0.25,lib,0,Mantener o Reducir
+44,Mujer,0.8,0,lib,-1,Mantener o Reducir
+25,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+70,Hombre,0.6,NA,cons,1,Aumentar
+33,Mujer,0.4,0,lib,1,Aumentar
+68,Hombre,0.5,0.5,cons,0,Mantener o Reducir
+35,Mujer,1,0.5,ndp,1,Aumentar
+62,Mujer,0.6,0,cons,-1,Mantener o Reducir
+21,Mujer,0.5,0,other,1,Aumentar
+65,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+66,Hombre,0.8,0.25,ndp,-1,Mantener o Reducir
+46,Hombre,0.9,0.75,cons,0,Mantener o Reducir
+61,Hombre,0.8,0.25,other,0,Mantener o Reducir
+61,Hombre,0.8,1,lib,0,Mantener o Reducir
+73,Hombre,0.4,0.75,cons,0,Mantener o Reducir
+66,Hombre,0.5,0.25,ndp,1,Aumentar
+57,Mujer,0.5,0,ndp,0,Mantener o Reducir
+20,Mujer,0.4,0.5,lib,-1,Mantener o Reducir
+70,Hombre,0.5,1,cons,1,Aumentar
+31,Hombre,0.8,1,lib,1,Aumentar
+23,Mujer,0.4,NA,other,-1,Mantener o Reducir
+62,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+23,Mujer,0.8,0.5,ndp,1,Aumentar
+24,Mujer,0.8,1,lib,0,Mantener o Reducir
+20,Mujer,0.7,0.5,ndp,1,Aumentar
+35,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+67,Hombre,0.5,0.5,lib,0,Mantener o Reducir
+25,Mujer,1,NA,lib,1,Aumentar
+50,Mujer,0.8,1,lib,0,Mantener o Reducir
+44,Hombre,0.6,0,lib,1,Aumentar
+37,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+43,Hombre,0.8,0.25,other,0,Mantener o Reducir
+59,Mujer,0.6,0.75,ndp,-1,Mantener o Reducir
+25,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+28,Hombre,0.7,0.5,ndp,0,Mantener o Reducir
+28,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+18,Mujer,0.4,0,lib,1,Aumentar
+47,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+30,Hombre,0.8,0.5,ndp,1,Aumentar
+62,Mujer,1,0,cons,-1,Mantener o Reducir
+44,Mujer,0.3,0,lib,1,Aumentar
+37,Hombre,0.9,0.25,cons,-1,Mantener o Reducir
+67,Mujer,0.6,1,lib,1,Aumentar
+26,Hombre,0.9,0.25,lib,0,Mantener o Reducir
+38,Hombre,0.8,1,ndp,-1,Mantener o Reducir
+69,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+44,Mujer,0.9,1,cons,0,Mantener o Reducir
+73,Hombre,0.9,0.5,ndp,0,Mantener o Reducir
+59,Mujer,0.5,0,cons,1,Aumentar
+29,Hombre,0.8,0.75,cons,0,Mantener o Reducir
+35,Hombre,0.9,0.5,lib,1,Aumentar
+21,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+53,Mujer,0.4,0.5,ndp,-1,Mantener o Reducir
+63,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+34,Mujer,0.6,0.75,ndp,0,Mantener o Reducir
+29,Mujer,0.8,0.25,ndp,1,Aumentar
+27,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+60,Mujer,0.9,1,cons,-1,Mantener o Reducir
+36,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+34,Hombre,0.8,0.75,cons,1,Aumentar
+53,Hombre,0.7,0,cons,0,Mantener o Reducir
+23,Hombre,0.5,0,ndp,1,Aumentar
+22,Mujer,0.6,0,ndp,1,Aumentar
+51,Mujer,0.9,0.5,ndp,-1,Mantener o Reducir
+62,Mujer,0.6,1,lib,0,Mantener o Reducir
+32,Hombre,0.6,0.25,lib,1,Aumentar
+65,Hombre,0.3,1,ndp,1,Aumentar
+60,Mujer,0.8,1,other,-1,Mantener o Reducir
+24,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+35,Hombre,0.5,0,ndp,1,Aumentar
+25,Hombre,1,0.25,lib,1,Aumentar
+44,Mujer,0.4,0,cons,1,Aumentar
+33,Mujer,0.6,0,ndp,1,Aumentar
+28,Hombre,1,0.25,lib,1,Aumentar
+25,Hombre,0.7,0.25,cons,1,Aumentar
+44,Hombre,0.7,0.75,other,0,Mantener o Reducir
+19,Hombre,0.7,0,lib,1,Aumentar
+24,Mujer,0.7,NA,ndp,1,Aumentar
+67,Mujer,0.3,0,ndp,0,Mantener o Reducir
+65,Hombre,1,1,lib,-1,Mantener o Reducir
+60,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+26,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+72,Hombre,0.7,0.25,cons,-1,Mantener o Reducir
+42,Mujer,0.8,0.75,ndp,0,Mantener o Reducir
+77,Hombre,1,0.25,cons,1,Aumentar
+41,Hombre,0.4,0,ndp,1,Aumentar
+52,Hombre,0.9,0,lib,1,Aumentar
+24,Mujer,0.8,0.5,ndp,1,Aumentar
+37,Hombre,1,1,ndp,-1,Mantener o Reducir
+65,Hombre,0.9,1,cons,-1,Mantener o Reducir
+62,Mujer,0.8,1,lib,0,Mantener o Reducir
+20,Mujer,0.4,0,lib,0,Mantener o Reducir
+27,Mujer,0.9,1,ndp,0,Mantener o Reducir
+70,Mujer,0.4,0.5,cons,-1,Mantener o Reducir
+62,Hombre,0.6,0.25,ndp,-1,Mantener o Reducir
+40,Hombre,0.8,1,lib,0,Mantener o Reducir
+54,Mujer,0.5,0.25,cons,-1,Mantener o Reducir
+54,Mujer,0.9,1,lib,0,Mantener o Reducir
+23,Hombre,0.3,0.25,ndp,0,Mantener o Reducir
+55,Hombre,0.4,1,cons,-1,Mantener o Reducir
+58,Hombre,0.8,0,lib,1,Aumentar
+53,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+28,Hombre,0.9,0.25,lib,0,Mantener o Reducir
+59,Hombre,0.9,1,ndp,1,Aumentar
+40,Hombre,0.6,1,cons,1,Aumentar
+25,Hombre,0.7,0.25,lib,0,Mantener o Reducir
+40,Hombre,0.9,0.75,lib,0,Mantener o Reducir
+32,Hombre,0.3,0,lib,1,Aumentar
+34,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+53,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+51,Mujer,0.3,0.75,cons,0,Mantener o Reducir
+65,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+66,Hombre,0.5,0.25,ndp,1,Aumentar
+60,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+68,Hombre,0.4,0,ndp,0,Mantener o Reducir
+20,Hombre,0.7,0,other,0,Mantener o Reducir
+20,Mujer,0.7,1,lib,1,Aumentar
+53,Hombre,0.6,0,cons,1,Aumentar
+52,Mujer,0.8,1,lib,0,Mantener o Reducir
+54,Mujer,0.5,1,lib,1,Aumentar
+61,Mujer,0.4,0.25,lib,1,Aumentar
+45,Hombre,0.8,0.25,cons,0,Mantener o Reducir
+70,Hombre,0.5,0.25,other,-1,Mantener o Reducir
+47,Hombre,0.4,0.25,other,1,Aumentar
+66,Mujer,0.4,0,lib,0,Mantener o Reducir
+32,Mujer,0.8,0.75,cons,0,Mantener o Reducir
+73,Hombre,0.5,0.5,cons,1,Aumentar
+64,Hombre,0.6,0,cons,1,Aumentar
+43,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+38,Hombre,0.8,0,other,-1,Mantener o Reducir
+65,Hombre,0.6,0.5,other,0,Mantener o Reducir
+18,Mujer,0.4,0.5,ndp,0,Mantener o Reducir
+26,Mujer,0.8,0.25,lib,1,Aumentar
+58,Mujer,0.8,0.25,lib,1,Aumentar
+57,Mujer,0.5,0,cons,0,Mantener o Reducir
+37,Hombre,1,0.5,lib,0,Mantener o Reducir
+52,Hombre,0.4,0.5,lib,0,Mantener o Reducir
+29,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+67,Mujer,0.9,0,lib,0,Mantener o Reducir
+28,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+45,Hombre,0.5,0,other,1,Aumentar
+48,Hombre,1,1,lib,-1,Mantener o Reducir
+43,Hombre,0.9,0.25,lib,1,Aumentar
+40,Hombre,0.6,0,cons,0,Mantener o Reducir
+71,Mujer,0.5,0,lib,1,Aumentar
+30,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+66,Hombre,0.6,0,ndp,0,Mantener o Reducir
+47,Hombre,0.6,0.75,other,-1,Mantener o Reducir
+19,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+31,Hombre,0.6,0.75,lib,0,Mantener o Reducir
+49,Hombre,0.8,0.5,other,-1,Mantener o Reducir
+48,Mujer,0.9,0.75,lib,1,Aumentar
+66,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+59,Hombre,0.5,0.25,lib,0,Mantener o Reducir
+57,Hombre,0.5,0.25,cons,0,Mantener o Reducir
+54,Mujer,0.7,1,ndp,1,Aumentar
+19,Mujer,0.5,NA,lib,1,Aumentar
+50,Mujer,0.8,1,lib,-1,Mantener o Reducir
+44,Hombre,0.5,0.5,lib,-1,Mantener o Reducir
+69,Hombre,0.9,0,cons,1,Aumentar
+29,Mujer,0.4,0,ndp,0,Mantener o Reducir
+64,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+69,Hombre,0.8,NA,lib,0,Mantener o Reducir
+46,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+31,Hombre,0.5,1,ndp,1,Aumentar
+65,Mujer,0.8,0,ndp,1,Aumentar
+68,Hombre,0.4,1,lib,0,Mantener o Reducir
+25,Mujer,0.8,1,ndp,1,Aumentar
+62,Mujer,0.3,0.25,ndp,1,Aumentar
+18,Hombre,0.4,0,other,0,Mantener o Reducir
+39,Mujer,0.9,0,lib,1,Aumentar
+28,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+82,Hombre,0.8,0.25,lib,1,Aumentar
+43,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+69,Hombre,0.8,0.75,cons,-1,Mantener o Reducir
+18,Hombre,0.7,0.25,cons,0,Mantener o Reducir
+37,Hombre,0.8,1,lib,-1,Mantener o Reducir
+64,Mujer,0.5,1,cons,0,Mantener o Reducir
+34,Hombre,1,0.75,ndp,1,Aumentar
+59,Mujer,0.8,0.5,lib,1,Aumentar
+19,Mujer,0.3,NA,lib,1,Aumentar
+38,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+67,Mujer,0.5,0,ndp,0,Mantener o Reducir
+76,Hombre,0.4,0.5,ndp,0,Mantener o Reducir
+60,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+50,Hombre,0.6,0.5,lib,1,Aumentar
+41,Mujer,0.5,NA,lib,0,Mantener o Reducir
+27,Hombre,0.4,0,ndp,1,Aumentar
+70,Mujer,0.7,0.25,ndp,1,Aumentar
+25,Mujer,0.8,0.25,ndp,1,Aumentar
+65,Hombre,0.7,1,lib,1,Aumentar
+53,Mujer,0.5,0.75,lib,-1,Mantener o Reducir
+66,Mujer,0.7,0.25,ndp,1,Aumentar
+60,Hombre,0.5,0.5,lib,1,Aumentar
+56,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+20,Mujer,0.6,0,other,1,Aumentar
+46,Mujer,0.6,0,cons,-1,Mantener o Reducir
+48,Mujer,0.5,0.75,cons,0,Mantener o Reducir
+28,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+24,Mujer,0.9,0.5,lib,0,Mantener o Reducir
+58,Hombre,1,0,ndp,1,Aumentar
+71,Hombre,0.7,0.25,cons,0,Mantener o Reducir
+32,Hombre,0.7,0.5,lib,1,Aumentar
+50,Mujer,0.8,1,lib,1,Aumentar
+46,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+69,Mujer,0.8,0.25,lib,-1,Mantener o Reducir
+28,Hombre,0.4,NA,lib,1,Aumentar
+54,Mujer,0.9,0,lib,1,Aumentar
+32,Hombre,0.6,0,lib,0,Mantener o Reducir
+32,Hombre,0.5,0.5,cons,1,Aumentar
+71,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+72,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+21,Hombre,0.5,0.75,lib,0,Mantener o Reducir
+73,Mujer,0.6,0,ndp,1,Aumentar
+30,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+48,Hombre,0.6,0.5,ndp,1,Aumentar
+74,Mujer,0.9,0.5,bloc,0,Mantener o Reducir
+67,Hombre,0.8,0.25,ndp,1,Aumentar
+26,Mujer,0.4,0.5,ndp,-1,Mantener o Reducir
+34,Hombre,0.8,1,bloc,-1,Mantener o Reducir
+44,Hombre,0.7,0.25,cons,1,Aumentar
+63,Mujer,0.4,1,bloc,0,Mantener o Reducir
+21,Mujer,0.7,0.5,ndp,0,Mantener o Reducir
+29,Hombre,0.9,0.25,lib,1,Aumentar
+21,Hombre,0.5,0.25,lib,1,Aumentar
+24,Hombre,0.7,0.5,bloc,0,Mantener o Reducir
+57,Mujer,0.3,0.25,bloc,1,Aumentar
+21,Mujer,0.7,0,other,-1,Mantener o Reducir
+19,Hombre,0.5,0,ndp,-1,Mantener o Reducir
+39,Mujer,0.6,0.25,bloc,1,Aumentar
+34,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+57,Hombre,0.5,0,ndp,0,Mantener o Reducir
+56,Mujer,0.6,0,lib,1,Aumentar
+58,Mujer,0.4,0.25,bloc,0,Mantener o Reducir
+22,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+61,Mujer,0.4,0,bloc,0,Mantener o Reducir
+61,Hombre,0.8,0.5,ndp,1,Aumentar
+35,Hombre,NA,NA,bloc,1,Aumentar
+40,Mujer,0.6,1,cons,-1,Mantener o Reducir
+53,Hombre,0.6,0.25,ndp,1,Aumentar
+58,Mujer,0.4,0.5,lib,-1,Mantener o Reducir
+77,Hombre,0.6,0.5,bloc,1,Aumentar
+80,Mujer,0.8,0.5,cons,1,Aumentar
+55,Mujer,0.8,0.25,bloc,1,Aumentar
+60,Hombre,0.4,0.25,lib,-1,Mantener o Reducir
+60,Hombre,0.8,0.75,cons,-1,Mantener o Reducir
+36,Mujer,0.6,0.75,ndp,-1,Mantener o Reducir
+41,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+23,Mujer,0.5,0,other,1,Aumentar
+52,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+60,Mujer,1,NA,bloc,1,Aumentar
+37,Mujer,0.4,0,bloc,1,Aumentar
+53,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+68,Mujer,0.4,0.25,ndp,-1,Mantener o Reducir
+50,Hombre,0.7,0.25,ndp,1,Aumentar
+59,Hombre,0.6,0,ndp,1,Aumentar
+49,Mujer,0.8,0.5,ndp,1,Aumentar
+36,Hombre,0.9,1,cons,-1,Mantener o Reducir
+69,Hombre,0.6,0.25,bloc,1,Aumentar
+20,Mujer,0.5,0.25,ndp,0,Mantener o Reducir
+50,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+72,Mujer,0.4,0,bloc,1,Aumentar
+66,Hombre,0.5,0.5,cons,0,Mantener o Reducir
+22,Hombre,0.6,0.25,ndp,-1,Mantener o Reducir
+38,Mujer,0.6,1,cons,-1,Mantener o Reducir
+26,Hombre,0.5,0,other,1,Aumentar
+72,Mujer,0.5,0.25,lib,-1,Mantener o Reducir
+45,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+65,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+34,Hombre,0.6,1,cons,-1,Mantener o Reducir
+25,Hombre,0.6,0.25,ndp,-1,Mantener o Reducir
+67,Mujer,0.8,0,cons,0,Mantener o Reducir
+71,Mujer,0.9,0.5,lib,0,Mantener o Reducir
+48,Hombre,0.6,0.25,bloc,0,Mantener o Reducir
+25,Mujer,0.9,0,ndp,0,Mantener o Reducir
+34,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+79,Hombre,0.6,0.25,lib,1,Aumentar
+38,Mujer,0.6,1,lib,0,Mantener o Reducir
+31,Hombre,0.6,0.25,bloc,-1,Mantener o Reducir
+26,Hombre,0.6,0.25,lib,1,Aumentar
+55,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+52,Mujer,0.3,0,ndp,1,Aumentar
+23,Mujer,0.6,0.5,cons,-1,Mantener o Reducir
+43,Hombre,0.5,0.5,ndp,0,Mantener o Reducir
+53,Hombre,0.4,0.5,ndp,-1,Mantener o Reducir
+62,Hombre,0.6,1,ndp,1,Aumentar
+66,Hombre,0.8,0.25,bloc,0,Mantener o Reducir
+61,Hombre,0.8,0,cons,-1,Mantener o Reducir
+64,Hombre,0.9,1,ndp,0,Mantener o Reducir
+38,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+63,Mujer,0.4,0.25,ndp,1,Aumentar
+23,Mujer,0.7,0.25,cons,-1,Mantener o Reducir
+45,Hombre,0.7,0.5,bloc,0,Mantener o Reducir
+27,Mujer,0.5,0.5,ndp,0,Mantener o Reducir
+72,Mujer,0.3,0,ndp,0,Mantener o Reducir
+22,Hombre,1,0.5,cons,0,Mantener o Reducir
+58,Hombre,0.6,0,ndp,1,Aumentar
+34,Mujer,0.8,0.25,ndp,1,Aumentar
+66,Mujer,0.8,0,bloc,-1,Mantener o Reducir
+59,Hombre,0.7,0.5,ndp,0,Mantener o Reducir
+59,Mujer,0.4,0,bloc,-1,Mantener o Reducir
+53,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+46,Mujer,1,0.25,bloc,1,Aumentar
+54,Hombre,0.8,0.5,bloc,1,Aumentar
+54,Mujer,0.1,0.25,ndp,1,Aumentar
+54,Mujer,0.4,0,ndp,1,Aumentar
+50,Hombre,0.4,0.75,bloc,0,Mantener o Reducir
+65,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+54,Mujer,1,0,bloc,0,Mantener o Reducir
+28,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+40,Hombre,0.7,0.5,lib,0,Mantener o Reducir
+50,Hombre,0.4,0.25,ndp,1,Aumentar
+52,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+47,Hombre,0.8,0.75,ndp,1,Aumentar
+38,Hombre,0.7,0.25,bloc,1,Aumentar
+46,Mujer,0.6,0,bloc,1,Aumentar
+54,Mujer,1,1,bloc,0,Mantener o Reducir
+61,Hombre,0.9,1,ndp,1,Aumentar
+52,Hombre,0.8,1,ndp,0,Mantener o Reducir
+70,Mujer,0.4,NA,other,-1,Mantener o Reducir
+33,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+56,Mujer,0.6,1,bloc,0,Mantener o Reducir
+63,Hombre,0.4,0.25,ndp,1,Aumentar
+57,Hombre,0.5,0,ndp,-1,Mantener o Reducir
+38,Mujer,0.6,0.25,cons,0,Mantener o Reducir
+71,Hombre,0.9,0.5,lib,1,Aumentar
+55,Mujer,0.8,0.75,lib,-1,Mantener o Reducir
+67,Hombre,0.4,0,lib,1,Aumentar
+58,Mujer,0.3,0,other,0,Mantener o Reducir
+36,Hombre,0.5,0.5,lib,-1,Mantener o Reducir
+31,Mujer,0.8,0,ndp,0,Mantener o Reducir
+45,Mujer,0.3,0,lib,0,Mantener o Reducir
+63,Hombre,0.8,0.75,ndp,1,Aumentar
+37,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+37,Mujer,0.8,0.25,bloc,0,Mantener o Reducir
+18,Hombre,0.4,1,ndp,0,Mantener o Reducir
+27,Hombre,0.7,0,lib,-1,Mantener o Reducir
+38,Mujer,0.9,0.25,cons,0,Mantener o Reducir
+28,Mujer,0.4,0,bloc,-1,Mantener o Reducir
+59,Hombre,0.4,0.25,ndp,-1,Mantener o Reducir
+58,Hombre,0.4,0.25,bloc,0,Mantener o Reducir
+37,Hombre,0.6,0.25,lib,1,Aumentar
+77,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+60,Hombre,0.9,0.75,bloc,1,Aumentar
+80,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+56,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+57,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+54,Hombre,0.4,0.25,bloc,1,Aumentar
+62,Mujer,0.6,0,ndp,1,Aumentar
+32,Mujer,0.4,0.5,bloc,0,Mantener o Reducir
+46,Hombre,0.6,1,lib,-1,Mantener o Reducir
+48,Mujer,0.8,0,lib,1,Aumentar
+61,Hombre,0.8,0.75,bloc,1,Aumentar
+30,Hombre,0.8,1,lib,-1,Mantener o Reducir
+65,Hombre,0.4,0.25,ndp,-1,Mantener o Reducir
+40,Hombre,0.6,0.25,bloc,0,Mantener o Reducir
+23,Hombre,0.4,0.25,other,1,Aumentar
+69,Hombre,0.6,0.25,ndp,1,Aumentar
+69,Mujer,0.6,0.25,ndp,1,Aumentar
+71,Mujer,0.7,0,bloc,-1,Mantener o Reducir
+38,Mujer,0.6,1,lib,-1,Mantener o Reducir
+57,Mujer,0.4,0,bloc,-1,Mantener o Reducir
+31,Hombre,0.4,0,ndp,1,Aumentar
+59,Mujer,0.8,0.5,ndp,1,Aumentar
+62,Mujer,0.3,0,bloc,0,Mantener o Reducir
+20,Hombre,0.6,NA,cons,-1,Mantener o Reducir
+43,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+56,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+29,Hombre,0.8,0.5,ndp,1,Aumentar
+60,Hombre,0.8,0.5,ndp,1,Aumentar
+19,Mujer,0.5,0,other,1,Aumentar
+38,Mujer,0.7,0.5,bloc,0,Mantener o Reducir
+36,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+44,Mujer,1,0,bloc,0,Mantener o Reducir
+22,Mujer,0.5,0,ndp,-1,Mantener o Reducir
+72,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+71,Mujer,0.4,0.25,bloc,0,Mantener o Reducir
+65,Mujer,0.5,0.25,ndp,0,Mantener o Reducir
+43,Hombre,0.8,1,lib,-1,Mantener o Reducir
+33,Mujer,0.5,0.25,other,-1,Mantener o Reducir
+49,Hombre,0.8,1,ndp,1,Aumentar
+42,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+42,Mujer,0.4,0,bloc,1,Aumentar
+44,Mujer,0.9,NA,ndp,1,Aumentar
+50,Mujer,0.8,0,ndp,1,Aumentar
+62,Hombre,0.8,1,cons,-1,Mantener o Reducir
+47,Mujer,0.7,0.75,ndp,0,Mantener o Reducir
+43,Hombre,0.8,NA,ndp,0,Mantener o Reducir
+62,Hombre,0.6,0.5,lib,-1,Mantener o Reducir
+29,Hombre,0.4,0,other,-1,Mantener o Reducir
+29,Mujer,0.6,1,ndp,-1,Mantener o Reducir
+23,Mujer,0.6,0,ndp,-1,Mantener o Reducir
+34,Mujer,0.5,0.5,other,0,Mantener o Reducir
+66,Hombre,1,0.5,ndp,1,Aumentar
+24,Hombre,1,0.25,lib,1,Aumentar
+64,Mujer,0.3,0.25,cons,-1,Mantener o Reducir
+49,Hombre,0.8,NA,ndp,0,Mantener o Reducir
+26,Hombre,0.4,0,lib,1,Aumentar
+36,Mujer,0.4,0.25,ndp,1,Aumentar
+22,Hombre,1,0.5,ndp,0,Mantener o Reducir
+59,Hombre,0.4,0,bloc,1,Aumentar
+19,Mujer,0.5,0,bloc,-1,Mantener o Reducir
+69,Mujer,0.4,0.25,ndp,-1,Mantener o Reducir
+33,Hombre,1,NA,ndp,0,Mantener o Reducir
+31,Mujer,1,0.5,cons,-1,Mantener o Reducir
+45,Mujer,0.6,0.25,lib,1,Aumentar
+35,Mujer,0.6,0.5,lib,-1,Mantener o Reducir
+53,Mujer,1,0,cons,-1,Mantener o Reducir
+31,Hombre,0.9,0,lib,1,Aumentar
+29,Mujer,0.6,0,ndp,1,Aumentar
+74,Mujer,0.4,0.25,other,1,Aumentar
+38,Hombre,0.4,0,other,1,Aumentar
+27,Hombre,0.9,0.5,bloc,1,Aumentar
+34,Hombre,0.6,0.75,ndp,0,Mantener o Reducir
+26,Hombre,0.8,0,lib,0,Mantener o Reducir
+27,Mujer,0.6,0.5,cons,0,Mantener o Reducir
+30,Hombre,0.7,0.5,lib,1,Aumentar
+65,Mujer,0.4,0,other,0,Mantener o Reducir
+59,Hombre,0.5,0.5,ndp,0,Mantener o Reducir
+63,Mujer,0.6,0,lib,1,Aumentar
+38,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+34,Hombre,0.9,0.75,lib,0,Mantener o Reducir
+40,Mujer,0.8,NA,lib,-1,Mantener o Reducir
+54,Hombre,0.4,0,cons,0,Mantener o Reducir
+35,Hombre,0.9,0.25,ndp,-1,Mantener o Reducir
+55,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+63,Hombre,0.6,0.75,ndp,0,Mantener o Reducir
+23,Mujer,0.5,0.5,ndp,-1,Mantener o Reducir
+57,Mujer,1,1,bloc,0,Mantener o Reducir
+74,Hombre,0.5,0,cons,1,Aumentar
+61,Hombre,0.4,0.5,ndp,0,Mantener o Reducir
+43,Mujer,NA,NA,ndp,0,Mantener o Reducir
+25,Hombre,0.3,0.25,other,-1,Mantener o Reducir
+77,Mujer,0.2,0,lib,-1,Mantener o Reducir
+53,Hombre,0.3,0,ndp,1,Aumentar
+55,Mujer,0.5,0.25,ndp,0,Mantener o Reducir
+34,Hombre,0.5,0.25,cons,-1,Mantener o Reducir
+56,Mujer,0.4,0,bloc,1,Aumentar
+66,Mujer,0.6,0.25,cons,0,Mantener o Reducir
+45,Hombre,0.9,0,cons,1,Aumentar
+34,Mujer,1,0.75,lib,-1,Mantener o Reducir
+30,Mujer,0.9,0.5,cons,0,Mantener o Reducir
+42,Mujer,0.4,0.5,bloc,-1,Mantener o Reducir
+71,Mujer,0.7,0.25,ndp,1,Aumentar
+69,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+35,Hombre,0.8,1,ndp,0,Mantener o Reducir
+72,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+30,Hombre,1,0.25,ndp,1,Aumentar
+21,Mujer,0.5,0.5,ndp,1,Aumentar
+31,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+58,Hombre,0.4,0.25,bloc,0,Mantener o Reducir
+52,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+27,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+32,Hombre,0.8,0.5,lib,1,Aumentar
+36,Mujer,0.8,0,ndp,-1,Mantener o Reducir
+62,Mujer,0.4,0,ndp,1,Aumentar
+45,Mujer,0.8,0.5,cons,0,Mantener o Reducir
+28,Mujer,0.8,0.75,other,0,Mantener o Reducir
+41,Hombre,0.5,0.25,bloc,0,Mantener o Reducir
+33,Mujer,0.7,0.25,ndp,1,Aumentar
+62,Mujer,0.8,0.5,lib,1,Aumentar
+64,Mujer,0.4,0,bloc,0,Mantener o Reducir
+67,Mujer,0.5,0.75,bloc,0,Mantener o Reducir
+39,Mujer,0.4,0,ndp,0,Mantener o Reducir
+62,Hombre,0.5,1,ndp,-1,Mantener o Reducir
+72,Mujer,0.6,0,cons,0,Mantener o Reducir
+22,Mujer,0.8,0,ndp,1,Aumentar
+39,Hombre,0.6,0.75,ndp,0,Mantener o Reducir
+70,Mujer,0.3,1,cons,-1,Mantener o Reducir
+53,Mujer,0.8,0,bloc,1,Aumentar
+30,Hombre,0.8,1,ndp,1,Aumentar
+48,Hombre,0.8,1,ndp,0,Mantener o Reducir
+40,Hombre,0.7,0,lib,1,Aumentar
+57,Mujer,0.3,0.25,bloc,-1,Mantener o Reducir
+70,Hombre,0.7,0.75,bloc,0,Mantener o Reducir
+43,Hombre,0.7,0.25,bloc,-1,Mantener o Reducir
+49,Mujer,0.8,1,bloc,0,Mantener o Reducir
+36,Hombre,0.7,0.75,lib,0,Mantener o Reducir
+63,Mujer,0.4,0,bloc,1,Aumentar
+81,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+51,Mujer,0.8,1,ndp,0,Mantener o Reducir
+61,Hombre,0.5,0.75,lib,0,Mantener o Reducir
+26,Mujer,0.8,0.5,ndp,1,Aumentar
+31,Hombre,0.5,0.25,ndp,1,Aumentar
+62,Mujer,0.5,0,cons,-1,Mantener o Reducir
+62,Hombre,0.6,0,bloc,0,Mantener o Reducir
+45,Hombre,0.3,0,cons,-1,Mantener o Reducir
+63,Mujer,0.4,0.25,ndp,1,Aumentar
+29,Hombre,0.8,0.75,ndp,-1,Mantener o Reducir
+61,Hombre,1,1,lib,0,Mantener o Reducir
+34,Hombre,0.8,0.5,other,1,Aumentar
+26,Mujer,0.3,0,bloc,1,Aumentar
+59,Mujer,0.6,0.25,bloc,0,Mantener o Reducir
+59,Hombre,0.6,0,ndp,1,Aumentar
+59,Mujer,0.4,0,bloc,1,Aumentar
+46,Hombre,0.8,0,other,1,Aumentar
+36,Mujer,0.8,0.75,ndp,0,Mantener o Reducir
+68,Mujer,0.7,NA,ndp,0,Mantener o Reducir
+54,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+55,Hombre,0.4,0.25,lib,0,Mantener o Reducir
+55,Mujer,0.4,0,bloc,1,Aumentar
+40,Hombre,0.8,0.25,lib,1,Aumentar
+50,Hombre,0.9,1,ndp,0,Mantener o Reducir
+40,Mujer,0.9,1,bloc,0,Mantener o Reducir
+59,Mujer,0.4,0.5,ndp,1,Aumentar
+66,Hombre,0.7,0.25,cons,-1,Mantener o Reducir
+31,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+25,Hombre,0.9,0,ndp,1,Aumentar
+64,Mujer,0.5,0.25,ndp,-1,Mantener o Reducir
+45,Mujer,1,0,other,0,Mantener o Reducir
+57,Mujer,0.4,0.5,lib,1,Aumentar
+32,Hombre,0.8,0.75,cons,-1,Mantener o Reducir
+55,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+26,Mujer,0.8,0,ndp,1,Aumentar
+67,Hombre,0.4,0.5,bloc,0,Mantener o Reducir
+27,Hombre,0.4,0.5,other,1,Aumentar
+41,Hombre,0.6,0,bloc,-1,Mantener o Reducir
+66,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+50,Hombre,0.5,0,cons,1,Aumentar
+32,Hombre,0.4,0,bloc,1,Aumentar
+74,Hombre,0.8,1,lib,0,Mantener o Reducir
+77,Hombre,0.5,0.25,lib,0,Mantener o Reducir
+47,Mujer,0.5,0,lib,0,Mantener o Reducir
+65,Hombre,0.8,0,bloc,1,Aumentar
+56,Hombre,0.3,0.25,lib,1,Aumentar
+57,Mujer,0.4,0.25,ndp,1,Aumentar
+51,Hombre,0.4,0,bloc,1,Aumentar
+25,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+39,Hombre,0.8,1,cons,-1,Mantener o Reducir
+65,Mujer,0.4,0,lib,1,Aumentar
+54,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+67,Hombre,0.7,0.25,bloc,1,Aumentar
+83,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+46,Mujer,0.6,0.25,bloc,1,Aumentar
+64,Hombre,0.4,0.5,bloc,-1,Mantener o Reducir
+61,Mujer,0.5,0,ndp,0,Mantener o Reducir
+57,Mujer,0.5,NA,other,0,Mantener o Reducir
+56,Hombre,0.8,1,ndp,0,Mantener o Reducir
+50,Hombre,0.4,0,cons,0,Mantener o Reducir
+62,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+22,Mujer,0.7,0,ndp,-1,Mantener o Reducir
+50,Hombre,0.6,0.5,ndp,1,Aumentar
+49,Mujer,0.9,0.25,ndp,0,Mantener o Reducir
+65,Mujer,0.5,0.5,ndp,1,Aumentar
+51,Hombre,0.8,1,cons,0,Mantener o Reducir
+40,Mujer,0.9,1,lib,0,Mantener o Reducir
+74,Hombre,0.9,1,lib,-1,Mantener o Reducir
+72,Hombre,0.4,0.25,ndp,-1,Mantener o Reducir
+37,Mujer,0.4,0.5,other,0,Mantener o Reducir
+53,Mujer,0.7,0.5,bloc,1,Aumentar
+35,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+32,Hombre,0.6,0.75,ndp,0,Mantener o Reducir
+39,Mujer,0.5,0.5,bloc,0,Mantener o Reducir
+33,Hombre,0.7,0.25,lib,-1,Mantener o Reducir
+35,Hombre,0.9,0,ndp,0,Mantener o Reducir
+32,Hombre,0.4,0,cons,1,Aumentar
+57,Mujer,0.3,0.25,ndp,0,Mantener o Reducir
+44,Mujer,1,1,lib,0,Mantener o Reducir
+24,Hombre,0.4,0,cons,-1,Mantener o Reducir
+71,Mujer,0.4,0,lib,0,Mantener o Reducir
+22,Mujer,0.3,0,cons,0,Mantener o Reducir
+59,Hombre,0.8,0.75,ndp,-1,Mantener o Reducir
+71,Hombre,0.1,0.25,ndp,-1,Mantener o Reducir
+67,Hombre,0.3,0,ndp,-1,Mantener o Reducir
+36,Mujer,0.8,0.5,cons,-1,Mantener o Reducir
+65,Hombre,0.7,0.5,ndp,0,Mantener o Reducir
+36,Hombre,0.8,0,bloc,1,Aumentar
+66,Mujer,0.3,0,ndp,0,Mantener o Reducir
+22,Hombre,0.5,0,ndp,1,Aumentar
+65,Hombre,0.4,0.25,cons,1,Aumentar
+52,Mujer,0.5,0.25,cons,-1,Mantener o Reducir
+40,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+50,Hombre,0.6,0.75,bloc,1,Aumentar
+61,Hombre,0.8,0,lib,0,Mantener o Reducir
+51,Mujer,0.5,0,lib,0,Mantener o Reducir
+52,Hombre,0.8,0.5,cons,1,Aumentar
+63,Mujer,0.4,1,lib,0,Mantener o Reducir
+61,Hombre,0.4,0.5,ndp,1,Aumentar
+78,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+27,Mujer,0.8,0.25,ndp,1,Aumentar
+25,Hombre,0.8,0.25,cons,0,Mantener o Reducir
+50,Mujer,0.4,0,bloc,1,Aumentar
+49,Hombre,0.4,0,ndp,1,Aumentar
+59,Mujer,0.4,0.25,bloc,1,Aumentar
+67,Hombre,0.8,0.5,ndp,-1,Mantener o Reducir
+37,Hombre,0.4,0.25,bloc,0,Mantener o Reducir
+26,Mujer,0.4,0,bloc,1,Aumentar
+52,Hombre,0.7,0.5,other,0,Mantener o Reducir
+33,Hombre,1,1,lib,1,Aumentar
+25,Hombre,1,0.75,cons,0,Mantener o Reducir
+61,Hombre,0.7,0.75,other,1,Aumentar
+45,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+53,Hombre,0.8,0.75,bloc,-1,Mantener o Reducir
+55,Hombre,1,1,other,1,Aumentar
+65,Mujer,0.4,NA,bloc,1,Aumentar
+32,Hombre,NA,NA,ndp,1,Aumentar
+30,Mujer,0.4,0.25,ndp,1,Aumentar
+21,Mujer,0.6,NA,other,1,Aumentar
+39,Mujer,0.8,0,lib,0,Mantener o Reducir
+28,Hombre,1,0.5,lib,1,Aumentar
+64,Mujer,0.4,0,ndp,0,Mantener o Reducir
+27,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+69,Mujer,0.5,0.5,cons,0,Mantener o Reducir
+61,Mujer,0.4,0,bloc,1,Aumentar
+62,Mujer,0.4,0,ndp,1,Aumentar
+31,Hombre,0.8,0,cons,0,Mantener o Reducir
+21,Mujer,0.6,0,ndp,1,Aumentar
+61,Hombre,0.9,1,lib,1,Aumentar
+43,Mujer,0.8,1,bloc,0,Mantener o Reducir
+67,Hombre,0.8,0.25,ndp,1,Aumentar
+49,Hombre,1,0,cons,1,Aumentar
+27,Hombre,0.8,0.5,other,-1,Mantener o Reducir
+58,Mujer,0.6,0.5,cons,1,Aumentar
+49,Mujer,0.6,0,bloc,0,Mantener o Reducir
+80,Hombre,0.9,0.25,ndp,-1,Mantener o Reducir
+31,Hombre,0.8,0,ndp,0,Mantener o Reducir
+45,Hombre,0.5,0.75,ndp,0,Mantener o Reducir
+67,Mujer,1,0.75,other,-1,Mantener o Reducir
+24,Hombre,0.8,0,ndp,1,Aumentar
+26,Hombre,0.4,0,bloc,0,Mantener o Reducir
+20,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+35,Mujer,0.8,NA,ndp,-1,Mantener o Reducir
+32,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+43,Hombre,0.3,0,bloc,1,Aumentar
+34,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+28,Mujer,0.8,0.75,lib,0,Mantener o Reducir
+53,Mujer,0.4,0.25,ndp,-1,Mantener o Reducir
+62,Mujer,0.5,0,lib,0,Mantener o Reducir
+47,Hombre,0.3,0.25,ndp,-1,Mantener o Reducir
+18,Hombre,0.5,NA,bloc,0,Mantener o Reducir
+53,Mujer,0.3,0,bloc,1,Aumentar
+47,Mujer,0.3,0,lib,1,Aumentar
+58,Mujer,0.6,1,lib,-1,Mantener o Reducir
+22,Mujer,0.3,0,cons,1,Aumentar
+23,Hombre,0.7,0.5,other,-1,Mantener o Reducir
+67,Mujer,0.4,0.25,ndp,1,Aumentar
+67,Mujer,0.4,0,bloc,0,Mantener o Reducir
+42,Hombre,0.5,0.25,bloc,-1,Mantener o Reducir
+52,Hombre,0.8,0,bloc,1,Aumentar
+63,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+63,Hombre,0.6,0.25,bloc,1,Aumentar
+32,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+36,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+69,Hombre,0.8,0,cons,0,Mantener o Reducir
+63,Mujer,0.4,0,ndp,0,Mantener o Reducir
+21,Hombre,0.5,0.25,bloc,0,Mantener o Reducir
+19,Mujer,0.6,0,ndp,-1,Mantener o Reducir
+67,Hombre,0.5,0,lib,-1,Mantener o Reducir
+74,Hombre,1,1,bloc,-1,Mantener o Reducir
+29,Mujer,0.9,0.5,bloc,-1,Mantener o Reducir
+58,Mujer,0.5,0.25,bloc,0,Mantener o Reducir
+77,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+20,Mujer,0.6,1,other,-1,Mantener o Reducir
+36,Mujer,0.5,0.25,bloc,0,Mantener o Reducir
+73,Mujer,0.6,0,ndp,-1,Mantener o Reducir
+52,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+46,Hombre,0.5,0.5,lib,-1,Mantener o Reducir
+20,Mujer,0.5,0.75,cons,-1,Mantener o Reducir
+67,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+64,Mujer,0.5,0,ndp,1,Aumentar
+27,Mujer,0.4,0,ndp,1,Aumentar
+27,Mujer,0.6,1,ndp,0,Mantener o Reducir
+67,Mujer,0.9,0.5,ndp,1,Aumentar
+54,Hombre,0.8,0.25,ndp,1,Aumentar
+60,Hombre,0.9,0,other,1,Aumentar
+27,Hombre,0.8,0.25,lib,0,Mantener o Reducir
+38,Hombre,0.8,0.5,lib,1,Aumentar
+75,Hombre,0.9,0,ndp,0,Mantener o Reducir
+61,Mujer,0.4,0.5,bloc,0,Mantener o Reducir
+59,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+52,Hombre,1,0.25,bloc,0,Mantener o Reducir
+71,Hombre,0.4,0.25,other,0,Mantener o Reducir
+24,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+75,Hombre,0.5,0.5,cons,0,Mantener o Reducir
+35,Hombre,1,0.5,lib,1,Aumentar
+67,Hombre,0.4,0,bloc,1,Aumentar
+53,Hombre,0.6,0.75,ndp,1,Aumentar
+22,Hombre,1,0,ndp,1,Aumentar
+26,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+43,Hombre,0.5,0.25,bloc,-1,Mantener o Reducir
+74,Hombre,0.8,0.25,lib,1,Aumentar
+73,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+60,Hombre,0.6,0,lib,1,Aumentar
+59,Hombre,0.5,1,ndp,1,Aumentar
+23,Mujer,0.5,0,bloc,-1,Mantener o Reducir
+21,Hombre,0.8,0,cons,-1,Mantener o Reducir
+66,Hombre,0.4,0.5,bloc,0,Mantener o Reducir
+25,Mujer,0.9,0.5,lib,1,Aumentar
+69,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+65,Hombre,0.5,0,cons,0,Mantener o Reducir
+55,Hombre,1,1,ndp,1,Aumentar
+77,Hombre,0.5,0.5,lib,0,Mantener o Reducir
+56,Mujer,0.3,0.25,lib,-1,Mantener o Reducir
+18,Hombre,0.4,0,cons,1,Aumentar
+58,Hombre,0.4,0.25,ndp,-1,Mantener o Reducir
+23,Mujer,0.8,0,lib,1,Aumentar
+65,Hombre,0.6,0.25,bloc,-1,Mantener o Reducir
+37,Hombre,0.8,0.25,bloc,0,Mantener o Reducir
+62,Hombre,0.9,1,ndp,1,Aumentar
+26,Hombre,0.8,0,lib,0,Mantener o Reducir
+39,Hombre,1,0.5,lib,1,Aumentar
+67,Hombre,0.4,0,ndp,-1,Mantener o Reducir
+40,Hombre,0.6,0.5,ndp,-1,Mantener o Reducir
+69,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+66,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+69,Mujer,0.6,0.25,bloc,-1,Mantener o Reducir
+40,Mujer,0.7,1,ndp,0,Mantener o Reducir
+29,Hombre,1,0.5,cons,-1,Mantener o Reducir
+48,Hombre,0.5,1,lib,1,Aumentar
+74,Hombre,0.6,0.75,cons,0,Mantener o Reducir
+60,Mujer,0.4,0,ndp,0,Mantener o Reducir
+72,Hombre,0.8,0.5,ndp,1,Aumentar
+67,Hombre,0.8,0,ndp,1,Aumentar
+61,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+31,Mujer,0.6,0.75,ndp,0,Mantener o Reducir
+35,Hombre,0.3,0.25,ndp,-1,Mantener o Reducir
+60,Hombre,0.6,0,lib,1,Aumentar
+56,Hombre,0.5,0,bloc,1,Aumentar
+69,Hombre,0.4,NA,lib,0,Mantener o Reducir
+50,Mujer,0.8,0.5,cons,-1,Mantener o Reducir
+56,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+63,Hombre,0.4,0.25,bloc,-1,Mantener o Reducir
+35,Mujer,0.6,0.25,other,0,Mantener o Reducir
+31,Hombre,0.3,0.25,ndp,-1,Mantener o Reducir
+41,Mujer,0.8,1,ndp,0,Mantener o Reducir
+58,Hombre,0.3,0,bloc,0,Mantener o Reducir
+34,Hombre,0.8,0.25,lib,1,Aumentar
+47,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+19,Hombre,0.4,1,ndp,1,Aumentar
+55,Mujer,0.4,0.25,bloc,0,Mantener o Reducir
+59,Mujer,0.4,0,bloc,1,Aumentar
+62,Mujer,0.4,0,bloc,1,Aumentar
+66,Hombre,0.6,0,lib,0,Mantener o Reducir
+33,Hombre,1,0.75,ndp,0,Mantener o Reducir
+67,Mujer,1,NA,bloc,1,Aumentar
+47,Hombre,0.4,0,bloc,1,Aumentar
+50,Mujer,0.5,0,bloc,1,Aumentar
+51,Mujer,0.9,0.25,ndp,0,Mantener o Reducir
+43,Mujer,0.6,0.5,bloc,1,Aumentar
+36,Hombre,0.7,0.25,ndp,-1,Mantener o Reducir
+28,Hombre,0.9,0,ndp,0,Mantener o Reducir
+45,Hombre,0.4,0.25,ndp,1,Aumentar
+33,Hombre,0.7,0.75,bloc,-1,Mantener o Reducir
+33,Hombre,0.4,0,lib,1,Aumentar
+60,Hombre,1,0,ndp,1,Aumentar
+36,Mujer,0.8,0.25,cons,-1,Mantener o Reducir
+58,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+52,Mujer,0.8,1,bloc,-1,Mantener o Reducir
+20,Hombre,0,0.75,lib,1,Aumentar
+70,Mujer,0.2,0,bloc,1,Aumentar
+52,Mujer,0.6,0,ndp,1,Aumentar
+42,Mujer,0.4,0.5,other,-1,Mantener o Reducir
+59,Hombre,0.2,0,ndp,1,Aumentar
+61,Hombre,0.4,0.25,other,1,Aumentar
+40,Mujer,0.4,0,lib,1,Aumentar
+46,Hombre,0.7,0.5,ndp,1,Aumentar
+31,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+28,Hombre,0.4,0.75,ndp,0,Mantener o Reducir
+31,Mujer,1,0.5,ndp,0,Mantener o Reducir
+18,Hombre,0.4,1,ndp,1,Aumentar
+54,Hombre,0.4,0.25,ndp,1,Aumentar
+70,Hombre,0.7,0.25,bloc,0,Mantener o Reducir
+50,Mujer,0.5,0.75,ndp,0,Mantener o Reducir
+22,Mujer,0.4,0,ndp,1,Aumentar
+52,Hombre,1,0.5,ndp,0,Mantener o Reducir
+66,Mujer,0.3,0,lib,1,Aumentar
+21,Hombre,0.2,0,bloc,1,Aumentar
+53,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+33,Mujer,0.4,1,bloc,-1,Mantener o Reducir
+49,Hombre,0.9,0.75,ndp,1,Aumentar
+26,Mujer,1,0,ndp,0,Mantener o Reducir
+65,Hombre,0.3,0,bloc,1,Aumentar
+36,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+52,Mujer,0.6,1,ndp,1,Aumentar
+33,Mujer,0.9,NA,ndp,1,Aumentar
+20,Mujer,0.4,0,other,0,Mantener o Reducir
+46,Hombre,1,1,lib,-1,Mantener o Reducir
+35,Hombre,0.9,0,ndp,0,Mantener o Reducir
+41,Hombre,0.8,1,cons,-1,Mantener o Reducir
+32,Hombre,0.6,0.5,bloc,1,Aumentar
+79,Hombre,0.6,0,other,0,Mantener o Reducir
+75,Hombre,0.8,1,ndp,1,Aumentar
+69,Mujer,0.5,0,cons,-1,Mantener o Reducir
+57,Hombre,0.6,0.5,lib,-1,Mantener o Reducir
+19,Hombre,0.3,0.5,cons,1,Aumentar
+54,Hombre,0.9,0.25,cons,-1,Mantener o Reducir
+50,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+42,Hombre,0.8,1,cons,-1,Mantener o Reducir
+63,Hombre,0.4,0,ndp,0,Mantener o Reducir
+60,Hombre,0.4,0.25,bloc,-1,Mantener o Reducir
+55,Mujer,0.4,0,bloc,1,Aumentar
+49,Hombre,0.4,0.25,cons,1,Aumentar
+41,Hombre,0.5,0.75,bloc,-1,Mantener o Reducir
+53,Mujer,0.6,NA,lib,1,Aumentar
+21,Hombre,0.4,0,bloc,1,Aumentar
+69,Mujer,0.6,0.5,ndp,1,Aumentar
+42,Hombre,0.4,1,cons,0,Mantener o Reducir
+60,Hombre,0.4,0,ndp,1,Aumentar
+70,Hombre,0.5,0.25,bloc,0,Mantener o Reducir
+50,Mujer,0.9,1,lib,0,Mantener o Reducir
+37,Hombre,0.4,0.75,bloc,-1,Mantener o Reducir
+25,Mujer,NA,0,bloc,1,Aumentar
+53,Mujer,0.4,0.5,lib,1,Aumentar
+19,Mujer,0.5,1,bloc,1,Aumentar
+42,Hombre,1,0.25,lib,0,Mantener o Reducir
+36,Hombre,0.6,0.75,cons,-1,Mantener o Reducir
+38,Hombre,0.7,0.25,other,-1,Mantener o Reducir
+62,Mujer,0.4,0,bloc,1,Aumentar
+56,Hombre,0.4,0,bloc,1,Aumentar
+50,Hombre,0.5,0,cons,0,Mantener o Reducir
+19,Mujer,0.5,0.5,ndp,0,Mantener o Reducir
+61,Mujer,0.8,0.5,lib,0,Mantener o Reducir
+56,Mujer,0.9,0,ndp,1,Aumentar
+63,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+63,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+72,Mujer,0.5,0,lib,1,Aumentar
+37,Mujer,0.8,0.25,ndp,-1,Mantener o Reducir
+25,Mujer,0.6,0.5,lib,-1,Mantener o Reducir
+45,Mujer,0.7,0,lib,1,Aumentar
+35,Mujer,0.5,1,ndp,-1,Mantener o Reducir
+71,Mujer,0.7,0.5,ndp,1,Aumentar
+59,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+74,Mujer,0.7,NA,ndp,1,Aumentar
+41,Hombre,0.4,0,ndp,1,Aumentar
+61,Hombre,0.8,1,ndp,0,Mantener o Reducir
+28,Hombre,0.4,0.25,bloc,0,Mantener o Reducir
+83,Hombre,0.7,0.25,cons,0,Mantener o Reducir
+21,Mujer,0.8,0.25,bloc,-1,Mantener o Reducir
+20,Hombre,0.3,NA,other,1,Aumentar
+47,Mujer,0.4,0.25,bloc,-1,Mantener o Reducir
+71,Mujer,0.4,0,ndp,1,Aumentar
+64,Hombre,1,0.75,lib,1,Aumentar
+19,Hombre,0.5,0.75,ndp,0,Mantener o Reducir
+25,Hombre,0.7,0.25,lib,-1,Mantener o Reducir
+65,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+45,Mujer,0.8,1,ndp,0,Mantener o Reducir
+68,Hombre,1,1,bloc,1,Aumentar
+52,Mujer,0.4,NA,ndp,1,Aumentar
+62,Hombre,0.8,0.25,ndp,1,Aumentar
+45,Hombre,0.5,0.5,cons,-1,Mantener o Reducir
+41,Hombre,0.4,0.25,bloc,0,Mantener o Reducir
+50,Mujer,0.4,0.5,other,0,Mantener o Reducir
+35,Hombre,0.8,0.75,ndp,-1,Mantener o Reducir
+60,Hombre,0.8,0.25,ndp,-1,Mantener o Reducir
+59,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+25,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+30,Mujer,0.5,0,bloc,1,Aumentar
+68,Mujer,0.4,0.25,lib,-1,Mantener o Reducir
+56,Mujer,0.4,0.75,bloc,1,Aumentar
+74,Mujer,0.9,0.25,lib,1,Aumentar
+44,Mujer,0.8,0,ndp,1,Aumentar
+73,Mujer,0.6,0,bloc,1,Aumentar
+23,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+32,Mujer,1,0.5,cons,-1,Mantener o Reducir
+52,Hombre,0.8,1,ndp,0,Mantener o Reducir
+58,Mujer,0.4,0,ndp,1,Aumentar
+49,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+47,Hombre,0.9,0.5,bloc,1,Aumentar
+49,Mujer,0.6,0.5,cons,-1,Mantener o Reducir
+25,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+64,Hombre,0.9,0.5,ndp,1,Aumentar
+56,Hombre,0.5,0.5,lib,0,Mantener o Reducir
+68,Mujer,0.7,0,lib,-1,Mantener o Reducir
+65,Mujer,0.4,0.25,cons,-1,Mantener o Reducir
+68,Mujer,0.4,0,cons,0,Mantener o Reducir
+65,Hombre,0.7,NA,ndp,0,Mantener o Reducir
+75,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+45,Mujer,0.6,NA,cons,0,Mantener o Reducir
+60,Hombre,0.6,1,lib,1,Aumentar
+72,Hombre,0.9,0.25,ndp,0,Mantener o Reducir
+57,Hombre,0.4,0,ndp,0,Mantener o Reducir
+31,Hombre,1,0.75,cons,1,Aumentar
+49,Hombre,0.3,0,ndp,1,Aumentar
+41,Hombre,0.9,1,cons,0,Mantener o Reducir
+19,Mujer,0.5,NA,ndp,0,Mantener o Reducir
+39,Hombre,0.8,0.25,ndp,-1,Mantener o Reducir
+37,Mujer,1,0.25,other,-1,Mantener o Reducir
+48,Mujer,0.5,0.75,lib,-1,Mantener o Reducir
+50,Mujer,0.4,0,lib,1,Aumentar
+52,Hombre,0.5,NA,bloc,0,Mantener o Reducir
+40,Mujer,1,0,lib,1,Aumentar
+59,Mujer,0.4,NA,bloc,0,Mantener o Reducir
+54,Mujer,0.4,0.25,lib,1,Aumentar
+49,Mujer,0.8,0.25,other,1,Aumentar
+29,Mujer,0.8,0.5,bloc,1,Aumentar
+42,Mujer,0.5,0,lib,-1,Mantener o Reducir
+61,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+21,Hombre,0.7,0.75,lib,1,Aumentar
+63,Mujer,0.6,0,bloc,0,Mantener o Reducir
+35,Hombre,0.4,0.75,bloc,0,Mantener o Reducir
+78,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+32,Hombre,0.8,0.5,lib,-1,Mantener o Reducir
+45,Hombre,0.8,NA,lib,0,Mantener o Reducir
+63,Hombre,0.6,0.75,lib,-1,Mantener o Reducir
+34,Mujer,0.6,0.5,bloc,1,Aumentar
+34,Mujer,0.8,0.5,other,0,Mantener o Reducir
+46,Mujer,0.6,1,ndp,0,Mantener o Reducir
+52,Mujer,0.6,0.25,cons,0,Mantener o Reducir
+67,Hombre,0.8,0.5,ndp,-1,Mantener o Reducir
+20,Mujer,1,1,lib,-1,Mantener o Reducir
+41,Mujer,0.4,0.25,bloc,1,Aumentar
+64,Mujer,1,0.25,bloc,0,Mantener o Reducir
+61,Hombre,0.5,0.75,lib,0,Mantener o Reducir
+34,Hombre,0.5,0,ndp,1,Aumentar
+66,Mujer,0.5,0,lib,-1,Mantener o Reducir
+69,Hombre,0.7,0.5,lib,0,Mantener o Reducir
+57,Hombre,0.4,0.25,lib,-1,Mantener o Reducir
+40,Mujer,0.7,1,bloc,-1,Mantener o Reducir
+66,Hombre,0.9,0.25,cons,-1,Mantener o Reducir
+36,Mujer,0.8,0.75,bloc,-1,Mantener o Reducir
+51,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+52,Hombre,0.9,NA,cons,-1,Mantener o Reducir
+62,Mujer,0.4,0.5,bloc,0,Mantener o Reducir
+53,Mujer,0.4,1,ndp,1,Aumentar
+64,Hombre,0.9,0.25,ndp,0,Mantener o Reducir
+30,Mujer,0.6,0.5,ndp,-1,Mantener o Reducir
+42,Hombre,0.6,0.25,other,0,Mantener o Reducir
+50,Hombre,0.4,0.5,ndp,-1,Mantener o Reducir
+21,Hombre,0.6,1,ndp,1,Aumentar
+61,Hombre,0.5,0.5,lib,0,Mantener o Reducir
+64,Mujer,0.4,NA,bloc,1,Aumentar
+22,Mujer,0.8,0.25,other,-1,Mantener o Reducir
+45,Mujer,0.8,0.75,lib,0,Mantener o Reducir
+47,Mujer,0.7,0.25,ndp,1,Aumentar
+48,Mujer,0.5,0,ndp,1,Aumentar
+24,Mujer,0.5,NA,ndp,1,Aumentar
+57,Hombre,0.4,1,ndp,0,Mantener o Reducir
+23,Hombre,0.9,0,ndp,1,Aumentar
+54,Mujer,0.8,0.25,cons,0,Mantener o Reducir
+65,Hombre,0.4,0.25,bloc,-1,Mantener o Reducir
+33,Mujer,0.8,0.5,bloc,1,Aumentar
+26,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+64,Hombre,0.5,0,lib,1,Aumentar
+53,Mujer,0.3,0.25,lib,-1,Mantener o Reducir
+41,Mujer,0.8,0.75,ndp,0,Mantener o Reducir
+69,Mujer,0.7,0,ndp,1,Aumentar
+32,Hombre,0.5,0.5,other,0,Mantener o Reducir
+62,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+42,Hombre,0.5,1,cons,-1,Mantener o Reducir
+40,Hombre,0.8,0,lib,1,Aumentar
+24,Mujer,0.5,0.25,ndp,0,Mantener o Reducir
+69,Mujer,0.8,0.25,bloc,0,Mantener o Reducir
+52,Mujer,0.5,0,other,0,Mantener o Reducir
+66,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+34,Hombre,0.8,1,ndp,1,Aumentar
+55,Hombre,0.5,0.25,ndp,1,Aumentar
+48,Mujer,0.4,0.25,bloc,0,Mantener o Reducir
+36,Hombre,NA,NA,ndp,1,Aumentar
+74,Hombre,0.9,0.5,ndp,1,Aumentar
+29,Hombre,0.6,0,bloc,-1,Mantener o Reducir
+44,Hombre,0.8,NA,ndp,0,Mantener o Reducir
+69,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+27,Hombre,0.6,0.25,ndp,-1,Mantener o Reducir
+25,Mujer,0.8,0.25,lib,1,Aumentar
+73,Mujer,0.8,0.25,ndp,1,Aumentar
+31,Hombre,0.6,0.5,lib,-1,Mantener o Reducir
+67,Mujer,0.4,NA,other,0,Mantener o Reducir
+65,Mujer,0.6,0,lib,0,Mantener o Reducir
+44,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+40,Mujer,0.7,0.75,ndp,1,Aumentar
+48,Hombre,0.5,0,other,1,Aumentar
+72,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+40,Mujer,0.6,0.25,lib,1,Aumentar
+45,Hombre,0.4,0.5,cons,0,Mantener o Reducir
+62,Mujer,0.5,0.25,bloc,0,Mantener o Reducir
+23,Hombre,0.8,0,lib,1,Aumentar
+38,Hombre,0.3,0.25,lib,-1,Mantener o Reducir
+46,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+30,Mujer,0.6,0.5,ndp,-1,Mantener o Reducir
+71,Mujer,0.4,NA,cons,0,Mantener o Reducir
+38,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+34,Hombre,0.8,0,ndp,1,Aumentar
+70,Hombre,0.7,0,cons,-1,Mantener o Reducir
+49,Hombre,0.4,0.25,bloc,1,Aumentar
+37,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+52,Hombre,0.8,0.25,bloc,0,Mantener o Reducir
+63,Hombre,0.7,0.5,ndp,1,Aumentar
+65,Hombre,0.4,0,ndp,1,Aumentar
+55,Hombre,0.5,0.75,ndp,1,Aumentar
+36,Hombre,0.5,0,other,-1,Mantener o Reducir
+60,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+51,Hombre,0.4,0.5,lib,-1,Mantener o Reducir
+51,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+47,Mujer,0.8,0.25,bloc,-1,Mantener o Reducir
+51,Hombre,0.5,1,ndp,0,Mantener o Reducir
+20,Mujer,0.3,0,bloc,-1,Mantener o Reducir
+59,Mujer,0.8,0,lib,1,Aumentar
+41,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+36,Hombre,0.6,0,ndp,0,Mantener o Reducir
+35,Hombre,0.8,1,ndp,0,Mantener o Reducir
+55,Hombre,0.4,0.75,cons,-1,Mantener o Reducir
+29,Hombre,0.8,0.5,lib,1,Aumentar
+37,Mujer,1,0.25,lib,0,Mantener o Reducir
+21,Mujer,0.5,0.5,ndp,1,Aumentar
+36,Hombre,0.6,1,ndp,-1,Mantener o Reducir
+23,Mujer,0.5,0.25,ndp,-1,Mantener o Reducir
+47,Hombre,1,0.25,cons,1,Aumentar
+28,Mujer,0.9,0.75,lib,-1,Mantener o Reducir
+29,Mujer,0.4,0.25,cons,-1,Mantener o Reducir
+66,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+47,Hombre,0.6,0,cons,0,Mantener o Reducir
+24,Mujer,0.5,0.75,lib,-1,Mantener o Reducir
+64,Hombre,0.6,0.25,ndp,1,Aumentar
+48,Mujer,0.5,0,cons,-1,Mantener o Reducir
+59,Hombre,1,0,ndp,1,Aumentar
+44,Hombre,0.5,0.25,ndp,-1,Mantener o Reducir
+35,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+54,Mujer,0.4,0,ndp,0,Mantener o Reducir
+48,Mujer,0.5,0.5,other,0,Mantener o Reducir
+44,Mujer,0.7,0,cons,1,Aumentar
+22,Mujer,0.6,0,lib,-1,Mantener o Reducir
+62,Mujer,0.5,0,lib,0,Mantener o Reducir
+52,Hombre,0.9,0.5,ndp,0,Mantener o Reducir
+65,Hombre,0.8,0.5,ndp,1,Aumentar
+62,Hombre,0.3,0,ndp,1,Aumentar
+33,Hombre,0.5,0.25,cons,-1,Mantener o Reducir
+21,Hombre,0.5,1,lib,0,Mantener o Reducir
+42,Hombre,1,0.25,bloc,-1,Mantener o Reducir
+59,Hombre,1,0.25,cons,-1,Mantener o Reducir
+19,Hombre,0.5,0.25,bloc,1,Aumentar
+52,Hombre,0.6,0,ndp,0,Mantener o Reducir
+33,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+61,Mujer,0.6,0,bloc,1,Aumentar
+40,Hombre,0.6,0.5,lib,0,Mantener o Reducir
+29,Mujer,0.8,0.5,cons,-1,Mantener o Reducir
+38,Mujer,0.8,0.5,cons,0,Mantener o Reducir
+19,Hombre,0.4,0,cons,-1,Mantener o Reducir
+59,Mujer,1,0,lib,0,Mantener o Reducir
+53,Mujer,0.6,0,ndp,1,Aumentar
+44,Mujer,0.3,0,ndp,1,Aumentar
+71,Mujer,0.6,0.25,other,-1,Mantener o Reducir
+61,Hombre,0.5,0,ndp,1,Aumentar
+41,Mujer,0.8,0.25,bloc,-1,Mantener o Reducir
+30,Hombre,1,0.5,bloc,-1,Mantener o Reducir
+66,Mujer,0.4,0.25,bloc,0,Mantener o Reducir
+25,Mujer,0.8,0,lib,0,Mantener o Reducir
+52,Hombre,0.5,0.25,lib,1,Aumentar
+35,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+62,Mujer,0.5,0.25,ndp,-1,Mantener o Reducir
+79,Hombre,0.3,0.25,cons,0,Mantener o Reducir
+49,Mujer,1,0.25,bloc,1,Aumentar
+35,Hombre,0.9,0.75,lib,0,Mantener o Reducir
+42,Mujer,0.6,0.5,bloc,0,Mantener o Reducir
+39,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+59,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+66,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+35,Hombre,0.7,0,ndp,-1,Mantener o Reducir
+48,Hombre,0.7,0.5,ndp,1,Aumentar
+67,Hombre,0.6,0.25,lib,1,Aumentar
+33,Mujer,0.7,0.75,bloc,0,Mantener o Reducir
+21,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+68,Hombre,0.4,0.25,other,0,Mantener o Reducir
+67,Hombre,0.4,0.25,ndp,1,Aumentar
+47,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+62,Hombre,0.6,0.25,bloc,1,Aumentar
+52,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+54,Mujer,0.3,0.25,bloc,-1,Mantener o Reducir
+48,Hombre,0.4,0,bloc,1,Aumentar
+42,Hombre,0.7,0.25,cons,-1,Mantener o Reducir
+54,Hombre,0.4,0.25,bloc,1,Aumentar
+55,Mujer,0.7,0.5,bloc,0,Mantener o Reducir
+33,Hombre,0.6,0,lib,-1,Mantener o Reducir
+57,Hombre,0.7,0,lib,0,Mantener o Reducir
+53,Hombre,1,0.25,ndp,0,Mantener o Reducir
+62,Mujer,0.4,0,ndp,1,Aumentar
+43,Mujer,0.7,1,cons,0,Mantener o Reducir
+36,Hombre,0.4,0,lib,1,Aumentar
+20,Hombre,0.5,0.75,lib,0,Mantener o Reducir
+39,Hombre,0.6,0.75,bloc,1,Aumentar
+19,Mujer,0.6,0,bloc,1,Aumentar
+51,Hombre,0.8,0.5,bloc,0,Mantener o Reducir
+69,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+49,Hombre,0.7,0.5,ndp,1,Aumentar
+35,Hombre,0.7,0.75,cons,-1,Mantener o Reducir
+65,Mujer,0.8,0.25,lib,1,Aumentar
+51,Hombre,0.4,0.5,ndp,-1,Mantener o Reducir
+65,Hombre,0.7,0.5,bloc,0,Mantener o Reducir
+31,Hombre,0.7,0,other,1,Aumentar
+32,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+48,Mujer,0.9,0.5,lib,0,Mantener o Reducir
+51,Mujer,0.5,0.5,ndp,-1,Mantener o Reducir
+19,Hombre,0.4,1,lib,1,Aumentar
+27,Hombre,0.9,0,ndp,1,Aumentar
+23,Mujer,1,0,bloc,-1,Mantener o Reducir
+57,Mujer,0.6,0,ndp,0,Mantener o Reducir
+35,Hombre,0.5,0.25,ndp,-1,Mantener o Reducir
+81,Hombre,0.8,0.25,ndp,1,Aumentar
+33,Hombre,0.6,0.75,other,-1,Mantener o Reducir
+22,Mujer,0.7,0.25,ndp,1,Aumentar
+45,Hombre,0.4,0.25,bloc,-1,Mantener o Reducir
+32,Hombre,0.4,0,lib,1,Aumentar
+41,Mujer,1,1,other,1,Aumentar
+65,Mujer,0.6,0.5,cons,-1,Mantener o Reducir
+43,Hombre,0.4,0.75,cons,-1,Mantener o Reducir
+62,Hombre,0.7,0.5,bloc,0,Mantener o Reducir
+55,Mujer,0.4,0.5,bloc,-1,Mantener o Reducir
+52,Mujer,0.9,0.25,lib,-1,Mantener o Reducir
+38,Mujer,0.7,0.25,ndp,1,Aumentar
+34,Hombre,0.9,0,other,1,Aumentar
+21,Mujer,0.7,0.75,lib,1,Aumentar
+67,Mujer,0.4,0,bloc,-1,Mantener o Reducir
+59,Hombre,0.5,1,ndp,1,Aumentar
+46,Hombre,0.4,0.75,ndp,0,Mantener o Reducir
+62,Mujer,0.4,0.25,lib,1,Aumentar
+64,Mujer,0.6,0,bloc,-1,Mantener o Reducir
+46,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+33,Hombre,0.7,0,lib,1,Aumentar
+50,Mujer,0.6,0,ndp,0,Mantener o Reducir
+23,Hombre,0.8,NA,cons,0,Mantener o Reducir
+29,Mujer,0.8,0,ndp,1,Aumentar
+33,Hombre,0.5,0.75,ndp,0,Mantener o Reducir
+40,Hombre,0.9,0.25,ndp,0,Mantener o Reducir
+66,Hombre,0.4,0.25,bloc,0,Mantener o Reducir
+44,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+53,Hombre,0.8,0.5,ndp,-1,Mantener o Reducir
+42,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+20,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+54,Hombre,0.4,0.25,lib,-1,Mantener o Reducir
+36,Hombre,0.3,0.25,ndp,1,Aumentar
+72,Hombre,0.8,0.25,bloc,1,Aumentar
+43,Hombre,0.6,0,ndp,0,Mantener o Reducir
+71,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+38,Mujer,0.4,1,ndp,0,Mantener o Reducir
+32,Mujer,0.6,0.25,cons,0,Mantener o Reducir
+48,Hombre,0.4,0,bloc,1,Aumentar
+52,Hombre,0.8,0.5,other,1,Aumentar
+72,Mujer,0.5,0,ndp,-1,Mantener o Reducir
+19,Mujer,0.5,0.25,lib,1,Aumentar
+47,Mujer,0.5,0,lib,-1,Mantener o Reducir
+75,Hombre,0.9,0.25,ndp,0,Mantener o Reducir
+52,Hombre,0.5,0.25,cons,0,Mantener o Reducir
+56,Mujer,0.9,1,lib,0,Mantener o Reducir
+49,Hombre,0.5,0.25,ndp,1,Aumentar
+23,Hombre,0.7,0.25,lib,1,Aumentar
+25,Hombre,0.6,1,bloc,0,Mantener o Reducir
+56,Mujer,0.7,0.75,ndp,0,Mantener o Reducir
+48,Hombre,0.4,0.5,lib,-1,Mantener o Reducir
+64,Mujer,0.5,0,lib,0,Mantener o Reducir
+66,Hombre,0.7,0.5,cons,-1,Mantener o Reducir
+20,Mujer,0.3,0,lib,1,Aumentar
+69,Hombre,0.7,0.25,cons,0,Mantener o Reducir
+24,Hombre,0.7,0,cons,-1,Mantener o Reducir
+35,Mujer,0.5,0,ndp,0,Mantener o Reducir
+29,Hombre,0.8,0.5,ndp,1,Aumentar
+30,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+24,Mujer,0.5,0.75,ndp,-1,Mantener o Reducir
+58,Mujer,1,0.25,bloc,-1,Mantener o Reducir
+66,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+44,Mujer,0.5,0,bloc,0,Mantener o Reducir
+28,Hombre,0.8,0.5,bloc,0,Mantener o Reducir
+72,Mujer,0.4,0.25,cons,0,Mantener o Reducir
+43,Hombre,0.6,0.75,lib,0,Mantener o Reducir
+51,Hombre,0.6,0.5,ndp,-1,Mantener o Reducir
+27,Mujer,0.6,0.5,bloc,0,Mantener o Reducir
+65,Hombre,0.7,0.25,bloc,0,Mantener o Reducir
+29,Mujer,0.8,0.5,lib,-1,Mantener o Reducir
+63,Hombre,0.8,0.25,bloc,1,Aumentar
+40,Mujer,0.8,0.25,lib,-1,Mantener o Reducir
+40,Hombre,0.5,0.75,lib,1,Aumentar
+58,Mujer,0.8,0.5,bloc,1,Aumentar
+56,Mujer,0.3,0,cons,0,Mantener o Reducir
+67,Hombre,1,0.5,bloc,1,Aumentar
+74,Mujer,0.9,0.5,ndp,1,Aumentar
+64,Mujer,0.4,0.25,ndp,-1,Mantener o Reducir
+70,Hombre,0.6,1,cons,-1,Mantener o Reducir
+26,Hombre,0.4,0.5,ndp,0,Mantener o Reducir
+58,Hombre,0.3,0.25,ndp,-1,Mantener o Reducir
+26,Hombre,0.5,0.25,cons,-1,Mantener o Reducir
+59,Mujer,0.6,1,bloc,0,Mantener o Reducir
+72,Hombre,0.4,0.25,lib,-1,Mantener o Reducir
+46,Mujer,1,NA,ndp,-1,Mantener o Reducir
+65,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+36,Hombre,0.7,0,bloc,-1,Mantener o Reducir
+44,Hombre,0.2,1,bloc,1,Aumentar
+68,Hombre,0.8,0.25,cons,1,Aumentar
+66,Hombre,0.8,0.5,cons,0,Mantener o Reducir
+31,Hombre,0.6,0.25,ndp,-1,Mantener o Reducir
+78,Hombre,0.9,NA,lib,1,Aumentar
+43,Hombre,0.5,0,bloc,1,Aumentar
+33,Hombre,0.8,0.25,lib,-1,Mantener o Reducir
+67,Mujer,0.6,0.25,bloc,0,Mantener o Reducir
+46,Hombre,0.4,0.25,ndp,-1,Mantener o Reducir
+26,Hombre,0.7,1,ndp,0,Mantener o Reducir
+27,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+55,Hombre,0.4,NA,ndp,-1,Mantener o Reducir
+65,Hombre,0.7,NA,ndp,-1,Mantener o Reducir
+22,Mujer,0.7,0.25,cons,1,Aumentar
+39,Hombre,0.7,0.25,lib,1,Aumentar
+56,Mujer,0.4,0.25,ndp,1,Aumentar
+58,Mujer,0.5,0.25,cons,-1,Mantener o Reducir
+45,Hombre,0.5,0,lib,1,Aumentar
+58,Mujer,0.3,0,other,1,Aumentar
+68,Mujer,0.2,0,cons,0,Mantener o Reducir
+46,Mujer,0.8,0,lib,0,Mantener o Reducir
+33,Mujer,0.9,0.5,cons,0,Mantener o Reducir
+40,Hombre,0.3,0.5,cons,0,Mantener o Reducir
+55,Hombre,0.6,1,ndp,0,Mantener o Reducir
+65,Mujer,0.6,0,ndp,1,Aumentar
+59,Mujer,1,0.25,ndp,1,Aumentar
+64,Hombre,0.5,0,ndp,0,Mantener o Reducir
+29,Hombre,0.4,0,ndp,1,Aumentar
+44,Hombre,0.4,0.25,lib,0,Mantener o Reducir
+49,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+67,Hombre,0.6,1,ndp,0,Mantener o Reducir
+69,Hombre,0.7,0.25,cons,-1,Mantener o Reducir
+23,Hombre,0.7,0,cons,-1,Mantener o Reducir
+41,Hombre,0.8,0,lib,-1,Mantener o Reducir
+48,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+39,Hombre,0.6,0.25,lib,1,Aumentar
+66,Mujer,0.8,NA,lib,0,Mantener o Reducir
+58,Mujer,0.6,0.25,ndp,1,Aumentar
+69,Mujer,0.6,0,ndp,-1,Mantener o Reducir
+45,Hombre,0.3,0,ndp,1,Aumentar
+47,Hombre,1,0.25,lib,-1,Mantener o Reducir
+64,Hombre,0.8,0.25,ndp,1,Aumentar
+39,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+46,Hombre,0.8,0,ndp,1,Aumentar
+19,Hombre,0.5,0.5,other,-1,Mantener o Reducir
+72,Hombre,0.2,0.25,lib,0,Mantener o Reducir
+78,Hombre,0.8,0.5,bloc,-1,Mantener o Reducir
+56,Mujer,0.3,0,lib,1,Aumentar
+37,Mujer,0.8,0.5,ndp,0,Mantener o Reducir
+62,Hombre,0.5,0.25,lib,-1,Mantener o Reducir
+79,Hombre,0.7,0.5,cons,-1,Mantener o Reducir
+62,Hombre,0.4,0.5,bloc,1,Aumentar
+55,Mujer,0.4,0.5,cons,-1,Mantener o Reducir
+63,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+66,Mujer,0.4,0,ndp,1,Aumentar
+68,Hombre,0.3,0,cons,-1,Mantener o Reducir
+69,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+41,Hombre,0.9,0.75,ndp,-1,Mantener o Reducir
+59,Mujer,0.6,0.75,ndp,0,Mantener o Reducir
+74,Hombre,0.6,0,cons,1,Aumentar
+49,Mujer,0.7,0.5,ndp,-1,Mantener o Reducir
+23,Hombre,0.4,0.25,ndp,1,Aumentar
+67,Hombre,0.6,0.25,lib,-1,Mantener o Reducir
+51,Mujer,0.6,0.75,bloc,0,Mantener o Reducir
+64,Hombre,0.5,0,ndp,0,Mantener o Reducir
+27,Mujer,0.6,0.5,ndp,-1,Mantener o Reducir
+66,Hombre,0.6,0.75,lib,0,Mantener o Reducir
+54,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+68,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+57,Hombre,0.8,0.5,bloc,1,Aumentar
+54,Hombre,0.9,0.25,ndp,1,Aumentar
+49,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+26,Mujer,0.8,0.75,lib,0,Mantener o Reducir
+42,Hombre,0.3,0,lib,0,Mantener o Reducir
+54,Hombre,0.4,0.25,bloc,0,Mantener o Reducir
+31,Hombre,0.4,NA,ndp,-1,Mantener o Reducir
+23,Hombre,0.7,0.25,bloc,1,Aumentar
+61,Hombre,0.3,0.25,bloc,-1,Mantener o Reducir
+70,Mujer,0.7,0.25,lib,0,Mantener o Reducir
+21,Hombre,0.5,0.25,ndp,1,Aumentar
+38,Hombre,0.5,0,other,-1,Mantener o Reducir
+83,Mujer,0.7,0,lib,0,Mantener o Reducir
+58,Mujer,0.6,0,ndp,-1,Mantener o Reducir
+58,Mujer,1,0.75,bloc,0,Mantener o Reducir
+38,Hombre,0.5,NA,other,0,Mantener o Reducir
+20,Mujer,0.7,1,ndp,-1,Mantener o Reducir
+67,Mujer,0.6,0.5,ndp,-1,Mantener o Reducir
+61,Mujer,0.5,0.25,ndp,-1,Mantener o Reducir
+56,Hombre,0.4,0,lib,0,Mantener o Reducir
+26,Mujer,0.7,0.75,ndp,1,Aumentar
+53,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+62,Hombre,0.8,0,ndp,0,Mantener o Reducir
+35,Mujer,0.4,0,cons,-1,Mantener o Reducir
+63,Hombre,0.6,0.25,bloc,0,Mantener o Reducir
+34,Mujer,0.6,0.25,bloc,0,Mantener o Reducir
+62,Hombre,0.7,0.5,lib,1,Aumentar
+33,Mujer,0.5,0.25,lib,-1,Mantener o Reducir
+64,Hombre,0.9,0.5,ndp,0,Mantener o Reducir
+22,Mujer,0.4,0.5,bloc,0,Mantener o Reducir
+64,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+41,Mujer,0.4,0,bloc,1,Aumentar
+51,Hombre,0.9,0.5,lib,-1,Mantener o Reducir
+68,Hombre,0.4,0,cons,-1,Mantener o Reducir
+33,Hombre,0.8,0,ndp,1,Aumentar
+57,Hombre,0.8,0.5,other,0,Mantener o Reducir
+60,Mujer,0.8,0,bloc,1,Aumentar
+29,Hombre,0.7,0.25,other,-1,Mantener o Reducir
+68,Mujer,0.6,0.25,cons,-1,Mantener o Reducir
+38,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+50,Mujer,0.8,1,cons,1,Aumentar
+75,Mujer,0.6,0.75,ndp,0,Mantener o Reducir
+21,Hombre,0.6,0,bloc,0,Mantener o Reducir
+23,Mujer,0.5,0.5,bloc,-1,Mantener o Reducir
+71,Hombre,0.6,0.25,bloc,0,Mantener o Reducir
+48,Hombre,0.4,0.5,bloc,0,Mantener o Reducir
+50,Mujer,0.8,0.5,lib,1,Aumentar
+55,Hombre,0.7,1,cons,0,Mantener o Reducir
+67,Hombre,0.5,0,ndp,0,Mantener o Reducir
+55,Hombre,0.6,0.5,cons,0,Mantener o Reducir
+21,Hombre,0.6,0.25,ndp,1,Aumentar
+62,Hombre,0.5,1,lib,-1,Mantener o Reducir
+59,Mujer,0.8,0,lib,1,Aumentar
+55,Hombre,0.8,0.5,ndp,1,Aumentar
+50,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+44,Hombre,0.8,1,cons,-1,Mantener o Reducir
+69,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+77,Hombre,0.8,NA,ndp,-1,Mantener o Reducir
+40,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+26,Hombre,0.8,0.5,ndp,1,Aumentar
+69,Mujer,0.7,0.25,ndp,0,Mantener o Reducir
+28,Hombre,0.7,0,ndp,0,Mantener o Reducir
+53,Hombre,0.4,1,cons,-1,Mantener o Reducir
+61,Mujer,0.4,0.25,lib,1,Aumentar
+42,Mujer,1,0.5,bloc,-1,Mantener o Reducir
+44,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+69,Hombre,0.4,0.25,ndp,1,Aumentar
+35,Hombre,0.6,0,ndp,1,Aumentar
+21,Mujer,0.7,NA,ndp,1,Aumentar
+33,Hombre,0.7,0.5,lib,0,Mantener o Reducir
+64,Mujer,0.7,0,ndp,-1,Mantener o Reducir
+48,Hombre,0.5,0.5,other,-1,Mantener o Reducir
+37,Mujer,0.8,0.25,ndp,1,Aumentar
+20,Mujer,0.6,0,other,0,Mantener o Reducir
+61,Mujer,0.6,0.5,lib,1,Aumentar
+27,Mujer,0.9,1,bloc,0,Mantener o Reducir
+76,Mujer,0.4,0,lib,0,Mantener o Reducir
+42,Hombre,0.7,0.5,bloc,-1,Mantener o Reducir
+38,Mujer,0.4,0,other,1,Aumentar
+35,Hombre,0.8,1,ndp,0,Mantener o Reducir
+79,Hombre,0.7,0,bloc,0,Mantener o Reducir
+49,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+72,Hombre,0.5,0.25,ndp,-1,Mantener o Reducir
+50,Hombre,0.6,0.5,ndp,-1,Mantener o Reducir
+24,Hombre,0.5,0.5,cons,0,Mantener o Reducir
+67,Mujer,0.6,1,ndp,0,Mantener o Reducir
+45,Mujer,0.3,0,cons,0,Mantener o Reducir
+44,Hombre,0.5,1,bloc,1,Aumentar
+71,Mujer,0.4,0.25,cons,-1,Mantener o Reducir
+29,Mujer,0.4,0.5,cons,-1,Mantener o Reducir
+22,Hombre,0.3,0,lib,1,Aumentar
+38,Hombre,0.6,0.5,lib,1,Aumentar
+54,Mujer,0.7,0,ndp,-1,Mantener o Reducir
+18,Hombre,0.4,0,ndp,-1,Mantener o Reducir
+21,Mujer,0.4,0.25,lib,-1,Mantener o Reducir
+19,Hombre,0.6,1,ndp,-1,Mantener o Reducir
+29,Hombre,0.4,0.5,ndp,-1,Mantener o Reducir
+68,Hombre,0.9,0,ndp,0,Mantener o Reducir
+70,Hombre,0.7,0.5,ndp,0,Mantener o Reducir
+49,Hombre,0.6,0,bloc,1,Aumentar
+53,Hombre,0.5,0.25,lib,-1,Mantener o Reducir
+21,Hombre,0.4,0,bloc,0,Mantener o Reducir
+55,Hombre,0.7,0,ndp,1,Aumentar
+72,Mujer,0.8,0.5,cons,0,Mantener o Reducir
+47,Mujer,0.9,1,bloc,0,Mantener o Reducir
+42,Hombre,0.3,0,ndp,1,Aumentar
+37,Mujer,0.4,0,cons,1,Aumentar
+42,Hombre,0.4,0.5,lib,0,Mantener o Reducir
+62,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+60,Hombre,0.8,0,lib,1,Aumentar
+26,Hombre,0.6,0.75,bloc,0,Mantener o Reducir
+26,Hombre,0.6,0.25,ndp,-1,Mantener o Reducir
+63,Mujer,0.4,0.25,ndp,0,Mantener o Reducir
+18,Hombre,0.3,0.5,ndp,1,Aumentar
+47,Mujer,0.6,0.75,ndp,1,Aumentar
+65,Hombre,0.4,0.5,lib,0,Mantener o Reducir
+28,Hombre,0.8,0.25,other,1,Aumentar
+23,Mujer,0.5,0.25,other,1,Aumentar
+56,Hombre,0.6,0.5,cons,1,Aumentar
+38,Mujer,0.4,0,bloc,0,Mantener o Reducir
+49,Hombre,0.6,1,cons,-1,Mantener o Reducir
+66,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+34,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+37,Hombre,1,0.5,ndp,-1,Mantener o Reducir
+33,Mujer,0.5,0.5,ndp,-1,Mantener o Reducir
+26,Mujer,0.7,0.5,ndp,-1,Mantener o Reducir
+33,Hombre,0.8,1,ndp,0,Mantener o Reducir
+46,Hombre,0.7,0.25,lib,0,Mantener o Reducir
+74,Hombre,0.7,0.25,cons,1,Aumentar
+54,Mujer,0.6,1,ndp,0,Mantener o Reducir
+53,Hombre,0.6,0.25,bloc,1,Aumentar
+75,Hombre,1,0.5,lib,0,Mantener o Reducir
+29,Hombre,1,NA,ndp,1,Aumentar
+57,Mujer,0.6,0.5,ndp,-1,Mantener o Reducir
+66,Mujer,0.4,NA,ndp,-1,Mantener o Reducir
+60,Mujer,0.4,0.25,lib,-1,Mantener o Reducir
+59,Mujer,0.3,0.5,ndp,-1,Mantener o Reducir
+64,Hombre,0.7,0.25,cons,-1,Mantener o Reducir
+50,Mujer,0.9,0.75,ndp,0,Mantener o Reducir
+59,Mujer,0.9,1,bloc,0,Mantener o Reducir
+71,Mujer,0.8,0.25,lib,0,Mantener o Reducir
+26,Hombre,0.8,0.25,ndp,-1,Mantener o Reducir
+28,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+69,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+75,Hombre,0.4,0,lib,0,Mantener o Reducir
+51,Mujer,0.3,0,lib,-1,Mantener o Reducir
+58,Mujer,0.4,0.25,ndp,-1,Mantener o Reducir
+68,Mujer,0.6,0,lib,0,Mantener o Reducir
+52,Mujer,0.8,0.5,other,0,Mantener o Reducir
+65,Mujer,0.4,NA,ndp,-1,Mantener o Reducir
+60,Mujer,0.4,0.25,bloc,-1,Mantener o Reducir
+58,Mujer,0.8,0.5,other,0,Mantener o Reducir
+35,Mujer,0.6,0.25,bloc,1,Aumentar
+64,Mujer,0.4,0.25,cons,1,Aumentar
+20,Mujer,0.6,0.5,ndp,-1,Mantener o Reducir
+42,Mujer,0.4,0.5,bloc,0,Mantener o Reducir
+66,Hombre,0.4,0.5,ndp,0,Mantener o Reducir
+19,Mujer,0.5,0,bloc,-1,Mantener o Reducir
+37,Mujer,0.6,NA,ndp,0,Mantener o Reducir
+23,Hombre,0.6,1,cons,0,Mantener o Reducir
+27,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+23,Mujer,0.7,NA,ndp,1,Aumentar
+36,Hombre,0.8,0.5,ndp,1,Aumentar
+38,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+72,Hombre,0.4,0.5,lib,-1,Mantener o Reducir
+52,Hombre,0.7,0,lib,-1,Mantener o Reducir
+50,Mujer,0.4,0,lib,1,Aumentar
+77,Hombre,0.9,0.5,bloc,1,Aumentar
+27,Hombre,0.4,0,lib,1,Aumentar
+42,Hombre,1,0.5,lib,0,Mantener o Reducir
+62,Mujer,0.5,0,lib,1,Aumentar
+67,Hombre,0.4,0.25,ndp,1,Aumentar
+72,Hombre,0.4,0.25,bloc,1,Aumentar
+42,Mujer,0.9,1,lib,-1,Mantener o Reducir
+28,Mujer,0.5,0,other,-1,Mantener o Reducir
+53,Hombre,0.4,0.25,bloc,1,Aumentar
+51,Hombre,0.8,0.5,lib,-1,Mantener o Reducir
+53,Mujer,0.9,0.25,ndp,0,Mantener o Reducir
+27,Mujer,0.8,0.5,bloc,1,Aumentar
+40,Hombre,0.8,0,lib,1,Aumentar
+20,Mujer,0.6,NA,ndp,1,Aumentar
+65,Mujer,0.4,0,ndp,0,Mantener o Reducir
+52,Hombre,0.6,0.75,cons,-1,Mantener o Reducir
+62,Hombre,0.4,0,ndp,1,Aumentar
+68,Mujer,0.7,0,cons,1,Aumentar
+30,Hombre,0.6,0,other,1,Aumentar
+25,Hombre,0.5,0,cons,0,Mantener o Reducir
+61,Mujer,0.6,0,ndp,1,Aumentar
+39,Hombre,0.4,0.5,bloc,0,Mantener o Reducir
+29,Hombre,0.9,0.75,cons,-1,Mantener o Reducir
+46,Hombre,0.8,NA,ndp,1,Aumentar
+61,Mujer,1,0.25,lib,1,Aumentar
+60,Mujer,0.8,0.5,ndp,1,Aumentar
+55,Mujer,1,0.5,bloc,-1,Mantener o Reducir
+35,Hombre,0.6,0,ndp,0,Mantener o Reducir
+42,Mujer,0.8,1,lib,0,Mantener o Reducir
+54,Mujer,0.6,0.5,lib,-1,Mantener o Reducir
+23,Mujer,0.6,0.25,ndp,-1,Mantener o Reducir
+75,Mujer,0.7,0.5,ndp,0,Mantener o Reducir
+37,Hombre,0.2,0.5,bloc,1,Aumentar
+58,Hombre,0.7,0.75,cons,0,Mantener o Reducir
+28,Hombre,0.5,0,lib,0,Mantener o Reducir
+30,Mujer,0.6,0.5,ndp,-1,Mantener o Reducir
+25,Hombre,0.6,0.25,ndp,-1,Mantener o Reducir
+53,Hombre,0.9,1,ndp,1,Aumentar
+38,Hombre,0.4,0,cons,0,Mantener o Reducir
+26,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+49,Mujer,0.5,0.5,lib,1,Aumentar
+22,Hombre,0.5,NA,ndp,-1,Mantener o Reducir
+21,Mujer,0.6,0.25,lib,1,Aumentar
+63,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+60,Hombre,0.7,0,other,1,Aumentar
+30,Hombre,0.7,0.5,lib,1,Aumentar
+62,Mujer,0.6,0,ndp,1,Aumentar
+24,Mujer,0.8,0.25,bloc,0,Mantener o Reducir
+53,Mujer,0.8,0.75,cons,0,Mantener o Reducir
+62,Hombre,0.8,0,ndp,0,Mantener o Reducir
+66,Mujer,0.4,0.25,cons,-1,Mantener o Reducir
+60,Hombre,0.8,1,bloc,1,Aumentar
+37,Mujer,0.5,0.25,cons,0,Mantener o Reducir
+37,Mujer,0.4,0.25,ndp,1,Aumentar
+46,Mujer,0.4,0.25,bloc,1,Aumentar
+56,Mujer,0.4,0.5,ndp,0,Mantener o Reducir
+39,Hombre,0.7,0.25,lib,1,Aumentar
+54,Mujer,0.3,0,ndp,1,Aumentar
+77,Mujer,0.9,0.5,lib,1,Aumentar
+61,Mujer,0.5,0,ndp,1,Aumentar
+39,Hombre,1,0.25,bloc,1,Aumentar
+58,Hombre,0.6,0,ndp,1,Aumentar
+40,Hombre,0.7,1,ndp,-1,Mantener o Reducir
+27,Hombre,0.3,NA,bloc,1,Aumentar
+56,Hombre,0.9,0.25,lib,-1,Mantener o Reducir
+29,Hombre,0.6,0.25,ndp,-1,Mantener o Reducir
+41,Mujer,0.4,0.5,lib,-1,Mantener o Reducir
+51,Mujer,0.8,0.25,other,-1,Mantener o Reducir
+28,Mujer,0.7,0.25,ndp,1,Aumentar
+36,Hombre,1,0.5,ndp,0,Mantener o Reducir
+65,Hombre,1,0.25,cons,0,Mantener o Reducir
+53,Hombre,1,0.25,ndp,0,Mantener o Reducir
+56,Mujer,0.8,0,ndp,1,Aumentar
+58,Mujer,0.7,0.25,lib,-1,Mantener o Reducir
+57,Hombre,0.6,0.5,ndp,1,Aumentar
+33,Mujer,0.6,0.75,cons,-1,Mantener o Reducir
+66,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+24,Mujer,0.7,0,other,0,Mantener o Reducir
+51,Mujer,0.9,0,ndp,-1,Mantener o Reducir
+61,Hombre,0.5,0.5,bloc,0,Mantener o Reducir
+66,Hombre,0.7,0.25,lib,-1,Mantener o Reducir
+71,Mujer,0.7,0.25,lib,-1,Mantener o Reducir
+65,Hombre,0.4,0.25,bloc,-1,Mantener o Reducir
+37,Mujer,0.4,0,bloc,-1,Mantener o Reducir
+30,Hombre,0.8,1,ndp,-1,Mantener o Reducir
+21,Hombre,0.3,NA,other,0,Mantener o Reducir
+23,Mujer,0.6,NA,lib,-1,Mantener o Reducir
+43,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+60,Mujer,0.5,0,cons,0,Mantener o Reducir
+81,Hombre,0.9,1,other,1,Aumentar
+57,Hombre,0.8,0,ndp,1,Aumentar
+49,Hombre,0.4,0,ndp,1,Aumentar
+74,Hombre,0.4,0,cons,-1,Mantener o Reducir
+32,Hombre,0.8,0.5,cons,0,Mantener o Reducir
+47,Hombre,0.6,0.5,bloc,1,Aumentar
+20,Hombre,0.5,0,lib,-1,Mantener o Reducir
+19,Mujer,0.6,1,ndp,1,Aumentar
+26,Hombre,0.9,0,lib,0,Mantener o Reducir
+24,Mujer,0.7,0.25,ndp,-1,Mantener o Reducir
+53,Mujer,0.4,0.75,cons,0,Mantener o Reducir
+70,Mujer,0.4,0,ndp,1,Aumentar
+57,Mujer,0.7,0.75,lib,0,Mantener o Reducir
+66,Hombre,0.4,0,ndp,0,Mantener o Reducir
+60,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+28,Hombre,0.8,1,lib,0,Mantener o Reducir
+73,Hombre,0.8,0,ndp,1,Aumentar
+20,Mujer,0.5,0,lib,1,Aumentar
+29,Mujer,0.9,0.5,ndp,0,Mantener o Reducir
+63,Hombre,0.8,0.75,ndp,1,Aumentar
+27,Hombre,0.4,0.5,cons,-1,Mantener o Reducir
+56,Mujer,0.6,NA,ndp,0,Mantener o Reducir
+62,Hombre,0.4,0.25,ndp,1,Aumentar
+30,Hombre,0.3,0,ndp,1,Aumentar
+44,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+28,Hombre,0.3,0.25,bloc,0,Mantener o Reducir
+50,Mujer,1,0.25,cons,0,Mantener o Reducir
+41,Hombre,0.8,1,bloc,0,Mantener o Reducir
+39,Hombre,0.8,1,lib,-1,Mantener o Reducir
+33,Mujer,0.8,0.25,bloc,-1,Mantener o Reducir
+45,Mujer,0.5,NA,bloc,0,Mantener o Reducir
+65,Mujer,0.4,0,ndp,0,Mantener o Reducir
+24,Hombre,0.8,0,lib,-1,Mantener o Reducir
+56,Mujer,0.7,0,bloc,1,Aumentar
+59,Hombre,0.5,0.25,ndp,1,Aumentar
+53,Hombre,1,0,bloc,-1,Mantener o Reducir
+58,Hombre,0.8,0.25,cons,-1,Mantener o Reducir
+41,Hombre,1,0.75,other,-1,Mantener o Reducir
+52,Mujer,0.4,1,lib,-1,Mantener o Reducir
+32,Mujer,1,1,lib,0,Mantener o Reducir
+60,Mujer,0.4,0,bloc,0,Mantener o Reducir
+36,Mujer,0.5,1,ndp,0,Mantener o Reducir
+62,Hombre,0.3,0.5,cons,0,Mantener o Reducir
+30,Hombre,1,0.5,lib,0,Mantener o Reducir
+35,Mujer,0.6,0.25,bloc,0,Mantener o Reducir
+28,Hombre,0.4,0.25,ndp,1,Aumentar
+48,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+48,Mujer,0.5,0.5,bloc,-1,Mantener o Reducir
+53,Mujer,0.4,0,bloc,0,Mantener o Reducir
+68,Hombre,0.8,NA,cons,-1,Mantener o Reducir
+37,Hombre,0.2,0,other,-1,Mantener o Reducir
+31,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+40,Mujer,0.8,0.25,ndp,1,Aumentar
+58,Hombre,0.6,0,lib,1,Aumentar
+50,Mujer,0.6,1,lib,0,Mantener o Reducir
+58,Hombre,0.9,0.75,lib,0,Mantener o Reducir
+36,Mujer,0.8,1,lib,-1,Mantener o Reducir
+77,Mujer,0.6,0,cons,0,Mantener o Reducir
+64,Mujer,0.3,0.25,lib,-1,Mantener o Reducir
+59,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+53,Mujer,0.4,0,lib,1,Aumentar
+27,Hombre,0.6,0.5,lib,-1,Mantener o Reducir
+32,Hombre,0.4,0.25,bloc,0,Mantener o Reducir
+35,Hombre,1,1,lib,0,Mantener o Reducir
+41,Mujer,0.3,0.5,lib,1,Aumentar
+32,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+34,Mujer,0.7,0.25,ndp,1,Aumentar
+35,Hombre,0.3,0,bloc,1,Aumentar
+68,Hombre,0.9,0.75,ndp,1,Aumentar
+35,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+22,Mujer,0.6,0,bloc,-1,Mantener o Reducir
+52,Mujer,0.4,0.25,bloc,1,Aumentar
+23,Hombre,0.8,0.5,bloc,-1,Mantener o Reducir
+26,Hombre,0.4,0,cons,0,Mantener o Reducir
+31,Mujer,0.8,1,lib,-1,Mantener o Reducir
+38,Mujer,0.4,0.25,lib,1,Aumentar
+69,Hombre,0.8,0.25,bloc,1,Aumentar
+39,Hombre,0.1,0,lib,0,Mantener o Reducir
+36,Hombre,0.7,0.5,cons,0,Mantener o Reducir
+58,Hombre,0.7,0.75,lib,-1,Mantener o Reducir
+68,Hombre,0.5,0.25,bloc,0,Mantener o Reducir
+24,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+22,Hombre,0.4,0.25,ndp,1,Aumentar
+30,Hombre,0.9,0.5,ndp,1,Aumentar
+64,Hombre,0.6,0.75,cons,0,Mantener o Reducir
+66,Mujer,0.2,0,ndp,1,Aumentar
+53,Mujer,0.3,0,lib,-1,Mantener o Reducir
+72,Hombre,0.7,0.25,ndp,0,Mantener o Reducir
+57,Hombre,0.3,0.75,lib,0,Mantener o Reducir
+25,Hombre,1,0.75,other,1,Aumentar
+26,Mujer,0.5,0.75,bloc,1,Aumentar
+65,Hombre,0.5,0.75,ndp,1,Aumentar
+47,Mujer,0.7,1,lib,1,Aumentar
+63,Mujer,0.5,0.5,bloc,-1,Mantener o Reducir
+63,Hombre,0.8,0.25,ndp,-1,Mantener o Reducir
+53,Hombre,0.5,0,bloc,-1,Mantener o Reducir
+74,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+34,Mujer,0.5,0.25,cons,-1,Mantener o Reducir
+69,Mujer,0.8,0.25,ndp,-1,Mantener o Reducir
+60,Hombre,0.5,0,lib,1,Aumentar
+38,Hombre,0.6,0.75,ndp,-1,Mantener o Reducir
+69,Hombre,0.5,0.25,bloc,-1,Mantener o Reducir
+59,Hombre,0.3,1,ndp,-1,Mantener o Reducir
+50,Hombre,0.3,0,lib,1,Aumentar
+20,Hombre,0.5,0.75,bloc,1,Aumentar
+21,Mujer,0.5,0,ndp,0,Mantener o Reducir
+31,Hombre,0.8,0.75,lib,-1,Mantener o Reducir
+67,Mujer,0.5,0,lib,0,Mantener o Reducir
+24,Mujer,0.4,0,ndp,1,Aumentar
+63,Mujer,0.5,0,lib,0,Mantener o Reducir
+62,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+65,Mujer,0.7,0.25,bloc,0,Mantener o Reducir
+68,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+68,Mujer,0.8,0.5,ndp,1,Aumentar
+60,Mujer,0.3,0,bloc,1,Aumentar
+70,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+66,Mujer,0.7,0.5,cons,-1,Mantener o Reducir
+44,Hombre,0.5,0.5,ndp,0,Mantener o Reducir
+35,Hombre,0.4,0,bloc,1,Aumentar
+33,Hombre,0.5,0.5,bloc,1,Aumentar
+35,Mujer,0.9,1,ndp,1,Aumentar
+51,Hombre,0.5,0.25,cons,-1,Mantener o Reducir
+36,Mujer,0.7,0.5,bloc,0,Mantener o Reducir
+23,Hombre,0.7,0,bloc,1,Aumentar
+54,Mujer,1,0.5,lib,1,Aumentar
+30,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+67,Mujer,0.4,0.25,cons,1,Aumentar
+35,Mujer,0.6,0.75,cons,0,Mantener o Reducir
+19,Hombre,0.5,NA,lib,-1,Mantener o Reducir
+71,Hombre,1,0.75,bloc,1,Aumentar
+40,Hombre,0.5,0.25,cons,0,Mantener o Reducir
+18,Mujer,0.5,0,other,1,Aumentar
+33,Hombre,0.8,0.25,ndp,1,Aumentar
+71,Mujer,0.8,0.25,lib,-1,Mantener o Reducir
+27,Mujer,0.5,0.25,cons,-1,Mantener o Reducir
+26,Hombre,0.3,0,cons,0,Mantener o Reducir
+62,Mujer,0.4,0,bloc,-1,Mantener o Reducir
+57,Mujer,0.7,0,bloc,-1,Mantener o Reducir
+65,Hombre,0.9,0.5,cons,0,Mantener o Reducir
+36,Mujer,0.8,0.5,ndp,1,Aumentar
+43,Hombre,1,0.25,ndp,1,Aumentar
+45,Hombre,0.8,1,bloc,-1,Mantener o Reducir
+19,Hombre,NA,0.25,cons,-1,Mantener o Reducir
+65,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+30,Hombre,0.9,0.5,lib,0,Mantener o Reducir
+31,Hombre,0.6,0.5,ndp,1,Aumentar
+34,Mujer,0.8,0.75,cons,-1,Mantener o Reducir
+38,Hombre,1,0,cons,1,Aumentar
+64,Mujer,0.8,0.25,bloc,-1,Mantener o Reducir
+23,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+67,Mujer,0.7,1,lib,0,Mantener o Reducir
+25,Hombre,0.4,0.25,lib,0,Mantener o Reducir
+53,Hombre,0.4,0.5,bloc,1,Aumentar
+34,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+53,Mujer,0.8,0.5,lib,1,Aumentar
+73,Mujer,0,0.5,cons,0,Mantener o Reducir
+32,Hombre,0.6,0.25,ndp,-1,Mantener o Reducir
+37,Hombre,0.4,0.25,bloc,0,Mantener o Reducir
+67,Hombre,0.4,0.5,bloc,0,Mantener o Reducir
+25,Mujer,0.4,0.25,other,-1,Mantener o Reducir
+23,Hombre,0.4,0.5,ndp,-1,Mantener o Reducir
+40,Mujer,0.9,0.25,ndp,1,Aumentar
+25,Mujer,0.9,0.5,lib,-1,Mantener o Reducir
+24,Hombre,0.7,0,ndp,1,Aumentar
+56,Hombre,0.6,0,ndp,0,Mantener o Reducir
+33,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+79,Mujer,0.5,1,lib,0,Mantener o Reducir
+27,Hombre,0.8,0.25,lib,-1,Mantener o Reducir
+36,Hombre,0.3,0,bloc,-1,Mantener o Reducir
+27,Mujer,0.6,0.75,cons,-1,Mantener o Reducir
+38,Hombre,0.6,0.5,ndp,0,Mantener o Reducir
+35,Mujer,0.5,0.5,other,0,Mantener o Reducir
+63,Hombre,0.9,0,ndp,1,Aumentar
+62,Mujer,0.4,0,bloc,1,Aumentar
+58,Hombre,0.4,0,ndp,1,Aumentar
+51,Mujer,0.6,0.5,cons,-1,Mantener o Reducir
+52,Hombre,0.9,1,cons,-1,Mantener o Reducir
+61,Mujer,0.4,0,bloc,0,Mantener o Reducir
+27,Hombre,0.8,0.25,lib,-1,Mantener o Reducir
+73,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+75,Mujer,0.4,0.5,lib,0,Mantener o Reducir
+49,Mujer,0.6,1,cons,0,Mantener o Reducir
+48,Hombre,0.4,0.5,bloc,-1,Mantener o Reducir
+22,Mujer,0.8,0.75,ndp,0,Mantener o Reducir
+37,Mujer,0.4,0.25,bloc,0,Mantener o Reducir
+79,Hombre,0.6,0.25,ndp,0,Mantener o Reducir
+73,Hombre,0.7,0.5,cons,-1,Mantener o Reducir
+70,Mujer,0.6,0.25,cons,0,Mantener o Reducir
+32,Mujer,0.9,0.75,ndp,-1,Mantener o Reducir
+53,Hombre,0.7,0.5,ndp,1,Aumentar
+46,Mujer,0.5,0.25,lib,-1,Mantener o Reducir
+60,Mujer,0.5,0.25,lib,0,Mantener o Reducir
+72,Hombre,0.4,0,bloc,1,Aumentar
+70,Hombre,0.9,1,lib,-1,Mantener o Reducir
+59,Hombre,0.6,0,ndp,1,Aumentar
+34,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+52,Mujer,0.8,0,lib,1,Aumentar
+34,Hombre,0.4,0.25,cons,1,Aumentar
+28,Mujer,0.5,0.25,ndp,1,Aumentar
+32,Mujer,0.6,0.5,cons,-1,Mantener o Reducir
+53,Mujer,0.4,0.25,ndp,1,Aumentar
+30,Mujer,0.7,0.25,bloc,1,Aumentar
+33,Hombre,0.6,0.5,lib,1,Aumentar
+59,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+63,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+29,Mujer,0.8,0,ndp,1,Aumentar
+58,Mujer,1,0.25,bloc,0,Mantener o Reducir
+74,Hombre,0.9,0.5,ndp,0,Mantener o Reducir
+60,Hombre,0.4,0.25,bloc,1,Aumentar
+63,Mujer,0.4,0.25,lib,0,Mantener o Reducir
+63,Mujer,0.6,0.5,ndp,0,Mantener o Reducir
+20,Hombre,NA,0.5,lib,1,Aumentar
+73,Hombre,0.4,0,lib,1,Aumentar
+87,Hombre,0.9,0.25,ndp,1,Aumentar
+23,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+51,Mujer,0.3,0.5,cons,0,Mantener o Reducir
+51,Hombre,0.8,0.75,ndp,1,Aumentar
+76,Hombre,0.8,0.5,cons,-1,Mantener o Reducir
+44,Mujer,1,0.25,bloc,0,Mantener o Reducir
+46,Hombre,1,0.5,cons,-1,Mantener o Reducir
+39,Hombre,0.6,0,lib,1,Aumentar
+30,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+50,Mujer,0.4,0.5,bloc,0,Mantener o Reducir
+50,Mujer,0.8,0.75,ndp,-1,Mantener o Reducir
+56,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+28,Hombre,0.4,0.25,lib,1,Aumentar
+34,Mujer,0.7,NA,lib,-1,Mantener o Reducir
+68,Hombre,0.8,0.5,cons,0,Mantener o Reducir
+22,Mujer,0.7,0,lib,0,Mantener o Reducir
+76,Hombre,0.7,0.75,cons,0,Mantener o Reducir
+68,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+20,Hombre,0.6,1,ndp,1,Aumentar
+38,Mujer,0.7,0.75,ndp,0,Mantener o Reducir
+72,Mujer,0.2,0,ndp,1,Aumentar
+60,Mujer,0.7,0,ndp,1,Aumentar
+46,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+58,Hombre,0.8,0.5,ndp,0,Mantener o Reducir
+38,Hombre,0.4,0,cons,0,Mantener o Reducir
+34,Hombre,0.9,1,lib,0,Mantener o Reducir
+57,Mujer,0.5,0,ndp,0,Mantener o Reducir
+22,Hombre,0.8,0.75,ndp,0,Mantener o Reducir
+71,Hombre,0.9,0.5,cons,0,Mantener o Reducir
+59,Hombre,0.8,0.5,ndp,1,Aumentar
+46,Mujer,0.9,0.5,ndp,1,Aumentar
+33,Mujer,0.6,0.25,bloc,-1,Mantener o Reducir
+25,Hombre,0.8,1,lib,-1,Mantener o Reducir
+45,Hombre,0.5,1,cons,1,Aumentar
+25,Mujer,0.8,0.25,ndp,1,Aumentar
+52,Mujer,0.6,0.25,bloc,1,Aumentar
+43,Hombre,1,0.25,lib,0,Mantener o Reducir
+67,Hombre,0.7,0.5,cons,0,Mantener o Reducir
+44,Hombre,0.8,0,ndp,1,Aumentar
+23,Hombre,0.8,0.5,lib,0,Mantener o Reducir
+55,Hombre,0.7,1,bloc,-1,Mantener o Reducir
+28,Mujer,0.8,0.25,ndp,1,Aumentar
+31,Hombre,1,0.25,other,1,Aumentar
+45,Mujer,0.6,0.5,bloc,0,Mantener o Reducir
+67,Hombre,0.7,NA,cons,0,Mantener o Reducir
+73,Hombre,1,0.25,lib,0,Mantener o Reducir
+25,Hombre,0.7,1,lib,1,Aumentar
+34,Hombre,0.7,0.5,bloc,-1,Mantener o Reducir
+67,Hombre,0.6,0.25,cons,0,Mantener o Reducir
+20,Hombre,0.4,0.25,bloc,1,Aumentar
+34,Hombre,0.8,1,ndp,1,Aumentar
+39,Hombre,0.5,0.5,cons,-1,Mantener o Reducir
+51,Hombre,0.7,0.5,ndp,1,Aumentar
+20,Mujer,0.5,0.25,ndp,-1,Mantener o Reducir
+25,Hombre,0.3,0.25,other,-1,Mantener o Reducir
+73,Mujer,0.4,0.5,ndp,1,Aumentar
+66,Mujer,0.6,0.25,lib,-1,Mantener o Reducir
+44,Hombre,0.6,0.25,lib,0,Mantener o Reducir
+43,Mujer,0.4,0.25,lib,1,Aumentar
+22,Mujer,0.5,0,bloc,0,Mantener o Reducir
+21,Mujer,0.6,0,ndp,0,Mantener o Reducir
+75,Mujer,0.7,0.25,ndp,-1,Mantener o Reducir
+65,Mujer,0.4,0.5,cons,-1,Mantener o Reducir
+18,Mujer,0.5,1,ndp,1,Aumentar
+22,Mujer,0.5,0.25,bloc,-1,Mantener o Reducir
+54,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+81,Hombre,0.1,0.25,ndp,-1,Mantener o Reducir
+66,Mujer,0.3,0,other,0,Mantener o Reducir
+34,Mujer,0.6,0.5,lib,0,Mantener o Reducir
+32,Hombre,0.8,0.25,lib,1,Aumentar
+19,Mujer,0.6,1,cons,-1,Mantener o Reducir
+52,Hombre,0.6,0.25,lib,1,Aumentar
+66,Mujer,0.4,0.75,lib,-1,Mantener o Reducir
+53,Hombre,0.7,0.25,bloc,0,Mantener o Reducir
+35,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+24,Hombre,0.8,0,cons,1,Aumentar
+43,Hombre,0.4,0.25,cons,-1,Mantener o Reducir
+37,Hombre,1,0.25,bloc,-1,Mantener o Reducir
+64,Hombre,0.7,0.25,cons,-1,Mantener o Reducir
+55,Hombre,0.5,0.5,cons,0,Mantener o Reducir
+57,Mujer,0.8,0.25,bloc,1,Aumentar
+43,Hombre,0.5,0.25,bloc,0,Mantener o Reducir
+61,Hombre,0.7,0.25,ndp,1,Aumentar
+48,Mujer,0.6,0.25,bloc,1,Aumentar
+49,Mujer,0.4,NA,lib,0,Mantener o Reducir
+63,Hombre,0.8,0.5,ndp,1,Aumentar
+74,Hombre,0.8,0.5,ndp,1,Aumentar
+68,Mujer,0.4,NA,cons,-1,Mantener o Reducir
+20,Hombre,0.4,0.25,lib,0,Mantener o Reducir
+52,Mujer,0.6,0.25,lib,0,Mantener o Reducir
+55,Hombre,0.6,0,lib,-1,Mantener o Reducir
+65,Mujer,1,0.5,other,1,Aumentar
+26,Hombre,0.8,NA,cons,-1,Mantener o Reducir
+67,Hombre,0.8,0,cons,0,Mantener o Reducir
+53,Mujer,0.4,0.75,lib,1,Aumentar
+31,Mujer,0.6,0.75,lib,-1,Mantener o Reducir
+61,Mujer,0.8,0.5,cons,-1,Mantener o Reducir
+42,Mujer,0.4,0.75,lib,-1,Mantener o Reducir
+78,Hombre,0.4,0.25,ndp,-1,Mantener o Reducir
+31,Hombre,0.5,0.25,lib,-1,Mantener o Reducir
+23,Mujer,0.7,0.5,lib,-1,Mantener o Reducir
+51,Mujer,0.5,0,cons,0,Mantener o Reducir
+69,Hombre,0.8,0.25,ndp,1,Aumentar
+43,Mujer,0.6,0,cons,0,Mantener o Reducir
+26,Mujer,0.4,0.75,ndp,0,Mantener o Reducir
+45,Mujer,0.3,0.5,cons,-1,Mantener o Reducir
+53,Mujer,0.5,0.5,ndp,1,Aumentar
+45,Mujer,0.8,0.25,ndp,0,Mantener o Reducir
+59,Hombre,0.4,0.5,lib,-1,Mantener o Reducir
+76,Hombre,0.2,0,other,1,Aumentar
+65,Hombre,0.6,0.25,cons,1,Aumentar
+48,Hombre,0.8,0.75,ndp,0,Mantener o Reducir
+28,Hombre,0.6,0.5,cons,-1,Mantener o Reducir
+45,Hombre,0.6,1,lib,-1,Mantener o Reducir
+78,Mujer,0.4,1,cons,1,Aumentar
+65,Mujer,0.6,0.25,ndp,0,Mantener o Reducir
+28,Mujer,0.8,0.5,ndp,1,Aumentar
+63,Hombre,0.4,0.25,lib,-1,Mantener o Reducir
+37,Hombre,0.7,1,cons,-1,Mantener o Reducir
+25,Mujer,0.8,1,ndp,-1,Mantener o Reducir
+49,Hombre,0.2,1,cons,-1,Mantener o Reducir
+49,Hombre,0.5,0.25,ndp,1,Aumentar
+59,Hombre,0.7,0.5,ndp,0,Mantener o Reducir
+49,Hombre,0.4,0.25,cons,0,Mantener o Reducir
+57,Hombre,0.4,0.75,cons,0,Mantener o Reducir
+74,Hombre,0.9,1,lib,0,Mantener o Reducir
+27,Mujer,0.8,0.25,lib,1,Aumentar
+62,Hombre,0.6,0.75,lib,0,Mantener o Reducir
+27,Hombre,0.8,0.25,ndp,0,Mantener o Reducir
+67,Hombre,0.3,0.25,other,-1,Mantener o Reducir
+75,Mujer,0.6,0.75,ndp,1,Aumentar
+64,Mujer,0.4,0,cons,1,Aumentar
+57,Hombre,0.6,0.25,lib,1,Aumentar
+59,Hombre,0.4,0.75,lib,-1,Mantener o Reducir
+51,Hombre,0.8,0.25,ndp,1,Aumentar
+71,Mujer,0.3,0,cons,-1,Mantener o Reducir
+48,Hombre,0.8,0.75,lib,0,Mantener o Reducir
+28,Hombre,0.5,0.25,lib,1,Aumentar
+67,Hombre,0.8,0,ndp,0,Mantener o Reducir
+32,Mujer,0.8,0.75,lib,0,Mantener o Reducir
+54,Hombre,0.3,0.25,lib,0,Mantener o Reducir
+46,Mujer,0.4,0,lib,1,Aumentar
+57,Mujer,0.5,0.5,cons,1,Aumentar
+21,Hombre,0.5,0.25,ndp,0,Mantener o Reducir
+59,Hombre,1,1,other,0,Mantener o Reducir
+73,Mujer,0.4,0,cons,0,Mantener o Reducir
+18,Hombre,0.3,NA,lib,0,Mantener o Reducir
+35,Mujer,0.5,0.25,other,1,Aumentar
+19,Hombre,0.4,0.25,lib,-1,Mantener o Reducir
+35,Mujer,0.5,0.25,lib,0,Mantener o Reducir
+77,Hombre,0.4,0.25,ndp,0,Mantener o Reducir
+51,Hombre,0.6,0.25,cons,-1,Mantener o Reducir
+55,Mujer,1,0.5,ndp,0,Mantener o Reducir
+18,Mujer,0.4,NA,ndp,0,Mantener o Reducir
+56,Mujer,0.3,0.25,ndp,0,Mantener o Reducir
+48,Mujer,0.4,0,ndp,-1,Mantener o Reducir
+62,Mujer,0.7,0.5,other,1,Aumentar
