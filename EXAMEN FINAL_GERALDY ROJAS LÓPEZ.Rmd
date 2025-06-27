@@ -1,0 +1,249 @@
+---
+title: "EF_Geraldy Rojas López"
+author: "Geraldy Rojas"
+date: "2025-06-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+# LIBRERÍAS NECESARIAS PARA TODO EL SCRIPT
+library(dplyr)           # Manipulación de datos
+library(ggplot2)         # Gráficos
+library(modelsummary)    # Tablas de regresión
+library(kableExtra)      # Mejorar visualización de tablas en HTML/LaTeX
+library(lm.beta)         # Coeficientes estandarizados en regresión lineal
+library(sjPlot)          # Gráficos de modelos
+library(magrittr)        # Pipes %>% y estilo de código
+library(knitr)           # Para generar tablas con kable()
+library(lmtest)          # Test estadísticos como Breusch-Pagan y LR Test
+library(DescTools)       # Para VIF y otros diagnósticos
+library(AER)             # Para test de sobre/infra dispersión
+library(MASS)            # Para regresión binomial negativa (glm.nb)
+library(dotwhisker)      # Para graficar coeficientes (dwplot)
+library(margins)         # Para efectos marginales promedio en logística
+library(survival)        # Para regresión Cox
+library(survminer)       # Para gráficos Kaplan-Meier y forest plot en Cox
+library (rio)
+```
+
+```{r}
+dta= read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRbSbKczUxXcZM4rLV1pdSeDeMd8Uh_99ZKNKvOJ5gJnttpRe0X7fGc3pT0NM2GqA/pub?output=csv")
+```
+
+```{r}
+str(dta)
+```
+```{r}
+# Suma total nacional de viviendas con agua de red dentro de la vivienda
+total_agua_red <- sum(dta$agua1_Red, na.rm = TRUE)
+
+# Porcentaje que representa cada provincia del total nacional
+dta$porc_agua_red_nacional <- (dta$agua1_Red / total_agua_red) * 100
+
+```
+
+```{r}
+# Razón de votación Keiko/Castillo
+dta$razon_keiko_castillo <- ifelse(dta$Castillo == 0, NA, dta$Keiko / dta$Castillo)
+```
+
+```{r}
+# Tasa de fallecidos por cada 1000 contagiados
+dta$tasa_fallecidos_1000 <- (dta$covidFallecidos / dta$covidPositivos) * 1000
+```
+
+#AGRUPAMOS:
+
+```{r}
+library(dplyr)
+
+dta_provincias <- dta %>%
+  group_by(provincia) %>%
+  summarise(
+    porc_agua_red_nacional = mean(porc_agua_red_nacional, na.rm = TRUE),
+    razon_keiko_castillo = mean(razon_keiko_castillo, na.rm = TRUE),
+    tasa_fallecidos_1000 = mean(tasa_fallecidos_1000, na.rm = TRUE)
+  )
+```
+
+ELIMINAMOS
+```{r}
+dta_provincias <- dta_provincias %>%
+  filter(provincia != "LIMA")
+
+```
+
+#CLUSTER:
+```{r}
+str(dta_provincias)
+```
+```{r}
+boxplot(dta_provincias[,c(2:4)],horizontal = F,las=2,cex.axis = 0.5)
+```
+
+
+```{r}
+library(BBmisc)
+```
+
+```{r}
+boxplot(normalize(dta_provincias[,c(2:4)],method='standardize'))
+```
+```{r}
+dta_provincias[,c(2:4)]=normalize(dta_provincias[,c(2:4)],method='standardize')
+```
+
+```{r}
+cor(dta_provincias[,c(2:4)])
+```
+ESTO PARA GUARDAR APARTE EL NOMBRE LOS PAISES O DEPARTAMENTOS. 
+```{r}
+dataClus <- as.data.frame(dta_provincias[, 2:4])
+row.names(dataClus) <- dta_provincias$provincia  
+```
+
+
+CALCULAMOS LA MATRIZ DE DISTANCIAS:  CON GOWER
+```{r}
+library(cluster)
+g.dist = daisy(dataClus, metric="gower")
+```
+
+5.1 PARTICIÓN PAM: 
+
+- CON KMEDOIDES
+1. DECIDIMOS CANTIDAD DE CLUSTERS:
+```{r}
+## para PAM
+
+library(factoextra)
+fviz_nbclust(dataClus, pam,diss=g.dist,method = "gap_stat",k.max = 10,verbose = F)
+```
+2. CLUSTERIZAMOS VIA PAM 
+
+```{r}
+library(kableExtra)
+set.seed(123)
+res.pam=pam(g.dist,3,cluster.only = F)
+
+#nueva columna
+dataClus$pam=res.pam$cluster
+
+# ver
+
+head(dataClus,15)%>%kbl()%>%kable_styling()
+```
+
+3. EVALUAMOS SILUETA DE PAM: 
+NOS FIJAMOS EN EL AVERAGE Y CUALES NO CLASIFICA BIEN, LOS INVERTIDOS.
+```{r}
+fviz_silhouette(res.pam,print.summary = F)
+```
+
+
+4. VEMOS LOS MAL CLUSTERIZADOS:
+```{r}
+silPAM=data.frame(res.pam$silinfo$widths)
+silPAM$provincia=row.names(silPAM) #AQUI PODEMOS CAMBIAR COUNTRY
+poorPAM=silPAM[silPAM$sil_width<0,'provincia']%>%sort()
+poorPAM
+```
+5. VERIFICAMOS ETIQUETA DE CLUSTERS
+```{r}
+aggregate(.~ pam, data=dataClus,mean)
+```
+
+ 
+```{r}
+dta_provincias$pamIDHpoor=dta_provincias$provincia%in%poorPAM
+dta_provincias$pamIDH=as.ordered(dataClus$pam)
+dataClus$pam=NULL
+```
+
+
+1. DECIDIMOS CANTIDAD DE CLUSTERS:
+```{r}
+## PARA JERARQUICO
+
+fviz_nbclust(dataClus, hcut,diss=g.dist,method = "gap_stat",k.max = 10,verbose = F,hc_func = "agnes")
+```
+
+2. CLUSTERIZAMOS VIA AGNES:
+```{r}
+set.seed(123)
+library(factoextra)
+
+res.agnes<- hcut(g.dist, k = 2,hc_func='agnes',hc_method = "ward.D")
+
+dataClus$agnes=res.agnes$cluster
+
+# ver
+
+head(dataClus,15)%>%kbl()%>%kable_styling()
+```
+
+
+3. VEMOS EL DENDOGRAMA:
+```{r}
+# Visualize
+fviz_dend(res.agnes, cex = 0.7, horiz = T,main = "")
+```
+
+OJO: El eje ‘Height’ nos muestra el “costo” de conglomerar: mientras más corta la distancia mayor similitud y la conglomeracion es más rápida
+
+4. EVALUAMOS SILUETA DE AGNES: 
+```{r}
+fviz_silhouette(res.agnes,print.summary = F)
+```
+
+5. VEMOS LOS MAL CLUSTERIZADOS: 
+```{r}
+silAGNES=data.frame(res.agnes$silinfo$widths)
+silAGNES$country=row.names(silAGNES) #AQUI PODEMOS CAMBIAR COUNTRY 
+poorAGNES=silAGNES[silAGNES$sil_width<0,'country']%>%sort()
+poorAGNES
+```
+
+PARA CONTINUAR CON JERARQUICO DIVISIVA, RECUPERAMOS DATACLUS: 
+```{r}
+dta_provincias$agnesIDHpoor=dta_provincias$provincia%in%poorAGNES
+dta_provincias$agnesIDH=as.ordered(dataClus$agnes)
+dataClus$agnes=NULL
+```
+
+1. DECIDIMOS CANTIDAD DE CLUSTERS
+```{r}
+## PARA JERARQUICO
+
+fviz_nbclust(dataClus, hcut,diss=g.dist,method = "gap_stat",k.max = 10,verbose = F,hc_func = "diana")
+```
+
+2. CLUSTERIZAMOS VIA DIANA
+```{r}
+set.seed(123)
+res.diana <- hcut(g.dist, k = 1,hc_func='diana')
+dataClus$diana=res.diana$cluster
+# veamos
+head(dataClus,15)%>%kbl%>%kable_styling()
+#RECUERDA QUE CAMBIAMOS K
+```
+
+3. VEMOS EL DENDOGRAMA
+```{r}
+# Visualize
+fviz_dend(res.diana, cex = 0.7, horiz = T, main = "")
+```
+
+5. VEMOS LOS MAL CLUSTERIZADOS: 
+```{r}
+silDIANA=data.frame(res.diana$silinfo$widths)
+silDIANA$country=row.names(silDIANA) #AQUI SE PUEDE CAMBIAR COUNTRY
+poorDIANA=silDIANA[silDIANA$sil_width<0,'country']%>%sort()
+poorDIANA
+```
+
