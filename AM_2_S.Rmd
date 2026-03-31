@@ -1,0 +1,2194 @@
+---
+title: "AM_2"
+author: "Geraldy Rojas"
+date: "2026-03-16"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+#install.packages("rlang")
+```
+
+```{r}
+#packageVersion("rlang")
+```
+
+```{r}
+library(haven)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(scales)
+library(survey)
+library (rio)
+```
+
+```{r}
+m100=import("C:/Users/G ALEJANDRA ROJAS/Documents/ESTAPOL2/PROYECTO ADULTO MAYOR/Enaho01-2024-100.csv")
+m200=import("C:/Users/G ALEJANDRA ROJAS/Documents/ESTAPOL2/PROYECTO ADULTO MAYOR/Enaho01-2024-200.csv")
+m400=import("C:/Users/G ALEJANDRA ROJAS/Documents/ESTAPOL2/PROYECTO ADULTO MAYOR/Enaho01A-2024-400.csv")
+m500=import("C:/Users/G ALEJANDRA ROJAS/Documents/ESTAPOL2/PROYECTO ADULTO MAYOR/Enaho01a-2024-500.csv")
+m700=import("C:/Users/G ALEJANDRA ROJAS/Documents/ESTAPOL2/PROYECTO ADULTO MAYOR/Enaho01-2024-700.csv")
+```
+
+```{r}
+nrow(m100)
+nrow(m200)
+nrow(m400)
+nrow(m500)
+nrow(m700)
+```
+```{r}
+library(stringr)
+
+# Corregir UBIGEO en todos los módulos
+m100 <- m100 |> mutate(UBIGEO = str_pad(as.character(UBIGEO), width = 6, pad = "0", side = "left"))
+m200 <- m200 |> mutate(UBIGEO = str_pad(as.character(UBIGEO), width = 6, pad = "0", side = "left"))
+m400 <- m400 |> mutate(UBIGEO = str_pad(as.character(UBIGEO), width = 6, pad = "0", side = "left"))
+m500 <- m500 |> mutate(UBIGEO = str_pad(as.character(UBIGEO), width = 6, pad = "0", side = "left"))
+m700 <- m700 |> mutate(UBIGEO = str_pad(as.character(UBIGEO), width = 6, pad = "0", side = "left"))
+```
+
+```{r}
+head(m100$UBIGEO)
+head(m200$UBIGEO)
+head(m400$UBIGEO)
+head(m500$UBIGEO)
+head(m700$UBIGEO)
+```
+# ============================================
+# CUANTIFICACIÓN INICIAL (MÓDULO 200)
+# ============================================
+
+```{r}
+# 1. Total de adultos mayores en Huancavelica
+am_huancavelica <- m200 |>
+  filter(
+    substr(UBIGEO, 1, 2) == "09",   # Huancavelica
+    P208A >= 60,                      # Adulto mayor
+    !is.na(P208A)                     # Sin missings en edad
+  )
+cat("Total de adultos mayores en Huancavelica:", nrow(am_huancavelica), "
+")
+
+# 2. Total de adultos mayores rurales en Huancavelica
+base_am_rural <- am_huancavelica |>
+  filter(
+    ESTRATO %in% c(6, 7, 8)          # Rural
+  )
+cat("Total de adultos mayores rurales en Huancavelica:", nrow(base_am_rural), "
+")
+```
+
+# ============================================
+# MÓDULO 400 - SALUD
+# ============================================
+
+```{r}
+# Cruzamos la base rural de adultos mayores con el Módulo 400
+base_salud <- base_am_rural |>
+  inner_join(
+    m400 |> select(-UBIGEO, -ESTRATO, -DOMINIO), 
+    by = c("CONGLOME", "VIVIENDA", "HOGAR", "CODPERSO")
+  )
+```
+
+```{r}
+nrow(base_salud)
+table(base_salud$ESTRATO)
+```
+#CREAMOS VARIABLE DE GRUPO EDAD: 
+
+```{r}
+# Crear variable grupo de edad
+base_salud <- base_salud |>
+  mutate(grupo_edad = cut(P208A,
+                          breaks = c(60, 70, 80, Inf),
+                          labels = c("60-69", "70-79", "80+"),
+                          right  = FALSE))
+
+# Verificar
+table(base_salud$grupo_edad)
+```
+# ============================================
+# BLOQUE 1: CONDICIÓN DE SALUD
+# ============================================
+
+```{r}
+# 1.1. Enfermedad crónica (P401)
+# 1 = Sí, 2 = No
+tabla_cronica <- base_salud |>
+  count(P401) |>
+  mutate(
+    categoria  = if_else(P401 == 1, "Sí tiene", "No tiene"),
+    porcentaje = round(n / sum(n) * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1)
+  )
+print(tabla_cronica)
+```
+```{r}
+# 1.2 Enfermedad crónica por grupo de edad
+tabla_cronica_edad <- base_salud |>
+  group_by(grupo_edad) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(P401 == 1),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+print(tabla_cronica_edad)
+```
+```{r}
+g_cronica_edad <- ggplot(tabla_cronica_edad,
+                         aes(x = grupo_edad, y = porcentaje)) +
+  geom_col(fill = "#2C6E49", width = 0.5) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.2, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            vjust = -1.8, size = 4, fontface = "bold") +
+  scale_y_continuous(limits = c(0, 105),
+                     labels = function(x) paste0(x, "%")) +
+  labs(
+    title    = "Prevalencia de enfermedad crónica por grupo de edad",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = "Grupo de edad",
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    panel.grid.major.x = element_blank()
+  )
+
+print(g_cronica_edad)
+```
+
+#VERIFICAMOS POR SEXO
+```{r}
+table(base_salud$P207)
+```
+```{r}
+# Enfermedad crónica por sexo y grupo de edad
+tabla_cronica_sexo_edad <- base_salud |>
+  mutate(sexo = if_else(P207 == 1, "Hombre", "Mujer")) |>
+  group_by(sexo, grupo_edad) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(P401 == 1),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    .groups    = "drop"
+  )
+print(tabla_cronica_sexo_edad)
+```
+#GRÁFICO SEXO Y EDAD: 
+
+```{r}
+# Recrear variable sexo limpia
+tabla_cronica_sexo_edad <- base_salud |>
+  mutate(sexo = case_when(
+    P207 == 1 ~ "Masculino",
+    P207 == 2 ~ "Femenino"
+  ),
+  sexo = factor(sexo, levels = c("Masculino", "Femenino"))) |>
+  group_by(sexo, grupo_edad) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(P401 == 1),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    .groups    = "drop"
+  )
+
+# Gráfico
+g_cronica_sexo_edad <- ggplot(tabla_cronica_sexo_edad,
+                               aes(x = grupo_edad, y = porcentaje,
+                                   color = sexo, group = sexo)) +
+  geom_point(size = 4, position = position_dodge(width = 0.4)) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.2, linewidth = 0.8,
+                position = position_dodge(width = 0.4)) +
+  geom_line(linewidth = 0.8,
+            position = position_dodge(width = 0.4),
+            linetype = "dashed") +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            position = position_dodge(width = 0.4),
+            vjust = -1.2, size = 3.5, show.legend = FALSE) +
+  scale_color_manual(values = c("Masculino" = "#1B4F72",
+                                 "Femenino"  = "#922B21")) +
+  scale_y_continuous(limits = c(0, 110),
+                     labels = function(x) paste0(x, "%")) +
+  labs(
+    title    = "Prevalencia de enfermedad crónica por sexo y grupo de edad",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = "Grupo de edad",
+    y        = "Porcentaje (%)",
+    color    = NULL,
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "top",
+    legend.key         = element_blank(),
+    legend.text        = element_text(size = 11),
+    panel.grid.major.x = element_blank()
+  )
+
+print(g_cronica_sexo_edad)
+
+```
+
+# ============================================
+# BLOQUE 2: LIMITACIONES PERMANENTES
+# ============================================
+
+```{r}
+# --- Tabla general ---
+limitaciones <- data.frame(
+  limitacion = c("Movilidad", "Visión", "Comunicación",
+                 "Audición", "Cognición", "Relaciones sociales"),
+  n_si = c(
+    sum(base_salud$P401H1 == 1),
+    sum(base_salud$P401H2 == 1),
+    sum(base_salud$P401H3 == 1),
+    sum(base_salud$P401H4 == 1),
+    sum(base_salud$P401H5 == 1),
+    sum(base_salud$P401H6 == 1)
+  ),
+  n_total = nrow(base_salud)
+) |>
+  mutate(
+    porcentaje = round(n_si / n_total * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1)
+  )
+
+print(limitaciones)
+```
+
+```{r}
+g_limitaciones <- ggplot(limitaciones,
+                         aes(x = reorder(limitacion, porcentaje),
+                             y = porcentaje)) +
+  geom_col(fill = "#922B21", width = 0.6) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.3, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.3, size = 3.5) +
+  scale_y_continuous(limits = c(0, max(limitaciones$ic_sup) * 1.3),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Limitaciones permanentes",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_limitaciones)
+```
+
+#PORCENTAJE CON AL MENOS UNA LIMITACIÓN
+
+```{r}
+base_salud <- base_salud |>
+  mutate(
+    n_limitaciones    = (P401H1 == 1) + (P401H2 == 1) + (P401H3 == 1) +
+                        (P401H4 == 1) + (P401H5 == 1) + (P401H6 == 1),
+    tiene_limitacion  = if_else(n_limitaciones >= 1, 1, 0)
+  )
+```
+
+```{r}
+# Tabla general
+n_total <- nrow(base_salud)
+n_lim   <- sum(base_salud$tiene_limitacion)
+prop    <- round(n_lim / n_total * 100, 1)
+ic_inf  <- round(prop - 1.96 * sqrt(prop * (100 - prop) / n_total), 1)
+ic_sup  <- round(prop + 1.96 * sqrt(prop * (100 - prop) / n_total), 1)
+
+cat("Con al menos 1 limitación:", prop, "%",
+    "  IC95%:", ic_inf, "-", ic_sup, "\n")
+```
+```{r}
+# Por grupo de edad
+tabla_lim_edad <- base_salud |>
+  group_by(grupo_edad) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(tiene_limitacion),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+print(tabla_lim_edad)
+```
+```{r}
+# Por sexo
+tabla_lim_sexo <- base_salud |>
+  mutate(sexo = if_else(P207 == 1, "Hombre", "Mujer")) |>
+  group_by(sexo) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(tiene_limitacion),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+print(tabla_lim_sexo)
+```
+
+```{r}
+# Preparar datos para gráfico combinado
+datos_lim <- bind_rows(
+  # Total
+  data.frame(grupo = "Total", porcentaje = 22.4, 
+             ic_inf = 18.7, ic_sup = 26.1),
+  # Por sexo
+  data.frame(grupo = c("Hombre", "Mujer"),
+             porcentaje = c(19.5, 24.5),
+             ic_inf = c(14.0, 19.5),
+             ic_sup = c(25.0, 29.5)),
+  # Por grupo de edad
+  data.frame(grupo = c("60-69", "70-79", "80+"),
+             porcentaje = c(11.6, 23.6, 48.9),
+             ic_inf = c(7.6, 16.8, 38.7),
+             ic_sup = c(15.6, 30.4, 59.1))
+) |>
+  mutate(
+    categoria = case_when(
+      grupo == "Total"            ~ "Total",
+      grupo %in% c("Hombre", "Mujer") ~ "Sexo",
+      TRUE                        ~ "Grupo de edad"
+    ),
+    categoria = factor(categoria, 
+                       levels = c("Total", "Sexo", "Grupo de edad")),
+    grupo = factor(grupo, 
+                   levels = c("Total", "Hombre", "Mujer",
+                              "60-69", "70-79", "80+"))
+  )
+
+# Gráfico
+g_lim_total <- ggplot(datos_lim,
+                      aes(x = grupo, y = porcentaje, fill = categoria)) +
+  geom_col(width = 0.6) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.3, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            vjust = -1.5, size = 3.5, fontface = "bold") +
+  scale_fill_manual(values = c("Total"         = "#2E4057",
+                                "Sexo"          = "#1B4F72",
+                                "Grupo de edad" = "#922B21")) +
+  scale_y_continuous(limits = c(0, 70),
+                     labels = function(x) paste0(x, "%")) +
+  facet_grid(~ categoria, scales = "free_x", space = "free_x") +
+  labs(
+    title    = "Prevalencia de al menos una limitación permanente",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    fill     = NULL,
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "none",
+    panel.grid.major.x = element_blank(),
+    strip.text         = element_text(face = "bold", size = 10)
+  )
+
+print(g_lim_total)
+```
+
+#Limitaciones por grupo etario
+
+```{r}
+# Limitaciones por grupo de edad
+tabla_lim_edad_detalle <- base_salud |>
+  group_by(grupo_edad) |>
+  summarise(
+    Movilidad           = round(mean(P401H1 == 1) * 100, 1),
+    Vision              = round(mean(P401H2 == 1) * 100, 1),
+    Comunicacion        = round(mean(P401H3 == 1) * 100, 1),
+    Audicion            = round(mean(P401H4 == 1) * 100, 1),
+    Cognicion           = round(mean(P401H5 == 1) * 100, 1),
+    Relaciones_sociales = round(mean(P401H6 == 1) * 100, 1),
+    n                   = n()
+  )
+
+print(tabla_lim_edad_detalle)
+```
+
+```{r}
+g_lim_barras <- ggplot(tabla_lim_long,
+                       aes(x = reorder(limitacion, porcentaje),
+                           y = porcentaje, fill = grupo_edad)) +
+  geom_col(position = "dodge", width = 0.7) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            position = position_dodge(width = 0.7),
+            hjust = -0.1, size = 3) +
+  scale_fill_manual(values = c("60-69" = "#D6EAF8",
+                                "70-79" = "#1B4F72",
+                                "80+"   = "#922B21")) +
+  scale_y_continuous(limits = c(0, 30),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Prevalencia de limitaciones permanentes por grupo de edad",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    fill     = "Grupo de edad",
+    caption  = "Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "top",
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_lim_barras)
+```
+
+```{r}
+# Tabla con IC por limitación y grupo de edad
+tabla_lim_ic <- base_salud |>
+  group_by(grupo_edad) |>
+  summarise(
+    Movilidad           = mean(P401H1 == 1) * 100,
+    Vision              = mean(P401H2 == 1) * 100,
+    Comunicacion        = mean(P401H3 == 1) * 100,
+    Audicion            = mean(P401H4 == 1) * 100,
+    Cognicion           = mean(P401H5 == 1) * 100,
+    Relaciones_sociales = mean(P401H6 == 1) * 100,
+    n                   = n()
+  ) |>
+  pivot_longer(
+    cols      = -c(grupo_edad, n),
+    names_to  = "limitacion",
+    values_to = "porcentaje"
+  ) |>
+  mutate(
+    porcentaje = round(porcentaje, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    limitacion = recode(limitacion,
+      "Movilidad"           = "Movilidad",
+      "Vision"              = "Visión",
+      "Comunicacion"        = "Comunicación",
+      "Audicion"            = "Audición",
+      "Cognicion"           = "Cognición",
+      "Relaciones_sociales" = "Relaciones sociales"
+    )
+  )
+
+print(tabla_lim_ic)
+```
+```{r}
+#Truncamos a cero
+tabla_lim_ic <- tabla_lim_ic |>
+  mutate(ic_inf = if_else(ic_inf < 0, 0, ic_inf))
+
+# Gráfico de barras agrupadas con IC
+g_lim_ic <- ggplot(tabla_lim_ic,
+                   aes(x = reorder(limitacion, porcentaje),
+                       y = porcentaje, fill = grupo_edad)) +
+  geom_col(position = "dodge", width = 0.7) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                position = position_dodge(width = 0.7),
+                width = 0.3, color = "gray30", linewidth = 0.7) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            position = position_dodge(width = 0.7),
+            hjust = -0.1, size = 2.8) +
+  scale_fill_manual(values = c("60-69" = "#5DADE2",
+                              "70-79" = "#1B4F72",
+                              "80+"   = "#922B21")) +
+  scale_y_continuous(limits = c(0, 40),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Prevalencia de limitaciones permanentes por grupo de edad",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    fill     = "Grupo de edad",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "top",
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_lim_ic)
+```
+
+
+```{r}
+# Gráfico sin porcentajes
+g_lim_ic <- ggplot(tabla_lim_ic,
+                   aes(x = reorder(limitacion, porcentaje),
+                       y = porcentaje, fill = grupo_edad)) +
+  geom_col(position = "dodge", width = 0.7) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                position = position_dodge(width = 0.7),
+                width = 0.3, color = "gray30", linewidth = 0.7) +
+  scale_fill_manual(values = c("60-69" = "#5DADE2",
+                                "70-79" = "#1B4F72",
+                                "80+"   = "#922B21")) +
+  scale_y_continuous(limits = c(0, 40),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Prevalencia de limitaciones permanentes por grupo de edad",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    fill     = "Grupo de edad",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "top",
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_lim_ic)
+
+# Tabla aparte con valores exactos
+tabla_lim_presentar <- tabla_lim_ic |>
+  select(limitacion, grupo_edad, porcentaje, ic_inf, ic_sup) |>
+  mutate(resultado = paste0(porcentaje, "% (IC95%: ", ic_inf, " - ", ic_sup, ")")) |>
+  select(limitacion, grupo_edad, resultado) |>
+  tidyr::pivot_wider(names_from = grupo_edad, values_from = resultado)
+
+print(tabla_lim_presentar)
+```
+
+```{r}
+# Tabla presentable con IC
+tabla_lim_presentar <- tabla_lim_ic |>
+  mutate(
+    resultado = paste0(porcentaje, "% (", ic_inf, " - ", ic_sup, ")")
+  ) |>
+  select(limitacion, grupo_edad, resultado) |>
+  pivot_wider(
+    names_from  = grupo_edad,
+    values_from = resultado
+  ) |>
+  rename(
+    Limitación   = limitacion,
+    `60-69 años` = `60-69`,
+    `70-79 años` = `70-79`,
+    `80+ años`   = `80+`
+  )
+
+print(tabla_lim_presentar)
+```
+
+```{r}
+# Tabla mejorada con total general y estética para paper
+tabla_total <- data.frame(
+  limitacion = c("Movilidad", "Visión", "Comunicación",
+                 "Audición", "Cognición", "Relaciones sociales"),
+  n_si = c(
+    sum(base_salud$P401H1 == 1),
+    sum(base_salud$P401H2 == 1),
+    sum(base_salud$P401H3 == 1),
+    sum(base_salud$P401H4 == 1),
+    sum(base_salud$P401H5 == 1),
+    sum(base_salud$P401H6 == 1)
+  ),
+  n_total = nrow(base_salud)
+) |>
+  mutate(
+    porcentaje = round(n_si / n_total * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    Total      = paste0(porcentaje, "% (", ic_inf, " - ", ic_sup, ")")
+  ) |>
+  arrange(desc(porcentaje)) |>
+  select(limitacion, Total)
+
+# Unir con tabla por grupo de edad
+tabla_final <- tabla_lim_ic |>
+  mutate(
+    ic_inf    = if_else(ic_inf < 0, 0, ic_inf),
+    resultado = paste0(porcentaje, "% (", ic_inf, " - ", ic_sup, ")")
+  ) |>
+  select(limitacion, grupo_edad, resultado) |>
+  pivot_wider(names_from = grupo_edad, values_from = resultado) |>
+  left_join(tabla_total, by = "limitacion") |>
+  arrange(desc(as.numeric(sub("%.*", "", Total)))) |>
+  rename(
+    `Limitación`   = limitacion,
+    `60-69 años`   = `60-69`,
+    `70-79 años`   = `70-79`,
+    `80+ años`     = `80+`,
+    `Total`        = Total
+  )
+
+# Instalar kableExtra si no lo tienes
+if (!require(kableExtra)) install.packages("kableExtra")
+library(kableExtra)
+
+tabla_final |>
+  kable(
+    caption = "Prevalencia de limitaciones permanentes por grupo de edad. Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    align   = c("l", "c", "c", "c", "c")
+  ) |>
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "bordered"),
+    full_width        = FALSE,
+    font_size         = 13
+  ) |>
+  add_header_above(
+    c(" " = 1, "Grupo de edad" = 3, " " = 1)
+  ) |>
+  footnote(
+    general = "IC 95%: Intervalo de confianza al 95%. Fuente: ENAHO 2024 – INEI.",
+    general_title = "Nota:"
+  )
+```
+
+# ============================================
+# BLOQUE 3: MORBILIDAD ÚLTIMAS 4 SEMANAS
+# ============================================
+
+```{r}
+# --- 3.1 Tabla general por tipo de problema ---
+tabla_morbilidad <- data.frame(
+  problema = c("Síntoma o malestar", "Enfermedad aguda",
+               "Recaída enfermedad crónica", "Accidente",
+               "No tuvo ningún problema"),
+  n_si = c(
+    sum(base_salud$P4021 == 1),
+    sum(base_salud$P4022 == 1),
+    sum(base_salud$P4023 == 1),
+    sum(base_salud$P4024 == 1),
+    sum(base_salud$P4025 == 1)
+  ),
+  n_total = nrow(base_salud)
+) |>
+  mutate(
+    porcentaje = round(n_si / n_total * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  ) |>
+  arrange(desc(porcentaje))
+
+print(tabla_morbilidad)
+```
+```{r}
+# --- 3.2 Por grupo de edad ---
+tabla_morb_edad <- base_salud |>
+  group_by(grupo_edad) |>
+  summarise(
+    n                          = n(),
+    sintoma                    = round(mean(P4021 == 1) * 100, 1),
+    enfermedad                 = round(mean(P4022 == 1) * 100, 1),
+    recaida                    = round(mean(P4023 == 1) * 100, 1),
+    accidente                  = round(mean(P4024 == 1) * 100, 1),
+    ninguno                    = round(mean(P4025 == 1) * 100, 1)
+  )
+
+print(tabla_morb_edad)
+```
+```{r}
+# --- 3.3 Por sexo ---
+tabla_morb_sexo <- base_salud |>
+  mutate(sexo = if_else(P207 == 1, "Hombre", "Mujer")) |>
+  group_by(sexo) |>
+  summarise(
+    n          = n(),
+    sintoma    = round(mean(P4021 == 1) * 100, 1),
+    enfermedad = round(mean(P4022 == 1) * 100, 1),
+    recaida    = round(mean(P4023 == 1) * 100, 1),
+    accidente  = round(mean(P4024 == 1) * 100, 1),
+    ninguno    = round(mean(P4025 == 1) * 100, 1)
+  )
+
+print(tabla_morb_sexo)
+```
+```{r}
+# Verificar variables de acceso a salud
+vars_acceso <- c("P4031", "P4032", "P4033", "P4034", "P4035",
+                 "P4036", "P4037", "P4038", "P4039", "P40310",
+                 "P40311", "P40313", "P40314")
+
+# Missings
+sapply(base_salud[vars_acceso], function(x) sum(is.na(x)))
+
+# Cuántos tuvieron algún problema de salud
+# (solo ellos tienen valores en estas variables)
+cat("Tuvieron problema de salud:", sum(base_salud$P4025 != 1), "\n")
+cat("No tuvieron problema:", sum(base_salud$P4025 == 1), "\n")
+```
+```{r}
+# Filtrar solo quienes tuvieron problema de salud
+base_acceso <- base_salud |>
+  filter(P4025 != 1)
+
+cat("N para análisis de acceso:", nrow(base_acceso), "\n")
+
+# Tabla de lugar de atención
+tabla_acceso <- data.frame(
+  lugar = c("Puesto de salud MINSA", "Centro de salud MINSA",
+            "Centro/puesto CLAS", "Posta/policlínico EsSalud",
+            "Hospital MINSA", "Hospital EsSalud",
+            "Hospital FFAA/Policía", "Consultorio particular",
+            "Clínica particular", "Farmacia/botica",
+            "En domicilio", "Otro", "No buscó atención"),
+  n_si = c(
+    sum(base_acceso$P4031 == 1, na.rm = TRUE),
+    sum(base_acceso$P4032 == 1, na.rm = TRUE),
+    sum(base_acceso$P4033 == 1, na.rm = TRUE),
+    sum(base_acceso$P4034 == 1, na.rm = TRUE),
+    sum(base_acceso$P4035 == 1, na.rm = TRUE),
+    sum(base_acceso$P4036 == 1, na.rm = TRUE),
+    sum(base_acceso$P4037 == 1, na.rm = TRUE),
+    sum(base_acceso$P4038 == 1, na.rm = TRUE),
+    sum(base_acceso$P4039 == 1, na.rm = TRUE),
+    sum(base_acceso$P40310 == 1, na.rm = TRUE),
+    sum(base_acceso$P40311 == 1, na.rm = TRUE),
+    sum(base_acceso$P40313 == 1, na.rm = TRUE),
+    sum(base_acceso$P40314 == 1, na.rm = TRUE)
+  ),
+  n_total = nrow(base_acceso)
+) |>
+  mutate(
+    porcentaje = round(n_si / n_total * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  ) |>
+  arrange(desc(porcentaje))
+
+print(tabla_acceso)
+```
+
+```{r}
+# Filtrar lugares con al menos 1 observación
+tabla_acceso_graf <- tabla_acceso |>
+  filter(n_si > 0)
+
+# Gráfico
+g_acceso <- ggplot(tabla_acceso_graf,
+                   aes(x = reorder(lugar, porcentaje),
+                       y = porcentaje,
+                       fill = lugar == "No buscó atención")) +
+  geom_col(width = 0.6) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.3, color = "gray30", linewidth = 0.7) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.2, size = 3.5) +
+  scale_fill_manual(values = c("TRUE"  = "#922B21",
+                                "FALSE" = "#1B4F72")) +
+  scale_y_continuous(limits = c(0, 80),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Lugar de atención ante problema de salud",
+    subtitle = "Adultos mayores rurales con problema de salud, Huancavelica 2024 (n=412)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "none",
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_acceso)
+```
+
+```{r}
+# No buscó atención por grupo de edad
+tabla_nobusco_edad <- base_acceso |>
+  group_by(grupo_edad) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(P40314 == 1, na.rm = TRUE),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+print(tabla_nobusco_edad)
+
+# No buscó atención por sexo
+tabla_nobusco_sexo <- base_acceso |>
+  mutate(sexo = if_else(P207 == 1, "Hombre", "Mujer")) |>
+  group_by(sexo) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(P40314 == 1, na.rm = TRUE),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+print(tabla_nobusco_sexo)
+```
+##OJO: No hay diferencias significativas ni por grupo de edad ni por sexo en la proporción que no buscó atención. Los IC se solapan completamente en todos los grupos, lo que indica que el problema de no buscar atención es transversal — afecta por igual a hombres y mujeres, jóvenes y mayores de 80 años.
+
+# ============================================
+# RAZONES PARA NO BUSCAR ATENCIÓN
+# ============================================
+
+```{r}
+# Solo quienes NO buscaron atención
+base_nobusco <- base_acceso |>
+  filter(P40314 == 1)
+
+cat("N que no buscó atención:", nrow(base_nobusco), "\n")
+
+# Tabla de razones
+tabla_razones <- data.frame(
+  razon = c("No tuvo dinero", "Se encuentra lejos",
+            "Demoran mucho en atender", "No confía en médicos",
+            "No era grave", "Prefiere remedios caseros",
+            "No tiene seguro", "Se autorecetó",
+            "Falta de tiempo", "Maltrato del personal",
+            "Otro"),
+  n_si = c(
+    sum(base_nobusco$P4091 == 1, na.rm = TRUE),
+    sum(base_nobusco$P4092 == 1, na.rm = TRUE),
+    sum(base_nobusco$P4093 == 1, na.rm = TRUE),
+    sum(base_nobusco$P4094 == 1, na.rm = TRUE),
+    sum(base_nobusco$P4095 == 1, na.rm = TRUE),
+    sum(base_nobusco$P4096 == 1, na.rm = TRUE),
+    sum(base_nobusco$P4097 == 1, na.rm = TRUE),
+    sum(base_nobusco$P4098 == 1, na.rm = TRUE),
+    sum(base_nobusco$P4099 == 1, na.rm = TRUE),
+    sum(base_nobusco$P40910 == 1, na.rm = TRUE),
+    sum(base_nobusco$P40911 == 1, na.rm = TRUE)
+  ),
+  n_total = nrow(base_nobusco)
+) |>
+  mutate(
+    porcentaje = round(n_si / n_total * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  ) |>
+  filter(n_si > 0) |>
+  arrange(desc(porcentaje))
+
+print(tabla_razones)
+```
+##OJO: La principal razón no es económica ni de distancia, sino cultural: el 66.2% prefiere remedios caseros. Esto es muy coherente con el contexto rural andino de Huancavelica. 
+
+```{r}
+g_razones <- ggplot(tabla_razones,
+                    aes(x = reorder(razon, porcentaje),
+                        y = porcentaje,
+                        fill = razon == "Prefiere remedios caseros")) +
+  geom_col(width = 0.6) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.3, color = "gray30", linewidth = 0.7) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.2, size = 3.5) +
+  scale_fill_manual(values = c("TRUE"  = "#922B21",
+                                "FALSE" = "#1B4F72")) +
+  scale_y_continuous(limits = c(0, 85),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Razones para no buscar atención de salud",
+    subtitle = "Adultos mayores que no buscaron atención, Huancavelica 2024 (n=263)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI.\nNota: Un adulto mayor puede reportar más de una razón."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "none",
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_razones)
+```
+
+```{r}
+# Razones por sexo
+tabla_razones_sexo <- base_nobusco |>
+  mutate(sexo = if_else(P207 == 1, "Hombre", "Mujer")) |>
+  group_by(sexo) |>
+  summarise(
+    n                     = n(),
+    remedios_caseros      = round(mean(P4096 == 1, na.rm = TRUE) * 100, 1),
+    no_era_grave          = round(mean(P4095 == 1, na.rm = TRUE) * 100, 1),
+    lejos                 = round(mean(P4092 == 1, na.rm = TRUE) * 100, 1),
+    sin_dinero            = round(mean(P4091 == 1, na.rm = TRUE) * 100, 1),
+    autoreceto            = round(mean(P4098 == 1, na.rm = TRUE) * 100, 1),
+    no_confia             = round(mean(P4094 == 1, na.rm = TRUE) * 100, 1)
+  )
+
+print(tabla_razones_sexo)
+
+# Razones por grupo de edad
+tabla_razones_edad <- base_nobusco |>
+  group_by(grupo_edad) |>
+  summarise(
+    n                = n(),
+    remedios_caseros = round(mean(P4096 == 1, na.rm = TRUE) * 100, 1),
+    no_era_grave     = round(mean(P4095 == 1, na.rm = TRUE) * 100, 1),
+    lejos            = round(mean(P4092 == 1, na.rm = TRUE) * 100, 1),
+    sin_dinero       = round(mean(P4091 == 1, na.rm = TRUE) * 100, 1),
+    autoreceto       = round(mean(P4098 == 1, na.rm = TRUE) * 100, 1),
+    no_confia        = round(mean(P4094 == 1, na.rm = TRUE) * 100, 1)
+  )
+
+print(tabla_razones_edad)
+```
+
+```{r}
+# Convertir a formato largo
+tabla_razones_edad_long <- tabla_razones_edad |>
+  select(-n) |>
+  pivot_longer(
+    cols      = -grupo_edad,
+    names_to  = "razon",
+    values_to = "porcentaje"
+  ) |>
+  mutate(
+    razon = recode(razon,
+      "remedios_caseros" = "Remedios caseros",
+      "no_era_grave"     = "No era grave",
+      "lejos"            = "Se encuentra lejos",
+      "sin_dinero"       = "Sin dinero",
+      "autoreceto"       = "Se autorecetó",
+      "no_confia"        = "No confía en médicos"
+    )
+  )
+```
+
+
+```{r}
+g_razones_edad <- ggplot(tabla_razones_edad_long,
+                         aes(x = reorder(razon, porcentaje),
+                             y = porcentaje,
+                             fill = grupo_edad)) +
+  geom_col(position = "dodge", width = 0.7) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            position = position_dodge(width = 0.7),
+            hjust = -0.1, size = 2.8) +
+  scale_fill_manual(values = c("60-69" = "#5DADE2",
+                                "70-79" = "#1B4F72",
+                                "80+"   = "#922B21")) +
+  scale_y_continuous(limits = c(0, 90),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Razones para no buscar atención por grupo de edad",
+    subtitle = "Adultos mayores que no buscaron atención, Huancavelica 2024 (n=263)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    fill     = "Grupo de edad",
+    caption  = "Fuente: ENAHO 2024 – INEI.\nNota: Un adulto mayor puede reportar más de una razón."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "top",
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_razones_edad)
+```
+
+```{r}
+# Verificar missings
+vars_seguro <- c("P4191", "P4192", "P4193", "P4194",
+                 "P4195", "P4196", "P4197", "P4198")
+
+sapply(base_salud[vars_seguro], function(x) sum(is.na(x)))
+```
+# ============================================
+# BLOQUE 4: SEGURO DE SALUD
+# ============================================
+
+```{r}
+# Tabla general por tipo de seguro
+# 1 = afiliado, 2 = no afiliado
+tabla_seguro <- data.frame(
+  seguro = c("SIS", "EsSalud", "Seguro privado",
+             "FFAA/Policiales", "Otro"),
+  n_si = c(
+    sum(base_salud$P4195 == 1),
+    sum(base_salud$P4191 == 1),
+    sum(base_salud$P4192 == 1),
+    sum(base_salud$P4194 == 1),
+    sum(base_salud$P4198 == 1)
+  ),
+  n_total = nrow(base_salud)
+) |>
+  mutate(
+    porcentaje = round(n_si / n_total * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  ) |>
+  arrange(desc(porcentaje))
+
+print(tabla_seguro)
+
+# Sin ningún seguro
+n_sin_seguro <- base_salud |>
+  filter(P4191 == 2 & P4195 == 2 & P4192 == 2 &
+         P4194 == 2 & P4198 == 2) |>
+  nrow()
+
+cat("Sin ningún seguro:", n_sin_seguro, 
+    "(", round(n_sin_seguro/nrow(base_salud)*100, 1), "%)\n")
+```
+```{r}
+# SIS por grupo de edad
+tabla_sis_edad <- base_salud |>
+  group_by(grupo_edad) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(P4195 == 1),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+print(tabla_sis_edad)
+
+# SIS por sexo
+tabla_sis_sexo <- base_salud |>
+  mutate(sexo = if_else(P207 == 1, "Hombre", "Mujer")) |>
+  group_by(sexo) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(P4195 == 1),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+print(tabla_sis_sexo)
+```
+# De quienes tuvieron problema de salud y tienen SIS,
+# ¿cuántos no buscaron atención?
+
+```{r}
+base_acceso |>
+  mutate(tiene_sis = if_else(P4195 == 1, "Con SIS", "Sin SIS")) |>
+  group_by(tiene_sis) |>
+  summarise(
+    n              = n(),
+    no_busco       = sum(P40314 == 1, na.rm = TRUE),
+    porcentaje     = round(no_busco / n * 100, 1),
+    ic_inf         = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup         = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+```
+# Quienes tienen SIS no buscan atención más que quienes no tienen SIS (65.9% vs 45.2%), aunque los IC se solapan levemente dado el pequeño N del grupo sin SIS (n=42).
+
+#Entre los adultos mayores que reportaron un problema de salud, el 65.9% de quienes contaban con SIS no buscó atención médica (IC95%: 61.1-70.7), proporción significativamente mayor a la observada en quienes no tenían SIS (45.2%; IC95%: 30.1-60.3). Dado que los intervalos de confianza no se solapan, la diferencia es estadísticamente significativa. Este hallazgo es paradójico: los adultos mayores con seguro de salud evitan más la atención formal que quienes no lo tienen, lo que sugiere que la cobertura del SIS no es suficiente para garantizar el acceso efectivo a los servicios, siendo las barreras culturales, geográficas y de confianza factores determinantes independientemente de la afiliación.
+
+# El centro o establecimiento de salud donde generalmente acude:
+```{r}
+table(base_salud$P420A)
+sum(is.na(base_salud$P420A))
+```
+# ============================================
+# P420A: UBICACIÓN DEL ESTABLECIMIENTO
+# ============================================
+
+```{r}
+tabla_p420 <- base_salud |>
+  count(P420A) |>
+  mutate(
+    categoria  = case_when(
+      P420A == 1 ~ "Mismo distrito",
+      P420A == 2 ~ "Otro distrito",
+      P420A == 3 ~ "No acude a ninguno"
+    ),
+    porcentaje = round(n / sum(n) * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  )
+
+print(tabla_p420)
+
+# Por grupo de edad
+tabla_p420_edad <- base_salud |>
+  mutate(otro_distrito = if_else(P420A == 2, 1, 0)) |>
+  group_by(grupo_edad) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(otro_distrito),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+
+print(tabla_p420_edad)
+```
+#1. 87.8% acude a un establecimiento en su mismo distrito, 11.6% debe ir a otro distrito, 0.6% no acude a ningún establecimiento
+
+#Por grupo de edad: la proporción que va a otro distrito disminuye ligeramente con la edad (12.8% → 9.8%), aunque los IC se solapan. Esto podría indicar que los más ancianos directamente dejan de buscar atención en lugar de desplazarse.
+
+```{r}
+# Gráfico P420A general
+g_p420 <- ggplot(tabla_p420,
+                 aes(x = reorder(categoria, porcentaje),
+                     y = porcentaje,
+                     fill = categoria)) +
+  geom_col(width = 0.5) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.2, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.2, size = 4) +
+  scale_fill_manual(values = c("Mismo distrito"     = "#1B4F72",
+                                "Otro distrito"      = "#922B21",
+                                "No acude a ninguno" = "#717D7E")) +
+  scale_y_continuous(limits = c(0, 105),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Ubicación del establecimiento de salud al que acude habitualmente",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "none",
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_p420)
+```
+
+```{r}
+> # Verificar missings
+> #vars_atencion <- c("P4041", "P4042", "P4043", "P4044", 
++                    "P4045", "P4046", "P4047")
+> #sapply(base_atendidos[vars_atencion], function(x) sum(is.na(x)))
+```
+
+
+```{r}
+# Tabla de tipo de profesional que atendió
+tabla_profesional <- data.frame(
+  profesional = c("Médico", "Dentista/Odontólogo", "Obstetriz",
+                  "Enfermero/a", "Sanitario/aux. técnico",
+                  "Promotor/a", "Otro"),
+  n_si = c(
+    sum(base_atendidos$P4041 == 1, na.rm = TRUE),
+    sum(base_atendidos$P4042 == 1, na.rm = TRUE),
+    sum(base_atendidos$P4043 == 1, na.rm = TRUE),
+    sum(base_atendidos$P4044 == 1, na.rm = TRUE),
+    sum(base_atendidos$P4045 == 1, na.rm = TRUE),
+    sum(base_atendidos$P4046 == 1, na.rm = TRUE),
+    sum(base_atendidos$P4047 == 1, na.rm = TRUE)
+  ),
+  n_total = nrow(base_atendidos) - 31  # excluimos missings
+) |>
+  mutate(
+    porcentaje = round(n_si / n_total * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  ) |>
+  filter(n_si > 0) |>
+  arrange(desc(porcentaje))
+
+print(tabla_profesional)
+```
+```{r}
+g_profesional <- ggplot(tabla_profesional,
+                        aes(x = reorder(profesional, porcentaje),
+                            y = porcentaje,
+                            fill = profesional == "Médico")) +
+  geom_col(width = 0.5) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.2, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.2, size = 4) +
+  scale_fill_manual(values = c("TRUE"  = "#1B4F72",
+                                "FALSE" = "#922B21")) +
+  scale_y_continuous(limits = c(0, 75),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Tipo de profesional que atendió la consulta",
+    subtitle = "Adultos mayores que buscaron atención, Huancavelica 2024 (n=118)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI.\nNota: Un adulto mayor puede haber sido atendido por más de un profesional."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "none",
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_profesional)
+```
+
+# ============================================
+# PERFIL SOCIODEMOGRÁFICO
+# ============================================
+
+```{r}
+# --- Estado civil (P209) ---
+tabla_ecivil <- base_salud |>
+  count(P209) |>
+  mutate(
+    categoria = case_when(
+      P209 == 1 ~ "Conviviente",
+      P209 == 2 ~ "Casado/a",
+      P209 == 3 ~ "Viudo/a",
+      P209 == 4 ~ "Divorciado/a",
+      P209 == 5 ~ "Separado/a",
+      P209 == 6 ~ "Soltero/a"
+    ),
+    porcentaje = round(n / sum(n) * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  ) |>
+  arrange(desc(porcentaje))
+
+print(tabla_ecivil)
+
+```
+
+```{r}
+# --- Nivel educativo (P301A) ---
+tabla_educ <- base_salud |>
+  count(P301A) |>
+  mutate(
+    categoria = case_when(
+      P301A == 1  ~ "Sin nivel",
+      P301A == 2  ~ "Inicial",
+      P301A == 3  ~ "Primaria incompleta",
+      P301A == 4  ~ "Primaria completa",
+      P301A == 5  ~ "Secundaria incompleta",
+      P301A == 6  ~ "Secundaria completa",
+      P301A == 7  ~ "Sup. no univ. incompleta",
+      P301A == 8  ~ "Sup. no univ. completa",
+      P301A == 9  ~ "Sup. univ. incompleta",
+      P301A == 10 ~ "Sup. univ. completa",
+      P301A == 11 ~ "Maestría/Doctorado"
+    ),
+    porcentaje = round(n / sum(n) * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  ) |>
+  arrange(desc(porcentaje))
+
+print(tabla_educ)
+```
+```{r}
+# --- Parentesco con jefe del hogar (P203) ---
+tabla_parentesco <- base_salud |>
+  count(P203) |>
+  mutate(
+    categoria = case_when(
+      P203 == 1  ~ "Jefe/Jefa del hogar",
+      P203 == 2  ~ "Esposo/a - Compañero/a",
+      P203 == 3  ~ "Hijo/a",
+      P203 == 4  ~ "Yerno/Nuera",
+      P203 == 6  ~ "Padres/Suegros",
+      P203 == 7  ~ "Otros parientes",
+      P203 == 11 ~ "Hermano/a"
+    ),
+    porcentaje = round(n / sum(n) * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  ) |>
+  arrange(desc(porcentaje))
+
+print(tabla_parentesco)
+```
+
+```{r}
+tabla_educ_agrup <- base_salud |>
+  mutate(
+    educ_agrup = case_when(
+      P301A == 1  ~ "Sin nivel",
+      P301A == 2  ~ "Inicial",
+      P301A == 3  ~ "Primaria incompleta",
+      P301A == 4  ~ "Primaria completa",
+      P301A == 5  ~ "Secundaria incompleta",
+      P301A == 6  ~ "Secundaria completa",
+      P301A >= 7  ~ "Superior"
+    ),
+    educ_agrup = factor(educ_agrup,
+                        levels = c("Sin nivel", "Inicial",
+                                   "Primaria incompleta",
+                                   "Primaria completa",
+                                   "Secundaria incompleta",
+                                   "Secundaria completa",
+                                   "Superior"))
+  ) |>
+  count(educ_agrup) |>
+  mutate(
+    porcentaje = round(n / sum(n) * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  )
+
+print(tabla_educ_agrup)
+
+g_educ <- ggplot(tabla_educ_agrup,
+                 aes(x = educ_agrup, y = porcentaje)) +
+  geom_col(fill = "#922B21", width = 0.6) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.3, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.2, size = 3.5) +
+  scale_y_continuous(limits = c(0, 50),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Nivel educativo",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_educ)
+```
+
+```{r}
+g_ecivil <- ggplot(tabla_ecivil,
+                   aes(x = reorder(categoria, porcentaje),
+                       y = porcentaje)) +
+  geom_col(fill = "#1B4F72", width = 0.6) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.3, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.2, size = 3.5) +
+  scale_y_continuous(limits = c(0, 70),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Estado civil",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_ecivil)
+```
+```{r}
+g_parentesco <- ggplot(tabla_parentesco,
+                       aes(x = reorder(categoria, porcentaje),
+                           y = porcentaje)) +
+  geom_col(fill = "#1B4F72", width = 0.6) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.3, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.2, size = 3.5) +
+  scale_y_continuous(limits = c(0, 85),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Relación de parentesco con el jefe del hogar",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_parentesco)
+```
+##############################################################
+# ============================================
+# MÓDULO 700: PROGRAMAS SOCIALES
+# ============================================
+
+```{r}
+# Filtrar Huancavelica rural
+base_700 <- m700 |>
+  filter(
+    substr(UBIGEO, 1, 2) == "09",
+    ESTRATO %in% c(6, 7, 8)
+  ) |>
+  inner_join(
+    base_salud |>
+      select(CONGLOME, VIVIENDA, HOGAR) |>
+      distinct(),
+    by = c("CONGLOME", "VIVIENDA", "HOGAR")
+  )
+
+# Verificar
+cat("N hogares con adultos mayores rurales:", nrow(base_700), "\n")
+
+# Ver variables de programas sociales disponibles
+names(base_700)
+```
+#355 hogares rurales de Huancavelica con al menos un adulto mayor.
+
+```{r}
+# Ver cuántos adultos mayores hay por hogar
+base_salud |>
+  group_by(CONGLOME, VIVIENDA, HOGAR) |>
+  summarise(n_am = n(), .groups = "drop") |>
+  count(n_am) |>
+  mutate(porcentaje = round(n / sum(n) * 100, 1))
+```
+#Perfecto, eso confirma exactamente lo que explicamos:
+#230 hogares tienen 1 adulto mayor (64.8%), 124 hogares tienen 2 adultos mayores (34.9%) → estos aportan 248 personas, 1 hogar tiene 4 adultos mayores (0.3%) → aporta 4 personas. 
+
+
+```{r}
+# ============================================
+# PANEO INICIAL - MÓDULO 700
+# Base: 355 hogares con adultos mayores rurales
+# ============================================
+
+# --- PANEO 1: Programas alimentarios ---
+vars_alim_todas <- c("P701$01", "P701$02", "P701$03", "P701$04",
+                     "P701$05", "P701$06", "P701$07", "P701$08",
+                     "P701$09", "P701$10")
+
+etiquetas_alim <- c(
+  "P701$01" = "Vaso de Leche",
+  "P701$02" = "Comedor Popular",
+  "P701$03" = "Qali Warma desayunos",
+  "P701$04" = "Qali Warma almuerzos",
+  "P701$05" = "Cuna Más",
+  "P701$06" = "Otro",
+  "P701$07" = "Otro 2",
+  "P701$08" = "Otro 3",
+  "P701$09" = "No recibió ninguno",
+  "P701$10" = "Canasta municipio"
+)
+
+paneo_alim <- data.frame(
+  variable   = vars_alim_todas,
+  programa   = etiquetas_alim[vars_alim_todas],
+  n_si       = sapply(vars_alim_todas, function(v) sum(base_700[[v]] == 1, na.rm = TRUE)),
+  n_no       = sapply(vars_alim_todas, function(v) sum(base_700[[v]] == 0, na.rm = TRUE)),
+  n_total    = nrow(base_700)
+) |>
+  mutate(porcentaje = round(n_si / n_total * 100, 1))
+
+print(paneo_alim)
+```
+```{r}
+# --- PANEO 2: Programas de transferencia ---
+vars_transf_todas <- c("P710$01", "P710$02", "P710$03", "P710$04",
+                       "P710$05", "P710$06", "P710$07", "P710$08",
+                       "P710$09", "P710$10", "P710$11", "P710$12",
+                       "P710$13", "P710$14", "P710$15", "P710$20",
+                       "P710$21", "P710$28", "P710$29", "P710$30",
+                       "P710$31", "P710$32", "P710$33", "P710$34")
+
+etiquetas_transf <- c(
+  "P710$01" = "Cuna Más cuidado diurno",
+  "P710$02" = "Cuna Más acompañamiento",
+  "P710$03" = "Centro Emergencia Mujer",
+  "P710$04" = "JUNTOS",
+  "P710$05" = "Pensión 65",
+  "P710$06" = "Alfabetización",
+  "P710$07" = "Jóvenes Productivos",
+  "P710$08" = "Trabaja Perú",
+  "P710$09" = "Impulsa Perú",
+  "P710$10" = "Beca 18",
+  "P710$11" = "Otro",
+  "P710$12" = "Otro 2",
+  "P710$13" = "Otro 3",
+  "P710$14" = "No recibió ninguno",
+  "P710$15" = "Bono Gas FISE",
+  "P710$20" = "Retiro CTS",
+  "P710$21" = "Retiro AFP",
+  "P710$28" = "Material educativo",
+  "P710$29" = "Bono Yanapay",
+  "P710$30" = "Bono 600",
+  "P710$31" = "Bono Wanuchay",
+  "P710$32" = "Bono 210",
+  "P710$33" = "Asistencia COVID orfandad",
+  "P710$34" = "Contigo"
+)
+
+paneo_transf <- data.frame(
+  variable   = vars_transf_todas,
+  programa   = etiquetas_transf[vars_transf_todas],
+  n_si       = sapply(vars_transf_todas, function(v) sum(base_700[[v]] == 1, na.rm = TRUE)),
+  n_no       = sapply(vars_transf_todas, function(v) sum(base_700[[v]] == 0, na.rm = TRUE)),
+  n_total    = nrow(base_700)
+) |>
+  mutate(porcentaje = round(n_si / n_total * 100, 1)) |>
+  filter(n_si > 0) |>
+  arrange(desc(n_si))
+
+print(paneo_transf)
+```
+## TABLAS: 
+```{r}
+tabla_alim_final <- data.frame(
+  programa = c("Vaso de Leche", "Qali Warma desayunos",
+               "Qali Warma almuerzos", "Comedor Popular",
+               "Canasta municipio", "Otro",
+               "No recibió ninguno"),
+  n_si = c(39, 35, 31, 31, 1, 9, 256),
+  n_total = 355
+) |>
+  mutate(
+    porcentaje = round(n_si / n_total * 100, 1),
+    ic_inf = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_sup = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_inf = if_else(ic_inf < 0, 0, ic_inf),
+    resultado = paste0(porcentaje, "% (", ic_inf, " - ", ic_sup, ")")
+  ) |>
+  arrange(desc(porcentaje)) |>
+  select(programa, n_si, resultado)
+
+print(tabla_alim_final)
+
+# Tabla 2 — Programas de transferencia
+tabla_transf_final <- data.frame(
+  programa = c("Pensión 65", "Bono Yanapay",
+               "Bono Gas FISE", "JUNTOS",
+               "Material educativo", "Contigo",
+               "Bono 600", "Trabaja Perú",
+               "No recibió ninguno"),
+  n_si = c(219, 181, 154, 46, 47, 18, 12, 8, 25),
+  n_total = 355
+) |>
+  mutate(
+    porcentaje = round(n_si / n_total * 100, 1),
+    ic_inf = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_sup = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n_total), 1),
+    ic_inf = if_else(ic_inf < 0, 0, ic_inf),
+    resultado = paste0(porcentaje, "% (", ic_inf, " - ", ic_sup, ")")
+  ) |>
+  arrange(desc(porcentaje)) |>
+  select(programa, n_si, resultado)
+
+print(tabla_transf_final)
+```
+#"En cuanto a la cobertura de programas alimentarios, el 72.1% (IC95%: 67.4-76.8) de los hogares con adultos mayores rurales de Huancavelica no recibió ningún tipo de ayuda alimentaria en los últimos tres meses. Entre quienes sí recibieron algún programa, el Vaso de Leche fue el más frecuente (11.0%; IC95%: 7.7-14.3), seguido de Qali Warma desayunos (9.9%; IC95%: 6.8-13.0) y Comedor Popular (8.7%; IC95%: 5.8-11.6).
+#"Cabe señalar que Qali Warma es un programa dirigido a niños en edad escolar. Su presencia en el 9.9% de los hogares con adultos mayores indica que estos hogares tienen también miembros menores de edad. En el contexto rural andino, donde el hogar funciona como una unidad de consumo colectiva, estos programas alimentarios contribuyen indirectamente a la seguridad alimentaria del adulto mayor, aunque no están diseñados específicamente para este grupo etario. La coexistencia de programas dirigidos a distintos miembros del hogar refleja la vulnerabilidad multidimensional del hogar rural con adulto mayor."
+
+####### TRAEMOS DOS VARIBALES DE M2OO A MODULO DE SALUD PARA QUE SEAN MISMAS OBSERVACIONES ###
+
+```{r}
+# Verificar si las llaves coinciden entre base_salud y m200
+# Ver primeras filas de las llaves en base_salud
+head(base_salud[, c("CONGLOME", "VIVIENDA", "HOGAR", "CODPERSO")])
+
+# Ver primeras filas de las llaves en m200
+head(m200[, c("CONGLOME", "VIVIENDA", "HOGAR", "CODPERSO")])
+
+# Ver si hay coincidencias
+base_salud |>
+  inner_join(
+    m200 |> select(CONGLOME, VIVIENDA, HOGAR, CODPERSO, P210, P211A),
+    by = c("CONGLOME", "VIVIENDA", "HOGAR", "CODPERSO")
+  ) |>
+  nrow()
+table(base_salud$P211A)
+```
+##### VERIFICAMOS CON EL MÓDULO 500: EMPLEO ####
+
+```{r}
+# Módulo 500: Cruzamos la base matriz rural con m500
+m500_am <- base_am_rural |>
+  inner_join(
+    m500 |> select(-UBIGEO, -ESTRATO, -DOMINIO),
+    by = c("CONGLOME", "VIVIENDA", "HOGAR", "CODPERSO")
+  )
+
+cat("N adultos mayores rurales en m500:", nrow(m500_am), "
+")
+```
+```{r}
+# Ver nombres de variables
+names(m500_am)
+
+# Ver las primeras variables clave
+# P501 = condición de actividad
+# P502 = ocupación principal
+head(m500_am[, 1:20])
+```
+```{r}
+# Verificar variables clave en m500_am
+cat("P501 missings:", sum(is.na(m500_am$P501)), "\n")
+cat("P546 missings:", sum(is.na(m500_am$P546)), "\n")
+cat("P507 missings:", sum(is.na(m500_am$P507)), "\n")
+
+table(m500_am$P501)
+table(m500_am$P546)
+table(m500_am$P507)
+```
+```{r}
+# Verificar P5049 (labores en chacra)
+cat("P5049 missings:", sum(is.na(m500_am$P5049)), "\n")
+table(m500_am$P5049)
+
+# Verificar P5567A (recibió Pensión 65 a nivel persona)
+cat("P5567A missings:", sum(is.na(m500_am$P5567A)), "\n")
+table(m500_am$P5567A)
+```
+
+```{r}
+# Tabla actividad económica
+tabla_actividad <- m500_am |>
+  mutate(
+    actividad = case_when(
+      P501 == 1 ~ "Trabajó la semana pasada",
+      P501 == 2 ~ "No trabajó"
+    )
+  ) |>
+  count(actividad) |>
+  mutate(
+    porcentaje = round(n / sum(n) * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1)
+  )
+print(tabla_actividad)
+
+# Tabla categoría ocupacional completa
+tabla_categoria <- m500_am |>
+  filter(!is.na(P507)) |>
+  mutate(
+    categoria = case_when(
+      P507 == 1 ~ "Empleador/patrono",
+      P507 == 2 ~ "Trabajador independiente",
+      P507 == 3 ~ "Empleado",
+      P507 == 4 ~ "Obrero",
+      P507 == 5 ~ "Trabajador familiar no remunerado",
+      P507 == 6 ~ "Trabajador del hogar",
+      P507 == 7 ~ "Otro"
+    )
+  ) |>
+  count(categoria) |>
+  mutate(
+    porcentaje = round(n / sum(n) * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  ) |>
+  arrange(desc(porcentaje))
+
+print(tabla_categoria)
+
+# Razón para no trabajar
+tabla_razon <- m500_am |>
+  filter(P501 == 2, !is.na(P546)) |>
+  mutate(
+    razon = case_when(
+      P546 == 5 ~ "Quehaceres del hogar",
+      P546 == 6 ~ "Vive de pensión/jubilación",
+      P546 == 7 ~ "Enfermo o incapacitado",
+      P546 == 8 ~ "Otro"
+    )
+  ) |>
+  count(razon) |>
+  mutate(porcentaje = round(n / sum(n) * 100, 1))
+print(tabla_razon)
+```
+# Actividad económica:
+#77.8% trabajó la semana pasada
+#22.2% no trabajó
+
+#De quienes no trabajaron (69 respondieron):
+
+#56.2% enfermo/incapacitado ← muy relevante
+#23.4% quehaceres del hogar
+#12.5% vive de pensión/jubilación
+#7.8% otro
+
+#Categoría ocupacional:
+#72% trabajador independiente ← mayoría trabaja por cuenta propia
+#22.8% trabajador familiar no remunerado ← trabajan sin pago
+#Solo aparecen 5 categorías, no 7 — "Trabajador del hogar" y "Otro" tienen 0 observaciones
+
+
+```{r}
+# Gráfico 1: Actividad económica
+g_actividad <- ggplot(tabla_actividad,
+                      aes(x = reorder(actividad, porcentaje),
+                          y = porcentaje,
+                          fill = actividad)) +
+  geom_col(width = 0.5) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.2, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.2, size = 4) +
+  scale_fill_manual(values = c("Trabajó la semana pasada" = "#1B4F72",
+                                "No trabajó"              = "#922B21")) +
+  scale_y_continuous(limits = c(0, 95),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Actividad económica la semana pasada",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "none",
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_actividad)
+
+# Gráfico 2: Categoría ocupacional
+g_categoria <- ggplot(tabla_categoria,
+                      aes(x = reorder(categoria, porcentaje),
+                          y = porcentaje)) +
+  geom_col(fill = "#1B4F72", width = 0.6) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.3, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.2, size = 3.5) +
+  scale_y_continuous(limits = c(0, 90),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Categoría ocupacional",
+    subtitle = "Adultos mayores rurales que trabajaron, Huancavelica 2024 (n=421)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_categoria)
+```
+```{r}
+# Agregar IC a tabla de razones
+tabla_razon <- m500_am |>
+  filter(P501 == 2, !is.na(P546)) |>
+  mutate(
+    razon = case_when(
+      P546 == 5 ~ "Quehaceres del hogar",
+      P546 == 6 ~ "Vive de pensión/jubilación",
+      P546 == 7 ~ "Enfermo o incapacitado",
+      P546 == 8 ~ "Otro"
+    )
+  ) |>
+  count(razon) |>
+  mutate(
+    porcentaje = round(n / sum(n) * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_inf     = if_else(ic_inf < 0, 0, ic_inf)
+  ) |>
+  arrange(desc(porcentaje))
+
+# Gráfico razones para no trabajar
+g_razon <- ggplot(tabla_razon,
+                  aes(x = reorder(razon, porcentaje),
+                      y = porcentaje,
+                      fill = razon == "Enfermo o incapacitado")) +
+  geom_col(width = 0.5) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.2, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.2, size = 4) +
+  scale_fill_manual(values = c("TRUE"  = "#922B21",
+                                "FALSE" = "#1B4F72")) +
+  scale_y_continuous(limits = c(0, 75),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Razones para no trabajar la semana pasada",
+    subtitle = "Adultos mayores que no trabajaron, Huancavelica 2024 (n=69)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "none",
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_razon)
+```
+```{r}
+El gráfico quedó muy bien. Se ve claramente que la principal razón para no trabajar es estar enfermo o incapacitado (56.2%), lo cual conecta directamente con los hallazgos del módulo 400 sobre la alta prevalencia de enfermedades crónicas y limitaciones permanentes.
+Sin embargo hay una advertencia metodológica importante: n=69 es un N pequeño para calcular IC. Los intervalos son muy amplios, especialmente para "Vive de pensión/jubilación" (12.5%) y "Otro" (7.8%). Debes mencionarlo en tu paper.
+```
+
+### PENSIÓN 65 POR PERSONA #######################33
+
+```{r}
+# Tabla Pensión 65 a nivel persona
+tabla_pension65 <- m500_am |>
+  mutate(
+    pension65 = case_when(
+      P5567A == 1 ~ "Recibe Pensión 65",
+      P5567A == 2 ~ "No recibe Pensión 65"
+    )
+  ) |>
+  count(pension65) |>
+  mutate(
+    porcentaje = round(n / sum(n) * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / sum(n)), 1)
+  )
+
+print(tabla_pension65)
+
+# Gráfico
+g_pension65 <- ggplot(tabla_pension65,
+                      aes(x = reorder(pension65, porcentaje),
+                          y = porcentaje,
+                          fill = pension65 == "Recibe Pensión 65")) +
+  geom_col(width = 0.5) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.2, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            hjust = -0.2, size = 4) +
+  scale_fill_manual(values = c("TRUE"  = "#1B4F72",
+                                "FALSE" = "#922B21")) +
+  scale_y_continuous(limits = c(0, 75),
+                     labels = function(x) paste0(x, "%")) +
+  coord_flip() +
+  labs(
+    title    = "Cobertura de Pensión 65",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI.\nNota: Dato a nivel persona (módulo 500)."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "none",
+    panel.grid.major.y = element_blank()
+  )
+
+print(g_pension65)
+```
+### CRUZAMOS POR GRUPO DE EDAD Y SEXO
+
+```{r}
+# Agregar grupo de edad y sexo a m500_am
+m500_am <- m500_am |>
+  mutate(
+    grupo_edad = cut(P208A,
+                     breaks = c(60, 70, 80, Inf),
+                     labels = c("60-69", "70-79", "80+"),
+                     right  = FALSE),
+    sexo = case_when(
+      P207 == 1 ~ "Hombre",
+      P207 == 2 ~ "Mujer"
+    )
+  )
+
+# Verificar
+table(m500_am$grupo_edad)
+table(m500_am$sexo)
+```
+
+
+```{r}
+# Pensión 65 por grupo de edad
+tabla_p65_edad <- m500_am |>
+  group_by(grupo_edad) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(P5567A == 1),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+print(tabla_p65_edad)
+```
+```{r}
+# Pensión 65 por sexo
+tabla_p65_sexo <- m500_am |>
+  group_by(sexo) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(P5567A == 1),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+print(tabla_p65_sexo)
+```
+
+```{r}
+# Preparar datos combinados
+datos_p65 <- bind_rows(
+  tabla_p65_edad |>
+    mutate(grupo = as.character(grupo_edad),
+           categoria = "Grupo de edad") |>
+    select(grupo, categoria, porcentaje, ic_inf, ic_sup),
+  tabla_p65_sexo |>
+    mutate(grupo = sexo,
+           categoria = "Sexo") |>
+    select(grupo, categoria, porcentaje, ic_inf, ic_sup)
+) |>
+  mutate(
+    categoria = factor(categoria, levels = c("Sexo", "Grupo de edad")),
+    grupo     = factor(grupo, levels = c("Hombre", "Mujer",
+                                          "60-69", "70-79", "80+"))
+  )
+
+# Gráfico
+g_p65_cruce <- ggplot(datos_p65,
+                      aes(x = grupo, y = porcentaje,
+                          fill = categoria)) +
+  geom_col(width = 0.6) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.3, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            vjust = -1.5, size = 3.5, fontface = "bold") +
+  scale_fill_manual(values = c("Sexo"          = "#1B4F72",
+                                "Grupo de edad" = "#922B21")) +
+  scale_y_continuous(limits = c(0, 110),
+                     labels = function(x) paste0(x, "%")) +
+  facet_grid(~ categoria, scales = "free_x", space = "free_x") +
+  labs(
+    title    = "Cobertura de Pensión 65 por sexo y grupo de edad",
+    subtitle = "Adultos mayores rurales, Huancavelica 2024 (n=482)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    fill     = NULL,
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI.\nNota: Dato a nivel persona (módulo 500)."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "none",
+    panel.grid.major.x = element_blank(),
+    strip.text         = element_text(face = "bold", size = 10)
+  )
+
+print(g_p65_cruce)
+```
+
+```{r}
+# Ver cobertura de Pensión 65 por cada año de edad desde 60
+m500_am |>
+filter(P208A >= 60) |>
+group_by(P208A) |>
+summarise(
+ n          = n(),
+ n_si       = sum(P5567A == 1),
+ porcentaje = round(n_si / n * 100, 1)
+) |>
+arrange(P208A) |>
+ print(n = 60)
+```
+```{r}
+# Reagrupar con esta lógica
+m500_elegibles <- m500_am |>
+  filter(P208A >= 65) |>
+  mutate(
+    grupo_edad65 = cut(P208A,
+                       breaks = c(65, 70, 80, Inf),
+                       labels = c("65-69", "70-79", "80+"),
+                       right  = FALSE)
+  )
+
+# Cobertura por grupo
+tabla_p65_edad65 <- m500_elegibles |>
+  group_by(grupo_edad65) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(P5567A == 1),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+
+print(tabla_p65_edad65)
+
+# Cobertura por sexo
+tabla_p65_sexo65 <- m500_elegibles |>
+  group_by(sexo) |>
+  summarise(
+    n          = n(),
+    n_si       = sum(P5567A == 1),
+    porcentaje = round(n_si / n * 100, 1),
+    ic_inf     = round(porcentaje - 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1),
+    ic_sup     = round(porcentaje + 1.96 * sqrt(porcentaje * (100 - porcentaje) / n), 1)
+  )
+
+print(tabla_p65_sexo65)
+
+# Cobertura general entre elegibles
+cat("Cobertura general (65+):",
+    round(sum(m500_elegibles$P5567A == 1) / nrow(m500_elegibles) * 100, 1),
+    "% IC95%:",
+    round(mean(m500_elegibles$P5567A == 1) * 100 - 
+          1.96 * sqrt(mean(m500_elegibles$P5567A == 1) * (1 - mean(m500_elegibles$P5567A == 1)) / 
+          nrow(m500_elegibles)) * 100, 1),
+    "-",
+    round(mean(m500_elegibles$P5567A == 1) * 100 + 
+          1.96 * sqrt(mean(m500_elegibles$P5567A == 1) * (1 - mean(m500_elegibles$P5567A == 1)) / 
+          nrow(m500_elegibles)) * 100, 1), "\n")
+```
+
+```{r}
+# Preparar datos combinados
+datos_p65 <- bind_rows(
+  tabla_p65_edad65 |>
+    mutate(grupo = as.character(grupo_edad65),
+           categoria = "Grupo de edad") |>
+    select(grupo, categoria, porcentaje, ic_inf, ic_sup),
+  tabla_p65_sexo65 |>
+    mutate(grupo = sexo,
+           categoria = "Sexo") |>
+    select(grupo, categoria, porcentaje, ic_inf, ic_sup)
+) |>
+  mutate(
+    categoria = factor(categoria, levels = c("Sexo", "Grupo de edad")),
+    grupo     = factor(grupo, levels = c("Hombre", "Mujer",
+                                          "65-69", "70-79", "80+"))
+  )
+
+# Gráfico
+g_p65_cruce <- ggplot(datos_p65,
+                      aes(x = grupo, y = porcentaje,
+                          fill = categoria)) +
+  geom_col(width = 0.6) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.3, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            vjust = -1.5, size = 3.5, fontface = "bold") +
+  scale_fill_manual(values = c("Sexo"          = "#1B4F72",
+                                "Grupo de edad" = "#922B21")) +
+  scale_y_continuous(limits = c(0, 110),
+                     labels = function(x) paste0(x, "%")) +
+  facet_grid(~ categoria, scales = "free_x", space = "free_x") +
+  labs(
+    title    = "Cobertura de Pensión 65 por sexo y grupo de edad",
+    subtitle = "Adultos mayores rurales elegibles (65+), Huancavelica 2024 (n=348)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    fill     = NULL,
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI.\nNota: Análisis restringido a elegibles (65+ años)."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "none",
+    panel.grid.major.x = element_blank(),
+    strip.text         = element_text(face = "bold", size = 10)
+  )
+
+print(g_p65_cruce)
+```
+```{r}
+Excelentes resultados. Ahora el panorama es mucho más coherente:
+
+Cobertura general (65+): 75.6% (IC95%: 71.1 - 80.1)  ### REVISAR ESTO : OJO. 
+65-69: 55.6% — aún en proceso de incorporación
+70-79: 79.7% — cobertura consolidada
+80+: 92.4% — casi universal
+Mujeres tienen mayor cobertura (80.2%) que hombres (68.4%) y los IC no se solapan
+```
+
+```{r}
+# Preparar datos combinados
+datos_p65 <- bind_rows(
+  tabla_p65_edad65 |>
+    mutate(grupo = as.character(grupo_edad65),
+           categoria = "Grupo de edad") |>
+    select(grupo, categoria, porcentaje, ic_inf, ic_sup),
+  tabla_p65_sexo65 |>
+    mutate(grupo = sexo,
+           categoria = "Sexo") |>
+    select(grupo, categoria, porcentaje, ic_inf, ic_sup)
+) |>
+  mutate(
+    categoria = factor(categoria, levels = c("Sexo", "Grupo de edad")),
+    grupo     = factor(grupo, levels = c("Hombre", "Mujer",
+                                          "65-69", "70-79", "80+"))
+  )
+
+# Gráfico
+g_p65_cruce <- ggplot(datos_p65,
+                      aes(x = grupo, y = porcentaje,
+                          fill = categoria)) +
+  geom_col(width = 0.6) +
+  geom_errorbar(aes(ymin = ic_inf, ymax = ic_sup),
+                width = 0.3, color = "gray30", linewidth = 0.8) +
+  geom_text(aes(label = paste0(porcentaje, "%")),
+            vjust = -1.5, size = 3.5, fontface = "bold") +
+  scale_fill_manual(values = c("Sexo"          = "#1B4F72",
+                                "Grupo de edad" = "#922B21")) +
+  scale_y_continuous(limits = c(0, 110),
+                     labels = function(x) paste0(x, "%")) +
+  facet_grid(~ categoria, scales = "free_x", space = "free_x") +
+  labs(
+    title    = "Cobertura de Pensión 65 por sexo y grupo de edad",
+    subtitle = "Adultos mayores rurales elegibles (65+), Huancavelica 2024 (n=348)",
+    x        = NULL,
+    y        = "Porcentaje (%)",
+    fill     = NULL,
+    caption  = "Barras de error: IC 95%. Fuente: ENAHO 2024 – INEI.\nNota: Análisis restringido a elegibles (65+ años)."
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title         = element_text(face = "bold"),
+    legend.position    = "none",
+    panel.grid.major.x = element_blank(),
+    strip.text         = element_text(face = "bold", size = 10)
+  )
+
+print(g_p65_cruce)
+```
+
